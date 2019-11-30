@@ -1,0 +1,79 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\felip\Documents\Trabalho de AOC\regPC\simulation\modelsim
+Eregpc
+Z1 w1575122824
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\felip\Documents\Trabalho de AOC\regPC\simulation\modelsim
+Z6 8C:/Users/felip/Documents/Trabalho de AOC/regPC/regPC.vhd
+Z7 FC:/Users/felip/Documents/Trabalho de AOC/regPC/regPC.vhd
+l0
+L6
+V_lJ:44dIjOSJ;^SB_JiEM0
+Z8 OV;C;10.1d;51
+31
+Z9 !s108 1575123732.936000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/felip/Documents/Trabalho de AOC/regPC/regPC.vhd|
+Z11 !s107 C:/Users/felip/Documents/Trabalho de AOC/regPC/regPC.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+!s100 ^H^6m;K7_45WI87QRm@CX0
+!i10b 1
+Acomportamento
+R2
+R3
+R4
+DEx4 work 5 regpc 0 22 _lJ:44dIjOSJ;^SB_JiEM0
+l16
+L14
+V[zM]lnBm0Jh0]R=]i=hTH2
+R8
+31
+R9
+R10
+R11
+R12
+R13
+!s100 ]hQJgZ5j[nEXfWmFeD7eP2
+!i10b 1
+Etb_regpc
+Z14 w1575123615
+R2
+R3
+R4
+R5
+Z15 8C:/Users/felip/Documents/Trabalho de AOC/regPC/tb_regPC.vhd
+Z16 FC:/Users/felip/Documents/Trabalho de AOC/regPC/tb_regPC.vhd
+l0
+L5
+V8GXI8VIDR]2>BZAmX4lfa0
+!s100 L^WdB=Y74HElSAf:DzV]H0
+R8
+31
+!i10b 1
+Z17 !s108 1575123733.203000
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/felip/Documents/Trabalho de AOC/regPC/tb_regPC.vhd|
+Z19 !s107 C:/Users/felip/Documents/Trabalho de AOC/regPC/tb_regPC.vhd|
+R12
+R13
+Acomportamento
+R2
+R3
+R4
+DEx4 work 8 tb_regpc 0 22 8GXI8VIDR]2>BZAmX4lfa0
+l20
+L8
+VOaU7KKnfOAMWR;T`G0SdX1
+!s100 6lo34cDB9?3VAI4bNLZG71
+R8
+31
+!i10b 1
+R17
+R18
+R19
+R12
+R13
