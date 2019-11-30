@@ -1,0 +1,79 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\felip\Documents\Trabalho de AOC\divisor_sinal\simulation\modelsim
+Edivisor_sinal
+Z1 w1575132756
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\felip\Documents\Trabalho de AOC\divisor_sinal\simulation\modelsim
+Z6 8C:/Users/felip/Documents/Trabalho de AOC/divisor_sinal/divisor_sinal.vhd
+Z7 FC:/Users/felip/Documents/Trabalho de AOC/divisor_sinal/divisor_sinal.vhd
+l0
+L5
+VR^DdB0J7nO4k;iMzO235W0
+Z8 OV;C;10.1d;51
+31
+Z9 !s108 1575133581.701000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/felip/Documents/Trabalho de AOC/divisor_sinal/divisor_sinal.vhd|
+Z11 !s107 C:/Users/felip/Documents/Trabalho de AOC/divisor_sinal/divisor_sinal.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+!s100 C_mX2m9?DCCX26^0LU5]H1
+!i10b 1
+Acomportamento
+R2
+R3
+R4
+DEx4 work 13 divisor_sinal 0 22 R^DdB0J7nO4k;iMzO235W0
+l21
+L19
+VGnHdU8FW4<iUZC=?0_?_[2
+R8
+31
+R9
+R10
+R11
+R12
+R13
+!s100 ;f<UnahGh0Ef2mYYOCBg_2
+!i10b 1
+Etb_divisor_sinal
+Z14 w1575133504
+R2
+R3
+R4
+R5
+Z15 8C:/Users/felip/Documents/Trabalho de AOC/divisor_sinal/tb_divisor_sinal.vhd
+Z16 FC:/Users/felip/Documents/Trabalho de AOC/divisor_sinal/tb_divisor_sinal.vhd
+l0
+L5
+VmJdcMUn[:PWFZ1H?^T9dQ0
+!s100 WD:_Yc?YHSn9J?I[NkNei1
+R8
+31
+!i10b 1
+Z17 !s108 1575133581.888000
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/felip/Documents/Trabalho de AOC/divisor_sinal/tb_divisor_sinal.vhd|
+Z19 !s107 C:/Users/felip/Documents/Trabalho de AOC/divisor_sinal/tb_divisor_sinal.vhd|
+R12
+R13
+Acomportamento
+R2
+R3
+R4
+DEx4 work 16 tb_divisor_sinal 0 22 mJdcMUn[:PWFZ1H?^T9dQ0
+l28
+L8
+VAj6`@PPLnBMMMM;N7[Mlk0
+!s100 Id`SQH75jlHAmM5i^l3AT3
+R8
+31
+!i10b 1
+R17
+R18
+R19
+R12
+R13
