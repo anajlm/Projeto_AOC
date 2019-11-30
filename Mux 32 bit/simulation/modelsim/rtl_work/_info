@@ -1,0 +1,87 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\lwall\OneDrive\Documentos\Mux 2\simulation\modelsim
+Emux32b
+Z1 w1575128143
+Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z4 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z5 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z6 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z7 dC:\Users\lwall\OneDrive\Documentos\Mux 2\simulation\modelsim
+Z8 8C:/Users/lwall/OneDrive/Documentos/Mux 2/Mux32b.vhd
+Z9 FC:/Users/lwall/OneDrive/Documentos/Mux 2/Mux32b.vhd
+l0
+L6
+VBM@az4D>zW2Fg82<4P_WB2
+Z10 OV;C;10.1d;51
+31
+Z11 !s108 1575129022.330000
+Z12 !s90 -reportprogress|300|-93|-work|work|C:/Users/lwall/OneDrive/Documentos/Mux 2/Mux32b.vhd|
+Z13 !s107 C:/Users/lwall/OneDrive/Documentos/Mux 2/Mux32b.vhd|
+Z14 o-93 -work work -O0
+Z15 tExplicit 1
+!s100 A]_VaEmE_hZ8nLGAEJBz13
+!i10b 1
+Alogic
+R2
+R3
+R4
+R5
+R6
+DEx4 work 6 mux32b 0 22 BM@az4D>zW2Fg82<4P_WB2
+l15
+L14
+VC6f5XhFHRIn>9@beM:m:A3
+R10
+31
+R11
+R12
+R13
+R14
+R15
+!s100 OB32gQM]nMgmh7UFF[@RP0
+!i10b 1
+Etb_mux32b
+Z16 w1575128750
+R2
+R3
+R4
+R5
+R6
+R7
+Z17 8C:/Users/lwall/OneDrive/Documentos/Mux 2/tb_Mux32b.vhd
+Z18 FC:/Users/lwall/OneDrive/Documentos/Mux 2/tb_Mux32b.vhd
+l0
+L6
+VB;nfe`gbM`h=`D=gkQ1i91
+!s100 09hhlC^P`RboEhfFoBL=j2
+R10
+31
+!i10b 1
+Z19 !s108 1575129022.707000
+Z20 !s90 -reportprogress|300|-93|-work|work|C:/Users/lwall/OneDrive/Documentos/Mux 2/tb_Mux32b.vhd|
+Z21 !s107 C:/Users/lwall/OneDrive/Documentos/Mux 2/tb_Mux32b.vhd|
+R14
+R15
+Atest
+R2
+R3
+R4
+R5
+R6
+DEx4 work 9 tb_mux32b 0 22 B;nfe`gbM`h=`D=gkQ1i91
+l21
+L9
+V<0<`]db4a6Jbamb0Phbl<2
+!s100 8d5V`lJb0iikZ@Tdjh[9K1
+R10
+31
+!i10b 1
+R19
+R20
+R21
+R14
+R15
