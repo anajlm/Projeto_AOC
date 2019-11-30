@@ -1,0 +1,79 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\felip\Documents\Trabalho de AOC\Somador\simulation\modelsim
+Esomador
+Z1 w1575118132
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\felip\Documents\Trabalho de AOC\Somador\simulation\modelsim
+Z6 8C:/Users/felip/Documents/Trabalho de AOC/Somador/somador.vhd
+Z7 FC:/Users/felip/Documents/Trabalho de AOC/Somador/somador.vhd
+l0
+L6
+V8C44NK_bWe:SFWjLlTibC1
+Z8 OV;C;10.1d;51
+31
+Z9 !s108 1575120271.944000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/felip/Documents/Trabalho de AOC/Somador/somador.vhd|
+Z11 !s107 C:/Users/felip/Documents/Trabalho de AOC/Somador/somador.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+!s100 aS4JAIYX@[2<UEf>f`o?T0
+!i10b 1
+Acomportamento
+R2
+R3
+R4
+DEx4 work 7 somador 0 22 8C44NK_bWe:SFWjLlTibC1
+l15
+L13
+VO`Q4UdPJlo2Le;[OgAS622
+R8
+31
+R9
+R10
+R11
+R12
+R13
+!s100 ;Q07j=i]IYIB?DO]]n4SO0
+!i10b 1
+Etb_somador
+Z14 w1575120246
+R2
+R3
+R4
+R5
+Z15 8C:/Users/felip/Documents/Trabalho de AOC/Somador/tb_somador.vhd
+Z16 FC:/Users/felip/Documents/Trabalho de AOC/Somador/tb_somador.vhd
+l0
+L5
+VXk0<1dI_4WWcI1FLN@9M_3
+!s100 _UhXPG?PMK;a0YolJUTNh0
+R8
+31
+!i10b 1
+Z17 !s108 1575120272.225000
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/felip/Documents/Trabalho de AOC/Somador/tb_somador.vhd|
+Z19 !s107 C:/Users/felip/Documents/Trabalho de AOC/Somador/tb_somador.vhd|
+R12
+R13
+Acomportamento
+R2
+R3
+R4
+DEx4 work 10 tb_somador 0 22 Xk0<1dI_4WWcI1FLN@9M_3
+l18
+L8
+V<a5c9Dh7>=N2]DUkX56j_3
+!s100 2LQ`[[1Nc78DaWGB7OVW33
+R8
+31
+!i10b 1
+R17
+R18
+R19
+R12
+R13

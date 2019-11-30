@@ -1,0 +1,23 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+
+entity ALU is
+	port(
+		SrcA, SrcB 	: in std_logic_vector(31 downto 0);
+		ALUOut		: out std_logic_vector(31 downto 0);
+		ALUControl	: in std_logic_vector(1 downto 0)
+	);
+end ALU;
+
+architecture comportamento of ALU is
+
+begin
+ALUOut<=
+	(SrcA and SrcB) when (ALUControl="00") else
+	(SrcA or SrcB) when (ALUControl="01") else
+	(std_logic_vector(signed(SrcA)+signed(SrcB))) when (ALUControl="10") else
+	(std_logic_vector(signed(SrcA)-signed(SrcB)));
+
+end comportamento;
