@@ -8,6 +8,7 @@ entity regPC is
 		clock : in std_logic;
 		entrada : in std_logic_vector (31 downto 0);
 		saida : out std_logic_vector (31 downto 0)
+		--stallF: in std_logic
 	);
 end regPC;
 
@@ -17,7 +18,9 @@ begin
 	process (clock)
 	begin
 		if(rising_edge(clock)) then
+		--if stallF = '0' then
 			saida <= entrada;
 		end if;
+		--end  if;
 	end process;
 end comportamento;

@@ -14,6 +14,7 @@ entity regE is
 		RegDstE, ALUSrcE, RegWriteE : out std_logic;
 		ALUControlD : in std_logic_vector(1 downto 0);
 		ALUControlE : out std_logic_vector(1 downto 0)
+		--flushE: in std_logic;
 	);
 end regE;
 
@@ -23,6 +24,7 @@ begin
 	process (clock)
 	begin
 		if(rising_edge(clock)) then
+			--if flushE = '0' then
 			RD1s <= RD1;
 			RD2s <= RD2;
 			RsE <= RsD;
@@ -32,6 +34,7 @@ begin
 			ALUSrcE <= ALUSrcD;
 			RegWriteE <= RegWriteD;
 			ALUControlE <= ALUControlD;
+			--end if;
 		end if;
 	end process;
 end comportamento;

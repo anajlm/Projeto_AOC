@@ -9,7 +9,7 @@ Entrada0: in STD_LOGIC_VECTOR(31 downto 0);
 Entrada1: in STD_LOGIC_VECTOR(31 downto 0);
 Saida: out STD_LOGIC_VECTOR(31 downto 0));
 
-end;
+end Mux3232; 
 
 architecture struct of Mux3232 is
 
@@ -28,4 +28,4 @@ begin
 
 	Saida <= Entrada1 when booleano else Entrada0;
 
-end;
+end struct;
