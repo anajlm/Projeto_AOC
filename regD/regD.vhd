@@ -8,6 +8,7 @@ entity regD is
 		clock : in std_logic;
 		RD : in std_logic_vector (31 downto 0);
 		InstrD : out std_logic_vector (31 downto 0)
+		--stallD: in std_logic;
 	);
 end regD;
 
@@ -17,7 +18,9 @@ begin
 	process (clock)
 	begin
 		if(rising_edge(clock)) then
+		--if stallD = '0' then
 			InstrD <= RD;
+		--end if;
 		end if;
 	end process;
 end comportamento;
