@@ -1,0 +1,35 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+
+entity Mux3232tb is 
+end;
+
+architecture teste of Mux3232tb is
+
+component Mux3232 port(
+	
+	Controle: in STD_LOGIC;
+	Entrada0: in STD_LOGIC_VECTOR(31 downto 0);
+	Entrada1: in STD_LOGIC_VECTOR(31 downto 0);
+	Saida: out STD_LOGIC_VECTOR(31 downto 0));
+
+end component;
+
+signal Controle: STD_LOGIC;
+signal Entrada0: STD_LOGIC_VECTOR(31 downto 0);
+signal Entrada1: STD_LOGIC_VECTOR(31 downto 0);
+signal Saida: STD_LOGIC_VECTOR(31 downto 0);
+
+begin
+
+Mux32321: Mux3232 port map(Controle,Entrada0,Entrada1,Saida);
+
+process
+	begin 
+		
+		Controle <= '1'; wait for 20 ns;--,'1' after 20 ns,'1' after 40 ns,'0' after 60 ns;--'1' after 80 ns,'0' after 100 ns,'1' after 120 ns;
+		Entrada0 <= x"00000000"; wait for 20 ns;--, x"00000110" after 10 ns, x"01010101" after 55 ns;  
+		Entrada1 <= x"000001ff"; wait for 20 ns;--, x"000000ff" after 50 ns, x"11111111" after 60 ns; 
+end process;
+end;
