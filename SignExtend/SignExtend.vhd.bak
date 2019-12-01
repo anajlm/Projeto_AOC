@@ -1,0 +1,19 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+entity SignExtend is 
+port(
+
+Imm: in STD_LOGIC_VECTOR(15 downto 0);
+SignImmD: out STD_LOGIC_VECTOR(31 downto 0));
+
+end;
+
+architecture struct of SignExtend is
+
+
+begin
+
+SignImmD <= X"ffff" & Imm when Imm(15) else X"0000" & Imm;
+
+end;

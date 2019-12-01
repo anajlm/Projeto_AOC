@@ -1,0 +1,75 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\pedro\OneDrive\Documentos\SignExtend\simulation\modelsim
+Esignextend
+Z1 w1575141436
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\pedro\OneDrive\Documentos\SignExtend\simulation\modelsim
+Z5 8C:/Users/pedro/OneDrive/Documentos/SignExtend/SignExtend.vhd
+Z6 FC:/Users/pedro/OneDrive/Documentos/SignExtend/SignExtend.vhd
+l0
+L4
+VIR2hzQaRbo;ahmh]e@5a;2
+Z7 OV;C;10.1d;51
+31
+Z8 !s108 1575213341.746000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/pedro/OneDrive/Documentos/SignExtend/SignExtend.vhd|
+Z10 !s107 C:/Users/pedro/OneDrive/Documentos/SignExtend/SignExtend.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!s100 cz3XlgKl9h7o>N:7cJzK:0
+!i10b 1
+Astruct
+R2
+R3
+DEx4 work 10 signextend 0 22 IR2hzQaRbo;ahmh]e@5a;2
+l16
+L12
+V:Kc=LaI6;RfWRNSkM[aQ=1
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 UH?G:R9GLGV4=Mh`dbag91
+!i10b 1
+Esignextendtb
+Z13 w1575172998
+R2
+R3
+R4
+Z14 8C:/Users/pedro/OneDrive/Documentos/SignExtend/SignExtendtb.vhd
+Z15 FC:/Users/pedro/OneDrive/Documentos/SignExtend/SignExtendtb.vhd
+l0
+L5
+VRjN[^HP8FUD4X1V6dflzA1
+!s100 B7iWee5ZJh^dV74:nzmFo3
+R7
+31
+!i10b 1
+Z16 !s108 1575213342.824000
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/pedro/OneDrive/Documentos/SignExtend/SignExtendtb.vhd|
+Z18 !s107 C:/Users/pedro/OneDrive/Documentos/SignExtend/SignExtendtb.vhd|
+R11
+R12
+Ateste
+R2
+R3
+DEx4 work 12 signextendtb 0 22 RjN[^HP8FUD4X1V6dflzA1
+l20
+L8
+VDaAfC_`C3VX7S]XEPPilz2
+!s100 dG@NhTX:X0o_Y:56Uh:GX2
+R7
+31
+!i10b 1
+R16
+R17
+R18
+R11
+R12
