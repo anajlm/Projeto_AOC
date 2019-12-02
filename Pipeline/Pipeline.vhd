@@ -1,6 +1,3 @@
-
-
-
 ------------------------------------------PIPELINE-----------------------------------------------
 library ieee;
 use ieee.std_logic_1164.all;
@@ -35,7 +32,7 @@ use ieee.numeric_std.all;
 				RegDst, ALUSrc : out std_logic;
 				ALUControlID: out std_logic_vector(1 downto 0);
 				RegWrite: out std_logic
-	    );
+	     );
  end component;
  
  component Hazard is
