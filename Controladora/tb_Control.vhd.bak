@@ -1,0 +1,55 @@
+LIBRARY IEEE;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use ieee.std_logic_unsigned.all;
+
+entity Control is
+end Control;
+
+architecture test of tb_Control is
+begin
+	controladora: process(clock)
+	begin
+		if (clock='1' and clock'event) then
+			if(op = "000000" or op = "001000") then
+				RegWrite <= '1';
+			else
+				RegWrite <= '0';
+			end if;
+		
+			if (op = "000000") then
+				RegDst <= '1';
+			else
+				RegDst <= '0';
+			end if;
+		
+			if (op = "001000") then
+				AluSrc <= '1';
+			else
+				AluSrc <= '0';
+			end if;
+	
+			if (op = "000100") then
+				Branch <= '1';
+			else
+				Branch <= '0';
+			end if;
+		
+			if (op = "000100") then
+				Jump <= '1';
+			else
+				Jump <= '0';
+			end if;
+		
+			if (funct = "100000") then
+				ALuControlID <= "00";
+			elsif (funct = "100010") then
+				ALuControlID <= "01";
+			elsif (funct = "100100") then
+				ALuControlID <= "10";
+			elsif (funct = "100101") then
+				ALuControlID <= "11";	
+			end if;
+		end if;
+		
+	end process;

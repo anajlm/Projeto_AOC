@@ -1,0 +1,420 @@
+TimeQuest Timing Analyzer report for Hazard
+Mon Dec 02 11:42:55 2019
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Propagation Delay
+ 12. Minimum Propagation Delay
+ 13. Fast Model Setup Summary
+ 14. Fast Model Hold Summary
+ 15. Fast Model Recovery Summary
+ 16. Fast Model Removal Summary
+ 17. Fast Model Minimum Pulse Width Summary
+ 18. Propagation Delay
+ 19. Minimum Propagation Delay
+ 20. Multicorner Timing Analysis Summary
+ 21. Progagation Delay
+ 22. Minimum Progagation Delay
+ 23. Clock Transfers
+ 24. Report TCCS
+ 25. Report RSKM
+ 26. Unconstrained Paths
+ 27. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; Hazard                                                            ;
+; Device Family      ; Cyclone II                                                        ;
+; Device Name        ; EP2C35F672C6                                                      ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Combined                                                          ;
+; Rise/Fall Delays   ; Unavailable                                                       ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
+----------
+; Clocks ;
+----------
+No clocks to report.
+
+
+---------------------------
+; Slow Model Fmax Summary ;
+---------------------------
+No paths to report.
+
+
+----------------------------
+; Slow Model Setup Summary ;
+----------------------------
+No paths to report.
+
+
+---------------------------
+; Slow Model Hold Summary ;
+---------------------------
+No paths to report.
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Slow Model Minimum Pulse Width Summary ;
+------------------------------------------
+No paths to report.
+
+
++----------------------------------------------------------------+
+; Propagation Delay                                              ;
++--------------+-------------+--------+--------+--------+--------+
+; Input Port   ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++--------------+-------------+--------+--------+--------+--------+
+; RegWriteW    ; FowardAE    ; 7.123  ;        ;        ; 7.123  ;
+; RegWriteW    ; FowardBE    ; 6.162  ;        ;        ; 6.162  ;
+; RsE[0]       ; FowardAE    ; 11.481 ; 11.481 ; 11.481 ; 11.481 ;
+; RsE[1]       ; FowardAE    ; 11.918 ; 11.918 ; 11.918 ; 11.918 ;
+; RsE[2]       ; FowardAE    ; 11.538 ; 11.538 ; 11.538 ; 11.538 ;
+; RsE[3]       ; FowardAE    ; 11.210 ; 11.210 ; 11.210 ; 11.210 ;
+; RsE[4]       ; FowardAE    ; 10.295 ; 9.634  ; 9.634  ; 10.295 ;
+; RtE[0]       ; FowardBE    ; 10.051 ; 10.044 ; 10.044 ; 10.051 ;
+; RtE[1]       ; FowardBE    ; 11.791 ; 11.791 ; 11.791 ; 11.791 ;
+; RtE[2]       ; FowardBE    ; 9.900  ; 9.756  ; 9.756  ; 9.900  ;
+; RtE[3]       ; FowardBE    ; 10.596 ; 10.596 ; 10.596 ; 10.596 ;
+; RtE[4]       ; FowardBE    ; 9.609  ; 8.908  ; 8.908  ; 9.609  ;
+; WriteRegW[0] ; FowardAE    ; 10.711 ; 10.711 ; 10.711 ; 10.711 ;
+; WriteRegW[0] ; FowardBE    ; 9.955  ; 9.955  ; 9.955  ; 9.955  ;
+; WriteRegW[1] ; FowardAE    ; 11.137 ; 11.137 ; 11.137 ; 11.137 ;
+; WriteRegW[1] ; FowardBE    ; 10.523 ; 10.523 ; 10.523 ; 10.523 ;
+; WriteRegW[2] ; FowardAE    ; 11.484 ; 11.484 ; 11.484 ; 11.484 ;
+; WriteRegW[2] ; FowardBE    ; 10.354 ; 10.354 ; 10.354 ; 10.354 ;
+; WriteRegW[3] ; FowardAE    ; 11.546 ; 11.546 ; 11.546 ; 11.546 ;
+; WriteRegW[3] ; FowardBE    ; 10.444 ; 10.444 ; 10.444 ; 10.444 ;
+; WriteRegW[4] ; FowardAE    ; 9.416  ; 9.416  ; 9.416  ; 9.416  ;
+; WriteRegW[4] ; FowardBE    ; 8.745  ; 8.745  ; 8.745  ; 8.745  ;
++--------------+-------------+--------+--------+--------+--------+
+
+
++----------------------------------------------------------------+
+; Minimum Propagation Delay                                      ;
++--------------+-------------+--------+--------+--------+--------+
+; Input Port   ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++--------------+-------------+--------+--------+--------+--------+
+; RegWriteW    ; FowardAE    ; 7.123  ;        ;        ; 7.123  ;
+; RegWriteW    ; FowardBE    ; 6.162  ;        ;        ; 6.162  ;
+; RsE[0]       ; FowardAE    ; 11.315 ; 11.481 ; 11.481 ; 11.315 ;
+; RsE[1]       ; FowardAE    ; 11.599 ; 11.918 ; 11.918 ; 11.599 ;
+; RsE[2]       ; FowardAE    ; 11.142 ; 11.538 ; 11.538 ; 11.142 ;
+; RsE[3]       ; FowardAE    ; 10.861 ; 11.210 ; 11.210 ; 10.861 ;
+; RsE[4]       ; FowardAE    ; 9.634  ; 9.634  ; 9.634  ; 9.634  ;
+; RtE[0]       ; FowardBE    ; 10.044 ; 10.044 ; 10.044 ; 10.044 ;
+; RtE[1]       ; FowardBE    ; 11.763 ; 11.791 ; 11.791 ; 11.763 ;
+; RtE[2]       ; FowardBE    ; 9.756  ; 9.756  ; 9.756  ; 9.756  ;
+; RtE[3]       ; FowardBE    ; 10.501 ; 10.596 ; 10.596 ; 10.501 ;
+; RtE[4]       ; FowardBE    ; 8.908  ; 8.908  ; 8.908  ; 8.908  ;
+; WriteRegW[0] ; FowardAE    ; 10.711 ; 10.711 ; 10.711 ; 10.711 ;
+; WriteRegW[0] ; FowardBE    ; 9.955  ; 9.955  ; 9.955  ; 9.955  ;
+; WriteRegW[1] ; FowardAE    ; 11.137 ; 11.137 ; 11.137 ; 11.137 ;
+; WriteRegW[1] ; FowardBE    ; 10.523 ; 10.523 ; 10.523 ; 10.523 ;
+; WriteRegW[2] ; FowardAE    ; 11.484 ; 11.484 ; 11.484 ; 11.484 ;
+; WriteRegW[2] ; FowardBE    ; 10.354 ; 10.354 ; 10.354 ; 10.354 ;
+; WriteRegW[3] ; FowardAE    ; 11.546 ; 11.546 ; 11.546 ; 11.546 ;
+; WriteRegW[3] ; FowardBE    ; 10.444 ; 10.444 ; 10.444 ; 10.444 ;
+; WriteRegW[4] ; FowardAE    ; 9.416  ; 9.416  ; 9.416  ; 9.416  ;
+; WriteRegW[4] ; FowardBE    ; 8.745  ; 8.745  ; 8.745  ; 8.745  ;
++--------------+-------------+--------+--------+--------+--------+
+
+
+----------------------------
+; Fast Model Setup Summary ;
+----------------------------
+No paths to report.
+
+
+---------------------------
+; Fast Model Hold Summary ;
+---------------------------
+No paths to report.
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Fast Model Minimum Pulse Width Summary ;
+------------------------------------------
+No paths to report.
+
+
++------------------------------------------------------------+
+; Propagation Delay                                          ;
++--------------+-------------+-------+-------+-------+-------+
+; Input Port   ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++--------------+-------------+-------+-------+-------+-------+
+; RegWriteW    ; FowardAE    ; 3.674 ;       ;       ; 3.674 ;
+; RegWriteW    ; FowardBE    ; 3.191 ;       ;       ; 3.191 ;
+; RsE[0]       ; FowardAE    ; 6.210 ; 6.210 ; 6.210 ; 6.210 ;
+; RsE[1]       ; FowardAE    ; 6.434 ; 6.434 ; 6.434 ; 6.434 ;
+; RsE[2]       ; FowardAE    ; 6.244 ; 6.244 ; 6.244 ; 6.244 ;
+; RsE[3]       ; FowardAE    ; 6.091 ; 6.091 ; 6.091 ; 6.091 ;
+; RsE[4]       ; FowardAE    ; 5.681 ; 5.399 ; 5.399 ; 5.681 ;
+; RtE[0]       ; FowardBE    ; 5.485 ; 5.480 ; 5.480 ; 5.485 ;
+; RtE[1]       ; FowardBE    ; 6.347 ; 6.334 ; 6.334 ; 6.347 ;
+; RtE[2]       ; FowardBE    ; 5.449 ; 5.397 ; 5.397 ; 5.449 ;
+; RtE[3]       ; FowardBE    ; 5.740 ; 5.740 ; 5.740 ; 5.740 ;
+; RtE[4]       ; FowardBE    ; 5.334 ; 5.035 ; 5.035 ; 5.334 ;
+; WriteRegW[0] ; FowardAE    ; 5.873 ; 5.873 ; 5.873 ; 5.873 ;
+; WriteRegW[0] ; FowardBE    ; 5.466 ; 5.466 ; 5.466 ; 5.466 ;
+; WriteRegW[1] ; FowardAE    ; 6.062 ; 6.062 ; 6.062 ; 6.062 ;
+; WriteRegW[1] ; FowardBE    ; 5.725 ; 5.725 ; 5.725 ; 5.725 ;
+; WriteRegW[2] ; FowardAE    ; 6.217 ; 6.217 ; 6.217 ; 6.217 ;
+; WriteRegW[2] ; FowardBE    ; 5.676 ; 5.676 ; 5.676 ; 5.676 ;
+; WriteRegW[3] ; FowardAE    ; 6.245 ; 6.245 ; 6.245 ; 6.245 ;
+; WriteRegW[3] ; FowardBE    ; 5.697 ; 5.697 ; 5.697 ; 5.697 ;
+; WriteRegW[4] ; FowardAE    ; 5.302 ; 5.302 ; 5.302 ; 5.302 ;
+; WriteRegW[4] ; FowardBE    ; 4.953 ; 4.953 ; 4.953 ; 4.953 ;
++--------------+-------------+-------+-------+-------+-------+
+
+
++------------------------------------------------------------+
+; Minimum Propagation Delay                                  ;
++--------------+-------------+-------+-------+-------+-------+
+; Input Port   ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++--------------+-------------+-------+-------+-------+-------+
+; RegWriteW    ; FowardAE    ; 3.674 ;       ;       ; 3.674 ;
+; RegWriteW    ; FowardBE    ; 3.191 ;       ;       ; 3.191 ;
+; RsE[0]       ; FowardAE    ; 6.135 ; 6.210 ; 6.210 ; 6.135 ;
+; RsE[1]       ; FowardAE    ; 6.283 ; 6.434 ; 6.434 ; 6.283 ;
+; RsE[2]       ; FowardAE    ; 6.079 ; 6.244 ; 6.244 ; 6.079 ;
+; RsE[3]       ; FowardAE    ; 5.928 ; 6.091 ; 6.091 ; 5.928 ;
+; RsE[4]       ; FowardAE    ; 5.399 ; 5.399 ; 5.399 ; 5.399 ;
+; RtE[0]       ; FowardBE    ; 5.480 ; 5.480 ; 5.480 ; 5.480 ;
+; RtE[1]       ; FowardBE    ; 6.334 ; 6.334 ; 6.334 ; 6.334 ;
+; RtE[2]       ; FowardBE    ; 5.397 ; 5.397 ; 5.397 ; 5.397 ;
+; RtE[3]       ; FowardBE    ; 5.712 ; 5.740 ; 5.740 ; 5.712 ;
+; RtE[4]       ; FowardBE    ; 5.035 ; 5.035 ; 5.035 ; 5.035 ;
+; WriteRegW[0] ; FowardAE    ; 5.873 ; 5.873 ; 5.873 ; 5.873 ;
+; WriteRegW[0] ; FowardBE    ; 5.466 ; 5.466 ; 5.466 ; 5.466 ;
+; WriteRegW[1] ; FowardAE    ; 6.062 ; 6.062 ; 6.062 ; 6.062 ;
+; WriteRegW[1] ; FowardBE    ; 5.725 ; 5.725 ; 5.725 ; 5.725 ;
+; WriteRegW[2] ; FowardAE    ; 6.217 ; 6.217 ; 6.217 ; 6.217 ;
+; WriteRegW[2] ; FowardBE    ; 5.676 ; 5.676 ; 5.676 ; 5.676 ;
+; WriteRegW[3] ; FowardAE    ; 6.245 ; 6.245 ; 6.245 ; 6.245 ;
+; WriteRegW[3] ; FowardBE    ; 5.697 ; 5.697 ; 5.697 ; 5.697 ;
+; WriteRegW[4] ; FowardAE    ; 5.302 ; 5.302 ; 5.302 ; 5.302 ;
+; WriteRegW[4] ; FowardBE    ; 4.953 ; 4.953 ; 4.953 ; 4.953 ;
++--------------+-------------+-------+-------+-------+-------+
+
+
++----------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                        ;
++------------------+-------+------+----------+---------+---------------------+
+; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-------+------+----------+---------+---------------------+
+; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; N/A                 ;
+; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
++------------------+-------+------+----------+---------+---------------------+
+
+
++----------------------------------------------------------------+
+; Progagation Delay                                              ;
++--------------+-------------+--------+--------+--------+--------+
+; Input Port   ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++--------------+-------------+--------+--------+--------+--------+
+; RegWriteW    ; FowardAE    ; 7.123  ;        ;        ; 7.123  ;
+; RegWriteW    ; FowardBE    ; 6.162  ;        ;        ; 6.162  ;
+; RsE[0]       ; FowardAE    ; 11.481 ; 11.481 ; 11.481 ; 11.481 ;
+; RsE[1]       ; FowardAE    ; 11.918 ; 11.918 ; 11.918 ; 11.918 ;
+; RsE[2]       ; FowardAE    ; 11.538 ; 11.538 ; 11.538 ; 11.538 ;
+; RsE[3]       ; FowardAE    ; 11.210 ; 11.210 ; 11.210 ; 11.210 ;
+; RsE[4]       ; FowardAE    ; 10.295 ; 9.634  ; 9.634  ; 10.295 ;
+; RtE[0]       ; FowardBE    ; 10.051 ; 10.044 ; 10.044 ; 10.051 ;
+; RtE[1]       ; FowardBE    ; 11.791 ; 11.791 ; 11.791 ; 11.791 ;
+; RtE[2]       ; FowardBE    ; 9.900  ; 9.756  ; 9.756  ; 9.900  ;
+; RtE[3]       ; FowardBE    ; 10.596 ; 10.596 ; 10.596 ; 10.596 ;
+; RtE[4]       ; FowardBE    ; 9.609  ; 8.908  ; 8.908  ; 9.609  ;
+; WriteRegW[0] ; FowardAE    ; 10.711 ; 10.711 ; 10.711 ; 10.711 ;
+; WriteRegW[0] ; FowardBE    ; 9.955  ; 9.955  ; 9.955  ; 9.955  ;
+; WriteRegW[1] ; FowardAE    ; 11.137 ; 11.137 ; 11.137 ; 11.137 ;
+; WriteRegW[1] ; FowardBE    ; 10.523 ; 10.523 ; 10.523 ; 10.523 ;
+; WriteRegW[2] ; FowardAE    ; 11.484 ; 11.484 ; 11.484 ; 11.484 ;
+; WriteRegW[2] ; FowardBE    ; 10.354 ; 10.354 ; 10.354 ; 10.354 ;
+; WriteRegW[3] ; FowardAE    ; 11.546 ; 11.546 ; 11.546 ; 11.546 ;
+; WriteRegW[3] ; FowardBE    ; 10.444 ; 10.444 ; 10.444 ; 10.444 ;
+; WriteRegW[4] ; FowardAE    ; 9.416  ; 9.416  ; 9.416  ; 9.416  ;
+; WriteRegW[4] ; FowardBE    ; 8.745  ; 8.745  ; 8.745  ; 8.745  ;
++--------------+-------------+--------+--------+--------+--------+
+
+
++------------------------------------------------------------+
+; Minimum Progagation Delay                                  ;
++--------------+-------------+-------+-------+-------+-------+
+; Input Port   ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++--------------+-------------+-------+-------+-------+-------+
+; RegWriteW    ; FowardAE    ; 3.674 ;       ;       ; 3.674 ;
+; RegWriteW    ; FowardBE    ; 3.191 ;       ;       ; 3.191 ;
+; RsE[0]       ; FowardAE    ; 6.135 ; 6.210 ; 6.210 ; 6.135 ;
+; RsE[1]       ; FowardAE    ; 6.283 ; 6.434 ; 6.434 ; 6.283 ;
+; RsE[2]       ; FowardAE    ; 6.079 ; 6.244 ; 6.244 ; 6.079 ;
+; RsE[3]       ; FowardAE    ; 5.928 ; 6.091 ; 6.091 ; 5.928 ;
+; RsE[4]       ; FowardAE    ; 5.399 ; 5.399 ; 5.399 ; 5.399 ;
+; RtE[0]       ; FowardBE    ; 5.480 ; 5.480 ; 5.480 ; 5.480 ;
+; RtE[1]       ; FowardBE    ; 6.334 ; 6.334 ; 6.334 ; 6.334 ;
+; RtE[2]       ; FowardBE    ; 5.397 ; 5.397 ; 5.397 ; 5.397 ;
+; RtE[3]       ; FowardBE    ; 5.712 ; 5.740 ; 5.740 ; 5.712 ;
+; RtE[4]       ; FowardBE    ; 5.035 ; 5.035 ; 5.035 ; 5.035 ;
+; WriteRegW[0] ; FowardAE    ; 5.873 ; 5.873 ; 5.873 ; 5.873 ;
+; WriteRegW[0] ; FowardBE    ; 5.466 ; 5.466 ; 5.466 ; 5.466 ;
+; WriteRegW[1] ; FowardAE    ; 6.062 ; 6.062 ; 6.062 ; 6.062 ;
+; WriteRegW[1] ; FowardBE    ; 5.725 ; 5.725 ; 5.725 ; 5.725 ;
+; WriteRegW[2] ; FowardAE    ; 6.217 ; 6.217 ; 6.217 ; 6.217 ;
+; WriteRegW[2] ; FowardBE    ; 5.676 ; 5.676 ; 5.676 ; 5.676 ;
+; WriteRegW[3] ; FowardAE    ; 6.245 ; 6.245 ; 6.245 ; 6.245 ;
+; WriteRegW[3] ; FowardBE    ; 5.697 ; 5.697 ; 5.697 ; 5.697 ;
+; WriteRegW[4] ; FowardAE    ; 5.302 ; 5.302 ; 5.302 ; 5.302 ;
+; WriteRegW[4] ; FowardBE    ; 4.953 ; 4.953 ; 4.953 ; 4.953 ;
++--------------+-------------+-------+-------+-------+-------+
+
+
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 16    ; 16   ;
+; Unconstrained Input Port Paths  ; 22    ; 22   ;
+; Unconstrained Output Ports      ; 2     ; 2    ;
+; Unconstrained Output Port Paths ; 22    ; 22   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Mon Dec 02 11:42:53 2019
+Info: Command: quartus_sta Hazard -c Hazard
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'Hazard.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info (332159): No clocks to report
+Info: Analyzing Slow Model
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 388 megabytes
+    Info: Processing ended: Mon Dec 02 11:42:55 2019
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+
