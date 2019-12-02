@@ -1,6 +1,6 @@
 Analysis & Synthesis report for Pipeline
-Mon Dec 02 10:16:57 2019
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Mon Dec  2 16:57:14 2019
+Quartus II 32-bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
 ---------------------
@@ -33,24 +33,24 @@ applicable agreement for further details.
 
 
 
-+--------------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                         ;
-+------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Mon Dec 02 10:16:57 2019               ;
-; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
-; Revision Name                      ; Pipeline                                        ;
-; Top-level Entity Name              ; Pipeline                                        ;
-; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; N/A until Partition Merge                       ;
-;     Total combinational functions  ; N/A until Partition Merge                       ;
-;     Dedicated logic registers      ; N/A until Partition Merge                       ;
-; Total registers                    ; N/A until Partition Merge                       ;
-; Total pins                         ; N/A until Partition Merge                       ;
-; Total virtual pins                 ; N/A until Partition Merge                       ;
-; Total memory bits                  ; N/A until Partition Merge                       ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
-; Total PLLs                         ; N/A until Partition Merge                       ;
-+------------------------------------+-------------------------------------------------+
++---------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                    ;
++------------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status        ; Failed - Mon Dec  2 16:57:14 2019          ;
+; Quartus II 32-bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
+; Revision Name                      ; Pipeline                                   ;
+; Top-level Entity Name              ; Pipeline                                   ;
+; Family                             ; Cyclone II                                 ;
+; Total logic elements               ; N/A until Partition Merge                  ;
+;     Total combinational functions  ; N/A until Partition Merge                  ;
+;     Dedicated logic registers      ; N/A until Partition Merge                  ;
+; Total registers                    ; N/A until Partition Merge                  ;
+; Total pins                         ; N/A until Partition Merge                  ;
+; Total virtual pins                 ; N/A until Partition Merge                  ;
+; Total memory bits                  ; N/A until Partition Merge                  ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                  ;
+; Total PLLs                         ; N/A until Partition Merge                  ;
++------------------------------------+--------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -153,28 +153,62 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit Analysis & Synthesis
-    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Dec 02 10:16:54 2019
+Info: Running Quartus II 32-bit Analysis & Synthesis
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+    Info: Processing started: Mon Dec  2 16:57:12 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Pipeline -c Pipeline
 Warning (20028): Parallel compilation is not licensed and has been disabled
-Info (12021): Found 2 design units, including 1 entities, in source file datapath/datapath.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file Hazard/Hazard.vhd
+    Info (12022): Found design unit 1: Hazard-struct
+    Info (12023): Found entity 1: Hazard
+Info (12021): Found 2 design units, including 1 entities, in source file Datapath/Datapath.vhd
     Info (12022): Found design unit 1: datapath-struct
     Info (12023): Found entity 1: datapath
-Info (12021): Found 2 design units, including 1 entities, in source file controladora/control.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file Controladora/Control.vhd
     Info (12022): Found design unit 1: Control-Logic
     Info (12023): Found entity 1: Control
-Info (12021): Found 2 design units, including 1 entities, in source file pipeline.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file Pipeline.vhd
     Info (12022): Found design unit 1: Pipeline-struct
     Info (12023): Found entity 1: Pipeline
-Error (10346): VHDL error at Pipeline.vhd(42): formal port or parameter "FowardAE" must have actual or default value File: C:/Users/ALUNOS/Desktop/Projeto_AOC-master/Pipeline/Pipeline.vhd Line: 42
-Error (10784): HDL error at Pipeline.vhd(19): see declaration for object "FowardAE" File: C:/Users/ALUNOS/Desktop/Projeto_AOC-master/Pipeline/Pipeline.vhd Line: 19
-Error (10346): VHDL error at Pipeline.vhd(42): formal port or parameter "FowardBE" must have actual or default value File: C:/Users/ALUNOS/Desktop/Projeto_AOC-master/Pipeline/Pipeline.vhd Line: 42
-Error (10784): HDL error at Pipeline.vhd(19): see declaration for object "FowardBE" File: C:/Users/ALUNOS/Desktop/Projeto_AOC-master/Pipeline/Pipeline.vhd Line: 19
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 4 errors, 1 warning
-    Error: Peak virtual memory: 474 megabytes
-    Error: Processing ended: Mon Dec 02 10:16:57 2019
-    Error: Elapsed time: 00:00:03
-    Error: Total CPU time (on all processors): 00:00:03
+Info (12127): Elaborating entity "Pipeline" for the top level hierarchy
+Warning (10541): VHDL Signal Declaration warning at Pipeline.vhd(46): used implicit default value for signal "clk" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at Pipeline.vhd(51): used implicit default value for signal "WriteRegW" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at Pipeline.vhd(51): used implicit default value for signal "RsE" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at Pipeline.vhd(51): used implicit default value for signal "RtE" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Info (12128): Elaborating entity "datapath" for hierarchy "datapath:Caminho_de_dados"
+Warning (10541): VHDL Signal Declaration warning at Datapath.vhd(15): used implicit default value for signal "RegWriteW" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at Datapath.vhd(146): used implicit default value for signal "RD" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at Datapath.vhd(147): used implicit default value for signal "RD1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at Datapath.vhd(147): used implicit default value for signal "RD2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10036): Verilog HDL or VHDL warning at Datapath.vhd(150): object "RsA1" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at Datapath.vhd(150): object "RtA2" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at Datapath.vhd(153): object "RsE_wire" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at Datapath.vhd(154): object "RegWriteW_wire" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at Datapath.vhd(157): object "WriteRegW_wire" assigned a value but never read
+Info (12128): Elaborating entity "Control" for hierarchy "Control:Controladora"
+Info (12128): Elaborating entity "Hazard" for hierarchy "Hazard:Unidade_de_Hazard"
+Warning (10492): VHDL Process Statement warning at Hazard.vhd(23): signal "RsE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Hazard.vhd(23): signal "WriteRegW" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Hazard.vhd(23): signal "RegWriteW" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Hazard.vhd(30): signal "RtE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Hazard.vhd(30): signal "WriteRegW" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Hazard.vhd(30): signal "RegWriteW" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Error (12006): Node instance "Registrador_PC" instantiates undefined entity "regPC" File: /home/ana/Documentos/Gits/Projeto_AOC/Pipeline/Datapath/Datapath.vhd Line: 165
+Error (12006): Node instance "PC_incremento" instantiates undefined entity "Somador" File: /home/ana/Documentos/Gits/Projeto_AOC/Pipeline/Datapath/Datapath.vhd Line: 166
+Error (12006): Node instance "Registrador_D" instantiates undefined entity "regD" File: /home/ana/Documentos/Gits/Projeto_AOC/Pipeline/Datapath/Datapath.vhd Line: 167
+Error (12006): Node instance "Divisor" instantiates undefined entity "divisor_sinal" File: /home/ana/Documentos/Gits/Projeto_AOC/Pipeline/Datapath/Datapath.vhd Line: 168
+Error (12006): Node instance "Extensao_de_sinal" instantiates undefined entity "SignExtend" File: /home/ana/Documentos/Gits/Projeto_AOC/Pipeline/Datapath/Datapath.vhd Line: 169
+Error (12006): Node instance "Registrador_E" instantiates undefined entity "regE" File: /home/ana/Documentos/Gits/Projeto_AOC/Pipeline/Datapath/Datapath.vhd Line: 170
+Error (12006): Node instance "Mux1" instantiates undefined entity "Mux2x1_5bits" File: /home/ana/Documentos/Gits/Projeto_AOC/Pipeline/Datapath/Datapath.vhd Line: 172
+Error (12006): Node instance "Mux2" instantiates undefined entity "Mux2x1_32bits" File: /home/ana/Documentos/Gits/Projeto_AOC/Pipeline/Datapath/Datapath.vhd Line: 173
+Error (12006): Node instance "Mux3" instantiates undefined entity "Mux2x1_32bits" File: /home/ana/Documentos/Gits/Projeto_AOC/Pipeline/Datapath/Datapath.vhd Line: 174
+Error (12006): Node instance "Mux4" instantiates undefined entity "Mux2x1_32bits" File: /home/ana/Documentos/Gits/Projeto_AOC/Pipeline/Datapath/Datapath.vhd Line: 175
+Error (12006): Node instance "ALU_1" instantiates undefined entity "ALU" File: /home/ana/Documentos/Gits/Projeto_AOC/Pipeline/Datapath/Datapath.vhd Line: 176
+Error (12006): Node instance "Registrador_W" instantiates undefined entity "regW" File: /home/ana/Documentos/Gits/Projeto_AOC/Pipeline/Datapath/Datapath.vhd Line: 177
+Error: Quartus II 32-bit Analysis & Synthesis was unsuccessful. 12 errors, 20 warnings
+    Error: Peak virtual memory: 355 megabytes
+    Error: Processing ended: Mon Dec  2 16:57:14 2019
+    Error: Elapsed time: 00:00:02
+    Error: Total CPU time (on all processors): 00:00:01
 
 
