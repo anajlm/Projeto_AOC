@@ -150,11 +150,11 @@ signal InstrD: std_logic_vector(31 downto 0);
 signal RsA1, RtA2, RsD, RtD, RdD: std_logic_vector(4 downto 0);
 signal imm: std_logic_vector(15 downto 0);
 signal SignImmD, SignImmE: std_logic_vector(31 downto 0);
-signal RsE, RtE, RdE: std_logic_vector(4 downto 0);
-signal RegWriteW: std_logic;
+signal RsE_wire, RtE_wire, RdE: std_logic_vector(4 downto 0);
+signal RegWriteW_wire: std_logic;
 signal RegDstE, ALUSrcE, RegWriteE : std_logic; 
 signal AluControlE: std_logic_vector(1 downto 0);
-signal WriteRegE, WriteRegW: std_logic_vector(4 downto 0);
+signal WriteRegE, WriteRegW_wire: std_logic_vector(4 downto 0);
 signal SrcAE, SrcBE: std_logic_vector(31 downto 0);
 signal WriteDataE: std_logic_vector(31 downto 0);
 signal AluOutE, AluOutW: std_logic_vector(31 downto 0);
@@ -167,14 +167,14 @@ begin
  Registrador_D: regD port map(RD=>RD, InstrD=>InstrD, clock=>clk);
  Divisor: divisor_sinal port map(InstrD=>InstrD, Op=>Op, Funct=>Funct, RsA1=>RsA1, RtA2=>RtA2, RsD=>RsD, RtD=>RtD, RdD=>RdD, Imm=>imm);
  Extensao_de_sinal: SignExtend port map(Imm=>imm, SignImmD=>SignImmD);
- Registrador_E: regE port map(clock=>clk, RD1=>RD1, RD2=>RD2, RD1s=>RD1s, RD2s=>RD2s, SignImmD=>SignImmD, SignImmE=>SignImmE, RsD=>RsD, RtD=>RtD, RdD=>RdD, RsE=>RsE, RtE=>RtE, RdE=>RdE, RegDstD=>RegDst, RegDstE=>RegDstE, RegWriteD=>RegWrite, RegWriteE=>RegWriteE, ALUSrcD=>ALUSrc, ALUSrcE=>ALUSrcE, AluControlD=>AluControl, AluControlE=>AluControlE);  
+ Registrador_E: regE port map(clock=>clk, RD1=>RD1, RD2=>RD2, RD1s=>RD1s, RD2s=>RD2s, SignImmD=>SignImmD, SignImmE=>SignImmE, RsD=>RsD, RtD=>RtD, RdD=>RdD, RsE=>RsE_wire, RtE=>RtE_wire, RdE=>RdE, RegDstD=>RegDst, RegDstE=>RegDstE, RegWriteD=>RegWrite, RegWriteE=>RegWriteE, ALUSrcD=>ALUSrc, ALUSrcE=>ALUSrcE, AluControlD=>AluControl, AluControlE=>AluControlE);  
  --RF: Register_File port map(A1=>RsA1, A2=>RtA2, A3=>WriteRegW, WD3=>ResultW, RD1=>RD1, RD2=>RD2, WE3=>RegWriteW);
- Mux1: Mux2x1_5bits port map(selection=>RegDstE, inA=>RtE, inB=>RdE, outMux=>WriteRegE);
+ Mux1: Mux2x1_5bits port map(selection=>RegDstE, inA=>RtE_wire, inB=>RdE, outMux=>WriteRegE);
  Mux2: Mux2x1_32bits port map(selection=>FowardAE, inA=>RD1s, inB=>ALUOutW, outMux=>SrcAE);
  Mux3: Mux2x1_32bits port map(selection=>FowardBE, inA=>RD2s, inB=>ALUOutW, outMux=>WriteDataE);
  Mux4: Mux2x1_32bits port map(selection=>AluSrcE, inA=>WriteDataE, inB=>SignImmE, outMux=>SrcBE);
  ALU_1: ALU port map(AluControl=>AluControlE, SrcA=>SrcAE, SrcB=>SrcBE, AluOut=>AluOutE);
- Registrador_W: regW port map(clock=>clk, WriteRegE=>WriteRegE, RegWriteE=>RegWriteE, WriteRegW=>WriteRegW, RegWriteW=>RegWriteW, ALUOut=>AluOutE, AluOutW=>AluOutW);
+ Registrador_W: regW port map(clock=>clk, WriteRegE=>WriteRegE, RegWriteE=>RegWriteE, WriteRegW=>WriteRegW_wire, RegWriteW=>RegWriteW_wire, ALUOut=>AluOutE, AluOutW=>AluOutW);
  
  
  
