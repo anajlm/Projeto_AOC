@@ -1,0 +1,44 @@
+|Control
+op[0] => Equal0.IN11
+op[0] => Equal1.IN11
+op[1] => Equal0.IN10
+op[1] => Equal1.IN10
+op[2] => Equal0.IN9
+op[2] => Equal1.IN9
+op[3] => Equal0.IN8
+op[3] => Equal1.IN8
+op[4] => Equal0.IN7
+op[4] => Equal1.IN7
+op[5] => Equal0.IN6
+op[5] => Equal1.IN6
+funct[0] => Equal2.IN11
+funct[0] => Equal3.IN11
+funct[0] => Equal4.IN11
+funct[0] => Equal5.IN11
+funct[1] => Equal2.IN10
+funct[1] => Equal3.IN10
+funct[1] => Equal4.IN10
+funct[1] => Equal5.IN10
+funct[2] => Equal2.IN9
+funct[2] => Equal3.IN9
+funct[2] => Equal4.IN9
+funct[2] => Equal5.IN9
+funct[3] => Equal2.IN8
+funct[3] => Equal3.IN8
+funct[3] => Equal4.IN8
+funct[3] => Equal5.IN8
+funct[4] => Equal2.IN7
+funct[4] => Equal3.IN7
+funct[4] => Equal4.IN7
+funct[4] => Equal5.IN7
+funct[5] => Equal2.IN6
+funct[5] => Equal3.IN6
+funct[5] => Equal4.IN6
+funct[5] => Equal5.IN6
+RegDst <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+ALUSrc <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+ALUControlID[0] <= ALUControlID.DB_MAX_OUTPUT_PORT_TYPE
+ALUControlID[1] <= ALUControlID.DB_MAX_OUTPUT_PORT_TYPE
+RegWrite <= RegWrite.DB_MAX_OUTPUT_PORT_TYPE
+
+
