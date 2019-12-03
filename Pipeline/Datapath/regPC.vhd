@@ -7,7 +7,7 @@ entity regPC is
 	port (
 		clock : in std_logic;
 		entrada : in std_logic_vector (31 downto 0);
-		saida : out std_logic_vector (31 downto 0)
+		saida : out std_logic_vector (31 downto 0) := x"00000000"
 		--stallF: in std_logic
 	);
 end regPC;
