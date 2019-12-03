@@ -1,6 +1,6 @@
 Analysis & Synthesis report for Pipeline
-Mon Dec  2 16:57:14 2019
-Quartus II 32-bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+Tue Dec 03 11:26:20 2019
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -10,7 +10,22 @@ Quartus II 32-bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis RAM Summary
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Registers Packed Into Inferred Megafunctions
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Source assignments for datapath:Caminho_de_dados|register_file:RF|altsyncram:registers_rtl_0|altsyncram_sfh1:auto_generated
+ 14. Source assignments for datapath:Caminho_de_dados|register_file:RF|altsyncram:registers_rtl_1|altsyncram_sfh1:auto_generated
+ 15. Parameter Settings for Inferred Entity Instance: datapath:Caminho_de_dados|register_file:RF|altsyncram:registers_rtl_0
+ 16. Parameter Settings for Inferred Entity Instance: datapath:Caminho_de_dados|register_file:RF|altsyncram:registers_rtl_1
+ 17. altsyncram Parameter Settings by Entity Instance
+ 18. Port Connectivity Checks: "datapath:Caminho_de_dados|somador:PC_incremento"
+ 19. Elapsed Time Per Partition
+ 20. Analysis & Synthesis Messages
 
 
 
@@ -33,24 +48,24 @@ applicable agreement for further details.
 
 
 
-+---------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                    ;
-+------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Mon Dec  2 16:57:14 2019          ;
-; Quartus II 32-bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
-; Revision Name                      ; Pipeline                                   ;
-; Top-level Entity Name              ; Pipeline                                   ;
-; Family                             ; Cyclone II                                 ;
-; Total logic elements               ; N/A until Partition Merge                  ;
-;     Total combinational functions  ; N/A until Partition Merge                  ;
-;     Dedicated logic registers      ; N/A until Partition Merge                  ;
-; Total registers                    ; N/A until Partition Merge                  ;
-; Total pins                         ; N/A until Partition Merge                  ;
-; Total virtual pins                 ; N/A until Partition Merge                  ;
-; Total memory bits                  ; N/A until Partition Merge                  ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                  ;
-; Total PLLs                         ; N/A until Partition Merge                  ;
-+------------------------------------+--------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Tue Dec 03 11:26:20 2019           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; Pipeline                                        ;
+; Top-level Entity Name              ; Pipeline                                        ;
+; Family                             ; Cyclone II                                      ;
+; Total logic elements               ; 308                                             ;
+;     Total combinational functions  ; 249                                             ;
+;     Dedicated logic registers      ; 101                                             ;
+; Total registers                    ; 101                                             ;
+; Total pins                         ; 71                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 2,048                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -149,66 +164,489 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                               ;
++-------------------------------------------------+-----------------+-------------------------------------------------------+--------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                   ; Library ;
++-------------------------------------------------+-----------------+-------------------------------------------------------+--------------------------------------------------------------------------------+---------+
+; Datapath/register_file.vhd                      ; yes             ; User VHDL File                                        ; E:/Projeto_AOC-master/Pipeline/Datapath/register_file.vhd                      ;         ;
+; Datapath/ALU.vhd                                ; yes             ; User VHDL File                                        ; E:/Projeto_AOC-master/Pipeline/Datapath/ALU.vhd                                ;         ;
+; Datapath/somador.vhd                            ; yes             ; User VHDL File                                        ; E:/Projeto_AOC-master/Pipeline/Datapath/somador.vhd                            ;         ;
+; Datapath/SignExtend.vhd                         ; yes             ; User VHDL File                                        ; E:/Projeto_AOC-master/Pipeline/Datapath/SignExtend.vhd                         ;         ;
+; Datapath/regW.vhd                               ; yes             ; User VHDL File                                        ; E:/Projeto_AOC-master/Pipeline/Datapath/regW.vhd                               ;         ;
+; Datapath/regPC.vhd                              ; yes             ; User VHDL File                                        ; E:/Projeto_AOC-master/Pipeline/Datapath/regPC.vhd                              ;         ;
+; Datapath/regE.vhd                               ; yes             ; User VHDL File                                        ; E:/Projeto_AOC-master/Pipeline/Datapath/regE.vhd                               ;         ;
+; Datapath/regD.vhd                               ; yes             ; User VHDL File                                        ; E:/Projeto_AOC-master/Pipeline/Datapath/regD.vhd                               ;         ;
+; Datapath/Mux2x1_32bits.vhd                      ; yes             ; User VHDL File                                        ; E:/Projeto_AOC-master/Pipeline/Datapath/Mux2x1_32bits.vhd                      ;         ;
+; Datapath/Mux2x1_5bits.vhd                       ; yes             ; User VHDL File                                        ; E:/Projeto_AOC-master/Pipeline/Datapath/Mux2x1_5bits.vhd                       ;         ;
+; Datapath/divisor_sinal.vhd                      ; yes             ; User VHDL File                                        ; E:/Projeto_AOC-master/Pipeline/Datapath/divisor_sinal.vhd                      ;         ;
+; Hazard/Hazard.vhd                               ; yes             ; User VHDL File                                        ; E:/Projeto_AOC-master/Pipeline/Hazard/Hazard.vhd                               ;         ;
+; Datapath/Datapath.vhd                           ; yes             ; User VHDL File                                        ; E:/Projeto_AOC-master/Pipeline/Datapath/Datapath.vhd                           ;         ;
+; Controladora/Control.vhd                        ; yes             ; User VHDL File                                        ; E:/Projeto_AOC-master/Pipeline/Controladora/Control.vhd                        ;         ;
+; Pipeline.vhd                                    ; yes             ; User VHDL File                                        ; E:/Projeto_AOC-master/Pipeline/Pipeline.vhd                                    ;         ;
+; altsyncram.tdf                                  ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf               ;         ;
+; stratix_ram_block.inc                           ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_ram_block.inc        ;         ;
+; lpm_mux.inc                                     ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc                  ;         ;
+; lpm_decode.inc                                  ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc               ;         ;
+; aglobal130.inc                                  ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc               ;         ;
+; a_rdenreg.inc                                   ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/a_rdenreg.inc                ;         ;
+; altrom.inc                                      ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altrom.inc                   ;         ;
+; altram.inc                                      ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc                   ;         ;
+; altdpram.inc                                    ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc                 ;         ;
+; db/altsyncram_sfh1.tdf                          ; yes             ; Auto-Generated Megafunction                           ; E:/Projeto_AOC-master/Pipeline/db/altsyncram_sfh1.tdf                          ;         ;
+; db/pipeline.ram0_register_file_87c776fc.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; E:/Projeto_AOC-master/Pipeline/db/pipeline.ram0_register_file_87c776fc.hdl.mif ;         ;
++-------------------------------------------------+-----------------+-------------------------------------------------------+--------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 308   ;
+;                                             ;       ;
+; Total combinational functions               ; 249   ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 128   ;
+;     -- 3 input functions                    ; 118   ;
+;     -- <=2 input functions                  ; 3     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 187   ;
+;     -- arithmetic mode                      ; 62    ;
+;                                             ;       ;
+; Total registers                             ; 101   ;
+;     -- Dedicated logic registers            ; 101   ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 71    ;
+; Total memory bits                           ; 2048  ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+; Maximum fan-out node                        ; clk   ;
+; Maximum fan-out                             ; 165   ;
+; Total fan-out                               ; 1944  ;
+; Average fan-out                             ; 4.01  ;
++---------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                      ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                            ; Library Name ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------+--------------+
+; |Pipeline                                    ; 249 (0)           ; 101 (0)      ; 2048        ; 0            ; 0       ; 0         ; 71   ; 0            ; |Pipeline                                                                                                      ; work         ;
+;    |Control:Controladora|                    ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Pipeline|Control:Controladora                                                                                 ; work         ;
+;    |Hazard:Unidade_de_Hazard|                ; 10 (10)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Pipeline|Hazard:Unidade_de_Hazard                                                                             ; work         ;
+;    |datapath:Caminho_de_dados|               ; 230 (0)           ; 101 (0)      ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |Pipeline|datapath:Caminho_de_dados                                                                            ; work         ;
+;       |ALU:ALU_1|                            ; 128 (128)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Pipeline|datapath:Caminho_de_dados|ALU:ALU_1                                                                  ; work         ;
+;       |Mux2x1_32bits:Mux2|                   ; 32 (32)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Pipeline|datapath:Caminho_de_dados|Mux2x1_32bits:Mux2                                                         ; work         ;
+;       |Mux2x1_32bits:Mux4|                   ; 65 (65)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Pipeline|datapath:Caminho_de_dados|Mux2x1_32bits:Mux4                                                         ; work         ;
+;       |Mux2x1_5bits:Mux1|                    ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Pipeline|datapath:Caminho_de_dados|Mux2x1_5bits:Mux1                                                          ; work         ;
+;       |regD:Registrador_D|                   ; 0 (0)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Pipeline|datapath:Caminho_de_dados|regD:Registrador_D                                                         ; work         ;
+;       |regE:Registrador_E|                   ; 0 (0)             ; 31 (31)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Pipeline|datapath:Caminho_de_dados|regE:Registrador_E                                                         ; work         ;
+;       |regW:Registrador_W|                   ; 0 (0)             ; 38 (38)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Pipeline|datapath:Caminho_de_dados|regW:Registrador_W                                                         ; work         ;
+;       |register_file:RF|                     ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |Pipeline|datapath:Caminho_de_dados|register_file:RF                                                           ; work         ;
+;          |altsyncram:registers_rtl_0|        ; 0 (0)             ; 0 (0)        ; 1024        ; 0            ; 0       ; 0         ; 0    ; 0            ; |Pipeline|datapath:Caminho_de_dados|register_file:RF|altsyncram:registers_rtl_0                                ; work         ;
+;             |altsyncram_sfh1:auto_generated| ; 0 (0)             ; 0 (0)        ; 1024        ; 0            ; 0       ; 0         ; 0    ; 0            ; |Pipeline|datapath:Caminho_de_dados|register_file:RF|altsyncram:registers_rtl_0|altsyncram_sfh1:auto_generated ; work         ;
+;          |altsyncram:registers_rtl_1|        ; 0 (0)             ; 0 (0)        ; 1024        ; 0            ; 0       ; 0         ; 0    ; 0            ; |Pipeline|datapath:Caminho_de_dados|register_file:RF|altsyncram:registers_rtl_1                                ; work         ;
+;             |altsyncram_sfh1:auto_generated| ; 0 (0)             ; 0 (0)        ; 1024        ; 0            ; 0       ; 0         ; 0    ; 0            ; |Pipeline|datapath:Caminho_de_dados|register_file:RF|altsyncram:registers_rtl_1|altsyncram_sfh1:auto_generated ; work         ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                                                               ;
++-----------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+-------------------------------------------------+
+; Name                                                                                                            ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF                                             ;
++-----------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+-------------------------------------------------+
+; datapath:Caminho_de_dados|register_file:RF|altsyncram:registers_rtl_0|altsyncram_sfh1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 32           ; 32           ; 32           ; 32           ; 1024 ; db/Pipeline.ram0_register_file_87c776fc.hdl.mif ;
+; datapath:Caminho_de_dados|register_file:RF|altsyncram:registers_rtl_1|altsyncram_sfh1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 32           ; 32           ; 32           ; 32           ; 1024 ; db/Pipeline.ram0_register_file_87c776fc.hdl.mif ;
++-----------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+-------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                    ;
++---------------------------------------------------------------+-----------------------------------------------------------------------+
+; Register name                                                 ; Reason for Removal                                                    ;
++---------------------------------------------------------------+-----------------------------------------------------------------------+
+; datapath:Caminho_de_dados|regE:Registrador_E|RdE[0]           ; Merged with datapath:Caminho_de_dados|regE:Registrador_E|SignImmE[11] ;
+; datapath:Caminho_de_dados|regE:Registrador_E|RdE[1]           ; Merged with datapath:Caminho_de_dados|regE:Registrador_E|SignImmE[12] ;
+; datapath:Caminho_de_dados|regE:Registrador_E|RdE[2]           ; Merged with datapath:Caminho_de_dados|regE:Registrador_E|SignImmE[13] ;
+; datapath:Caminho_de_dados|regE:Registrador_E|RdE[3]           ; Merged with datapath:Caminho_de_dados|regE:Registrador_E|SignImmE[14] ;
+; datapath:Caminho_de_dados|regE:Registrador_E|SignImmE[16..31] ; Merged with datapath:Caminho_de_dados|regE:Registrador_E|SignImmE[15] ;
+; datapath:Caminho_de_dados|regE:Registrador_E|RdE[4]           ; Merged with datapath:Caminho_de_dados|regE:Registrador_E|SignImmE[15] ;
+; Total Number of Removed Registers = 21                        ;                                                                       ;
++---------------------------------------------------------------+-----------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 101   ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Registers Packed Into Inferred Megafunctions                                                                                 ;
++----------------------------------------------------------+------------------------------------------------------------+------+
+; Register Name                                            ; Megafunction                                               ; Type ;
++----------------------------------------------------------+------------------------------------------------------------+------+
+; datapath:Caminho_de_dados|regE:Registrador_E|RD1s[0..31] ; datapath:Caminho_de_dados|register_file:RF|registers_rtl_0 ; RAM  ;
+; datapath:Caminho_de_dados|regE:Registrador_E|RD2s[0..31] ; datapath:Caminho_de_dados|register_file:RF|registers_rtl_1 ; RAM  ;
++----------------------------------------------------------+------------------------------------------------------------+------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------+
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |Pipeline|datapath:Caminho_de_dados|regW:Registrador_W|ALUOutW[0] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |Pipeline|datapath:Caminho_de_dados|Mux2x1_32bits:Mux4|outMux[3]  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for datapath:Caminho_de_dados|register_file:RF|altsyncram:registers_rtl_0|altsyncram_sfh1:auto_generated ;
++---------------------------------+--------------------+------+---------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                            ;
++---------------------------------+--------------------+------+---------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                             ;
++---------------------------------+--------------------+------+---------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for datapath:Caminho_de_dados|register_file:RF|altsyncram:registers_rtl_1|altsyncram_sfh1:auto_generated ;
++---------------------------------+--------------------+------+---------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                            ;
++---------------------------------+--------------------+------+---------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                             ;
++---------------------------------+--------------------+------+---------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: datapath:Caminho_de_dados|register_file:RF|altsyncram:registers_rtl_0 ;
++------------------------------------+-------------------------------------------------+---------------------------------+
+; Parameter Name                     ; Value                                           ; Type                            ;
++------------------------------------+-------------------------------------------------+---------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                                               ; Untyped                         ;
+; AUTO_CARRY_CHAINS                  ; ON                                              ; AUTO_CARRY                      ;
+; IGNORE_CARRY_BUFFERS               ; OFF                                             ; IGNORE_CARRY                    ;
+; AUTO_CASCADE_CHAINS                ; ON                                              ; AUTO_CASCADE                    ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                                             ; IGNORE_CASCADE                  ;
+; WIDTH_BYTEENA                      ; 1                                               ; Untyped                         ;
+; OPERATION_MODE                     ; DUAL_PORT                                       ; Untyped                         ;
+; WIDTH_A                            ; 32                                              ; Untyped                         ;
+; WIDTHAD_A                          ; 5                                               ; Untyped                         ;
+; NUMWORDS_A                         ; 32                                              ; Untyped                         ;
+; OUTDATA_REG_A                      ; UNREGISTERED                                    ; Untyped                         ;
+; ADDRESS_ACLR_A                     ; NONE                                            ; Untyped                         ;
+; OUTDATA_ACLR_A                     ; NONE                                            ; Untyped                         ;
+; WRCONTROL_ACLR_A                   ; NONE                                            ; Untyped                         ;
+; INDATA_ACLR_A                      ; NONE                                            ; Untyped                         ;
+; BYTEENA_ACLR_A                     ; NONE                                            ; Untyped                         ;
+; WIDTH_B                            ; 32                                              ; Untyped                         ;
+; WIDTHAD_B                          ; 5                                               ; Untyped                         ;
+; NUMWORDS_B                         ; 32                                              ; Untyped                         ;
+; INDATA_REG_B                       ; CLOCK1                                          ; Untyped                         ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                          ; Untyped                         ;
+; RDCONTROL_REG_B                    ; CLOCK1                                          ; Untyped                         ;
+; ADDRESS_REG_B                      ; CLOCK1                                          ; Untyped                         ;
+; OUTDATA_REG_B                      ; CLOCK1                                          ; Untyped                         ;
+; BYTEENA_REG_B                      ; CLOCK1                                          ; Untyped                         ;
+; INDATA_ACLR_B                      ; NONE                                            ; Untyped                         ;
+; WRCONTROL_ACLR_B                   ; NONE                                            ; Untyped                         ;
+; ADDRESS_ACLR_B                     ; NONE                                            ; Untyped                         ;
+; OUTDATA_ACLR_B                     ; NONE                                            ; Untyped                         ;
+; RDCONTROL_ACLR_B                   ; NONE                                            ; Untyped                         ;
+; BYTEENA_ACLR_B                     ; NONE                                            ; Untyped                         ;
+; WIDTH_BYTEENA_A                    ; 1                                               ; Untyped                         ;
+; WIDTH_BYTEENA_B                    ; 1                                               ; Untyped                         ;
+; RAM_BLOCK_TYPE                     ; AUTO                                            ; Untyped                         ;
+; BYTE_SIZE                          ; 8                                               ; Untyped                         ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                       ; Untyped                         ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                            ; Untyped                         ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                            ; Untyped                         ;
+; INIT_FILE                          ; db/Pipeline.ram0_register_file_87c776fc.hdl.mif ; Untyped                         ;
+; INIT_FILE_LAYOUT                   ; PORT_A                                          ; Untyped                         ;
+; MAXIMUM_DEPTH                      ; 0                                               ; Untyped                         ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL                                          ; Untyped                         ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL                                          ; Untyped                         ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL                                          ; Untyped                         ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                                          ; Untyped                         ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                                 ; Untyped                         ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                                 ; Untyped                         ;
+; ENABLE_ECC                         ; FALSE                                           ; Untyped                         ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                           ; Untyped                         ;
+; WIDTH_ECCSTATUS                    ; 3                                               ; Untyped                         ;
+; DEVICE_FAMILY                      ; Cyclone II                                      ; Untyped                         ;
+; CBXI_PARAMETER                     ; altsyncram_sfh1                                 ; Untyped                         ;
++------------------------------------+-------------------------------------------------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: datapath:Caminho_de_dados|register_file:RF|altsyncram:registers_rtl_1 ;
++------------------------------------+-------------------------------------------------+---------------------------------+
+; Parameter Name                     ; Value                                           ; Type                            ;
++------------------------------------+-------------------------------------------------+---------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                                               ; Untyped                         ;
+; AUTO_CARRY_CHAINS                  ; ON                                              ; AUTO_CARRY                      ;
+; IGNORE_CARRY_BUFFERS               ; OFF                                             ; IGNORE_CARRY                    ;
+; AUTO_CASCADE_CHAINS                ; ON                                              ; AUTO_CASCADE                    ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                                             ; IGNORE_CASCADE                  ;
+; WIDTH_BYTEENA                      ; 1                                               ; Untyped                         ;
+; OPERATION_MODE                     ; DUAL_PORT                                       ; Untyped                         ;
+; WIDTH_A                            ; 32                                              ; Untyped                         ;
+; WIDTHAD_A                          ; 5                                               ; Untyped                         ;
+; NUMWORDS_A                         ; 32                                              ; Untyped                         ;
+; OUTDATA_REG_A                      ; UNREGISTERED                                    ; Untyped                         ;
+; ADDRESS_ACLR_A                     ; NONE                                            ; Untyped                         ;
+; OUTDATA_ACLR_A                     ; NONE                                            ; Untyped                         ;
+; WRCONTROL_ACLR_A                   ; NONE                                            ; Untyped                         ;
+; INDATA_ACLR_A                      ; NONE                                            ; Untyped                         ;
+; BYTEENA_ACLR_A                     ; NONE                                            ; Untyped                         ;
+; WIDTH_B                            ; 32                                              ; Untyped                         ;
+; WIDTHAD_B                          ; 5                                               ; Untyped                         ;
+; NUMWORDS_B                         ; 32                                              ; Untyped                         ;
+; INDATA_REG_B                       ; CLOCK1                                          ; Untyped                         ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                          ; Untyped                         ;
+; RDCONTROL_REG_B                    ; CLOCK1                                          ; Untyped                         ;
+; ADDRESS_REG_B                      ; CLOCK1                                          ; Untyped                         ;
+; OUTDATA_REG_B                      ; CLOCK1                                          ; Untyped                         ;
+; BYTEENA_REG_B                      ; CLOCK1                                          ; Untyped                         ;
+; INDATA_ACLR_B                      ; NONE                                            ; Untyped                         ;
+; WRCONTROL_ACLR_B                   ; NONE                                            ; Untyped                         ;
+; ADDRESS_ACLR_B                     ; NONE                                            ; Untyped                         ;
+; OUTDATA_ACLR_B                     ; NONE                                            ; Untyped                         ;
+; RDCONTROL_ACLR_B                   ; NONE                                            ; Untyped                         ;
+; BYTEENA_ACLR_B                     ; NONE                                            ; Untyped                         ;
+; WIDTH_BYTEENA_A                    ; 1                                               ; Untyped                         ;
+; WIDTH_BYTEENA_B                    ; 1                                               ; Untyped                         ;
+; RAM_BLOCK_TYPE                     ; AUTO                                            ; Untyped                         ;
+; BYTE_SIZE                          ; 8                                               ; Untyped                         ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                       ; Untyped                         ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                            ; Untyped                         ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                            ; Untyped                         ;
+; INIT_FILE                          ; db/Pipeline.ram0_register_file_87c776fc.hdl.mif ; Untyped                         ;
+; INIT_FILE_LAYOUT                   ; PORT_A                                          ; Untyped                         ;
+; MAXIMUM_DEPTH                      ; 0                                               ; Untyped                         ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL                                          ; Untyped                         ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL                                          ; Untyped                         ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL                                          ; Untyped                         ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                                          ; Untyped                         ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                                 ; Untyped                         ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                                 ; Untyped                         ;
+; ENABLE_ECC                         ; FALSE                                           ; Untyped                         ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                           ; Untyped                         ;
+; WIDTH_ECCSTATUS                    ; 3                                               ; Untyped                         ;
+; DEVICE_FAMILY                      ; Cyclone II                                      ; Untyped                         ;
+; CBXI_PARAMETER                     ; altsyncram_sfh1                                 ; Untyped                         ;
++------------------------------------+-------------------------------------------------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                                                  ;
++-------------------------------------------+-----------------------------------------------------------------------+
+; Name                                      ; Value                                                                 ;
++-------------------------------------------+-----------------------------------------------------------------------+
+; Number of entity instances                ; 2                                                                     ;
+; Entity Instance                           ; datapath:Caminho_de_dados|register_file:RF|altsyncram:registers_rtl_0 ;
+;     -- OPERATION_MODE                     ; DUAL_PORT                                                             ;
+;     -- WIDTH_A                            ; 32                                                                    ;
+;     -- NUMWORDS_A                         ; 32                                                                    ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                          ;
+;     -- WIDTH_B                            ; 32                                                                    ;
+;     -- NUMWORDS_B                         ; 32                                                                    ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                                ;
+;     -- OUTDATA_REG_B                      ; CLOCK1                                                                ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                  ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                             ;
+; Entity Instance                           ; datapath:Caminho_de_dados|register_file:RF|altsyncram:registers_rtl_1 ;
+;     -- OPERATION_MODE                     ; DUAL_PORT                                                             ;
+;     -- WIDTH_A                            ; 32                                                                    ;
+;     -- NUMWORDS_A                         ; 32                                                                    ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                          ;
+;     -- WIDTH_B                            ; 32                                                                    ;
+;     -- NUMWORDS_B                         ; 32                                                                    ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                                ;
+;     -- OUTDATA_REG_B                      ; CLOCK1                                                                ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                  ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                             ;
++-------------------------------------------+-----------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:Caminho_de_dados|somador:PC_incremento" ;
++------------+-------+----------+---------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                     ;
++------------+-------+----------+---------------------------------------------+
+; in2[31..3] ; Input ; Info     ; Stuck at GND                                ;
+; in2[1..0]  ; Input ; Info     ; Stuck at GND                                ;
+; in2[2]     ; Input ; Info     ; Stuck at VCC                                ;
++------------+-------+----------+---------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:03     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 32-bit Analysis & Synthesis
-    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Mon Dec  2 16:57:12 2019
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Tue Dec 03 11:26:08 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Pipeline -c Pipeline
 Warning (20028): Parallel compilation is not licensed and has been disabled
-Info (12021): Found 2 design units, including 1 entities, in source file Hazard/Hazard.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file datapath/register_file.vhd
+    Info (12022): Found design unit 1: register_file-behavioral
+    Info (12023): Found entity 1: register_file
+Info (12021): Found 2 design units, including 1 entities, in source file datapath/alu.vhd
+    Info (12022): Found design unit 1: ALU-comportamento
+    Info (12023): Found entity 1: ALU
+Info (12021): Found 2 design units, including 1 entities, in source file datapath/somador.vhd
+    Info (12022): Found design unit 1: somador-comportamento
+    Info (12023): Found entity 1: somador
+Info (12021): Found 2 design units, including 1 entities, in source file datapath/signextend.vhd
+    Info (12022): Found design unit 1: SignExtend-struct
+    Info (12023): Found entity 1: SignExtend
+Info (12021): Found 2 design units, including 1 entities, in source file datapath/regw.vhd
+    Info (12022): Found design unit 1: regW-comportamento
+    Info (12023): Found entity 1: regW
+Info (12021): Found 2 design units, including 1 entities, in source file datapath/regpc.vhd
+    Info (12022): Found design unit 1: regPC-comportamento
+    Info (12023): Found entity 1: regPC
+Info (12021): Found 2 design units, including 1 entities, in source file datapath/rege.vhd
+    Info (12022): Found design unit 1: regE-comportamento
+    Info (12023): Found entity 1: regE
+Info (12021): Found 2 design units, including 1 entities, in source file datapath/regd.vhd
+    Info (12022): Found design unit 1: regD-comportamento
+    Info (12023): Found entity 1: regD
+Info (12021): Found 2 design units, including 1 entities, in source file datapath/mux2x1_32bits.vhd
+    Info (12022): Found design unit 1: Mux2x1_32bits-Logic
+    Info (12023): Found entity 1: Mux2x1_32bits
+Info (12021): Found 2 design units, including 1 entities, in source file datapath/mux2x1_5bits.vhd
+    Info (12022): Found design unit 1: Mux2x1_5bits-Logic
+    Info (12023): Found entity 1: Mux2x1_5bits
+Info (12021): Found 2 design units, including 1 entities, in source file datapath/divisor_sinal.vhd
+    Info (12022): Found design unit 1: divisor_sinal-comportamento
+    Info (12023): Found entity 1: divisor_sinal
+Info (12021): Found 2 design units, including 1 entities, in source file hazard/hazard.vhd
     Info (12022): Found design unit 1: Hazard-struct
     Info (12023): Found entity 1: Hazard
-Info (12021): Found 2 design units, including 1 entities, in source file Datapath/Datapath.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file datapath/datapath.vhd
     Info (12022): Found design unit 1: datapath-struct
     Info (12023): Found entity 1: datapath
-Info (12021): Found 2 design units, including 1 entities, in source file Controladora/Control.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file controladora/control.vhd
     Info (12022): Found design unit 1: Control-Logic
     Info (12023): Found entity 1: Control
-Info (12021): Found 2 design units, including 1 entities, in source file Pipeline.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file pipeline.vhd
     Info (12022): Found design unit 1: Pipeline-struct
     Info (12023): Found entity 1: Pipeline
+Info (12021): Found 2 design units, including 1 entities, in source file tb_pipeline.vhd
+    Info (12022): Found design unit 1: tb_Pipeline-teste
+    Info (12023): Found entity 1: tb_Pipeline
 Info (12127): Elaborating entity "Pipeline" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at Pipeline.vhd(46): used implicit default value for signal "clk" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at Pipeline.vhd(51): used implicit default value for signal "WriteRegW" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at Pipeline.vhd(51): used implicit default value for signal "RsE" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at Pipeline.vhd(51): used implicit default value for signal "RtE" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Info (12128): Elaborating entity "datapath" for hierarchy "datapath:Caminho_de_dados"
-Warning (10541): VHDL Signal Declaration warning at Datapath.vhd(15): used implicit default value for signal "RegWriteW" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at Datapath.vhd(146): used implicit default value for signal "RD" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at Datapath.vhd(147): used implicit default value for signal "RD1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at Datapath.vhd(147): used implicit default value for signal "RD2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10036): Verilog HDL or VHDL warning at Datapath.vhd(150): object "RsA1" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at Datapath.vhd(150): object "RtA2" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at Datapath.vhd(153): object "RsE_wire" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at Datapath.vhd(154): object "RegWriteW_wire" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at Datapath.vhd(157): object "WriteRegW_wire" assigned a value but never read
+Info (12128): Elaborating entity "regPC" for hierarchy "datapath:Caminho_de_dados|regPC:Registrador_PC"
+Info (12128): Elaborating entity "somador" for hierarchy "datapath:Caminho_de_dados|somador:PC_incremento"
+Info (12128): Elaborating entity "regD" for hierarchy "datapath:Caminho_de_dados|regD:Registrador_D"
+Info (12128): Elaborating entity "divisor_sinal" for hierarchy "datapath:Caminho_de_dados|divisor_sinal:Divisor"
+Info (12128): Elaborating entity "SignExtend" for hierarchy "datapath:Caminho_de_dados|SignExtend:Extensao_de_sinal"
+Info (12128): Elaborating entity "regE" for hierarchy "datapath:Caminho_de_dados|regE:Registrador_E"
+Info (12128): Elaborating entity "register_file" for hierarchy "datapath:Caminho_de_dados|register_file:RF"
+Warning (10492): VHDL Process Statement warning at register_file.vhd(25): signal "WE3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "Mux2x1_5bits" for hierarchy "datapath:Caminho_de_dados|Mux2x1_5bits:Mux1"
+Info (12128): Elaborating entity "Mux2x1_32bits" for hierarchy "datapath:Caminho_de_dados|Mux2x1_32bits:Mux2"
+Info (12128): Elaborating entity "ALU" for hierarchy "datapath:Caminho_de_dados|ALU:ALU_1"
+Info (12128): Elaborating entity "regW" for hierarchy "datapath:Caminho_de_dados|regW:Registrador_W"
 Info (12128): Elaborating entity "Control" for hierarchy "Control:Controladora"
 Info (12128): Elaborating entity "Hazard" for hierarchy "Hazard:Unidade_de_Hazard"
-Warning (10492): VHDL Process Statement warning at Hazard.vhd(23): signal "RsE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at Hazard.vhd(23): signal "WriteRegW" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at Hazard.vhd(23): signal "RegWriteW" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at Hazard.vhd(30): signal "RtE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at Hazard.vhd(30): signal "WriteRegW" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at Hazard.vhd(30): signal "RegWriteW" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Error (12006): Node instance "Registrador_PC" instantiates undefined entity "regPC" File: /home/ana/Documentos/Gits/Projeto_AOC/Pipeline/Datapath/Datapath.vhd Line: 165
-Error (12006): Node instance "PC_incremento" instantiates undefined entity "Somador" File: /home/ana/Documentos/Gits/Projeto_AOC/Pipeline/Datapath/Datapath.vhd Line: 166
-Error (12006): Node instance "Registrador_D" instantiates undefined entity "regD" File: /home/ana/Documentos/Gits/Projeto_AOC/Pipeline/Datapath/Datapath.vhd Line: 167
-Error (12006): Node instance "Divisor" instantiates undefined entity "divisor_sinal" File: /home/ana/Documentos/Gits/Projeto_AOC/Pipeline/Datapath/Datapath.vhd Line: 168
-Error (12006): Node instance "Extensao_de_sinal" instantiates undefined entity "SignExtend" File: /home/ana/Documentos/Gits/Projeto_AOC/Pipeline/Datapath/Datapath.vhd Line: 169
-Error (12006): Node instance "Registrador_E" instantiates undefined entity "regE" File: /home/ana/Documentos/Gits/Projeto_AOC/Pipeline/Datapath/Datapath.vhd Line: 170
-Error (12006): Node instance "Mux1" instantiates undefined entity "Mux2x1_5bits" File: /home/ana/Documentos/Gits/Projeto_AOC/Pipeline/Datapath/Datapath.vhd Line: 172
-Error (12006): Node instance "Mux2" instantiates undefined entity "Mux2x1_32bits" File: /home/ana/Documentos/Gits/Projeto_AOC/Pipeline/Datapath/Datapath.vhd Line: 173
-Error (12006): Node instance "Mux3" instantiates undefined entity "Mux2x1_32bits" File: /home/ana/Documentos/Gits/Projeto_AOC/Pipeline/Datapath/Datapath.vhd Line: 174
-Error (12006): Node instance "Mux4" instantiates undefined entity "Mux2x1_32bits" File: /home/ana/Documentos/Gits/Projeto_AOC/Pipeline/Datapath/Datapath.vhd Line: 175
-Error (12006): Node instance "ALU_1" instantiates undefined entity "ALU" File: /home/ana/Documentos/Gits/Projeto_AOC/Pipeline/Datapath/Datapath.vhd Line: 176
-Error (12006): Node instance "Registrador_W" instantiates undefined entity "regW" File: /home/ana/Documentos/Gits/Projeto_AOC/Pipeline/Datapath/Datapath.vhd Line: 177
-Error: Quartus II 32-bit Analysis & Synthesis was unsuccessful. 12 errors, 20 warnings
-    Error: Peak virtual memory: 355 megabytes
-    Error: Processing ended: Mon Dec  2 16:57:14 2019
-    Error: Elapsed time: 00:00:02
-    Error: Total CPU time (on all processors): 00:00:01
+Warning (276027): Inferred dual-clock RAM node "datapath:Caminho_de_dados|register_file:RF|registers_rtl_0" from synchronous design logic.  The read-during-write behavior of a dual-clock RAM is undefined and may not match the behavior of the original design.
+Warning (276027): Inferred dual-clock RAM node "datapath:Caminho_de_dados|register_file:RF|registers_rtl_1" from synchronous design logic.  The read-during-write behavior of a dual-clock RAM is undefined and may not match the behavior of the original design.
+Info (19000): Inferred 2 megafunctions from design logic
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "datapath:Caminho_de_dados|register_file:RF|registers_rtl_0" 
+        Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
+        Info (286033): Parameter WIDTH_A set to 32
+        Info (286033): Parameter WIDTHAD_A set to 5
+        Info (286033): Parameter NUMWORDS_A set to 32
+        Info (286033): Parameter WIDTH_B set to 32
+        Info (286033): Parameter WIDTHAD_B set to 5
+        Info (286033): Parameter NUMWORDS_B set to 32
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_REG_B set to CLOCK1
+        Info (286033): Parameter ADDRESS_ACLR_B set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_B set to NONE
+        Info (286033): Parameter ADDRESS_REG_B set to CLOCK1
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+        Info (286033): Parameter INIT_FILE set to db/Pipeline.ram0_register_file_87c776fc.hdl.mif
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "datapath:Caminho_de_dados|register_file:RF|registers_rtl_1" 
+        Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
+        Info (286033): Parameter WIDTH_A set to 32
+        Info (286033): Parameter WIDTHAD_A set to 5
+        Info (286033): Parameter NUMWORDS_A set to 32
+        Info (286033): Parameter WIDTH_B set to 32
+        Info (286033): Parameter WIDTHAD_B set to 5
+        Info (286033): Parameter NUMWORDS_B set to 32
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_REG_B set to CLOCK1
+        Info (286033): Parameter ADDRESS_ACLR_B set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_B set to NONE
+        Info (286033): Parameter ADDRESS_REG_B set to CLOCK1
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+        Info (286033): Parameter INIT_FILE set to db/Pipeline.ram0_register_file_87c776fc.hdl.mif
+Info (12130): Elaborated megafunction instantiation "datapath:Caminho_de_dados|register_file:RF|altsyncram:registers_rtl_0"
+Info (12133): Instantiated megafunction "datapath:Caminho_de_dados|register_file:RF|altsyncram:registers_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "DUAL_PORT"
+    Info (12134): Parameter "WIDTH_A" = "32"
+    Info (12134): Parameter "WIDTHAD_A" = "5"
+    Info (12134): Parameter "NUMWORDS_A" = "32"
+    Info (12134): Parameter "WIDTH_B" = "32"
+    Info (12134): Parameter "WIDTHAD_B" = "5"
+    Info (12134): Parameter "NUMWORDS_B" = "32"
+    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info (12134): Parameter "OUTDATA_REG_B" = "CLOCK1"
+    Info (12134): Parameter "ADDRESS_ACLR_B" = "NONE"
+    Info (12134): Parameter "OUTDATA_ACLR_B" = "NONE"
+    Info (12134): Parameter "ADDRESS_REG_B" = "CLOCK1"
+    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
+    Info (12134): Parameter "INIT_FILE" = "db/Pipeline.ram0_register_file_87c776fc.hdl.mif"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_sfh1.tdf
+    Info (12023): Found entity 1: altsyncram_sfh1
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 444 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 33 input pins
+    Info (21059): Implemented 38 output pins
+    Info (21061): Implemented 309 logic cells
+    Info (21064): Implemented 64 RAM segments
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 501 megabytes
+    Info: Processing ended: Tue Dec 03 11:26:20 2019
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:09
 
 

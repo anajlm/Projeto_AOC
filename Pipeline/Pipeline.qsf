@@ -41,7 +41,7 @@ set_global_assignment -name DEVICE EP2C35F672C6
 set_global_assignment -name TOP_LEVEL_ENTITY Pipeline
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:21:38  DECEMBER 01, 2019"
-set_global_assignment -name LAST_QUARTUS_VERSION 13.0
+set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
@@ -51,8 +51,27 @@ set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulati
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VHDL_FILE Datapath/register_file.vhd
+set_global_assignment -name VHDL_FILE Datapath/ALU.vhd
+set_global_assignment -name VHDL_FILE Datapath/somador.vhd
+set_global_assignment -name VHDL_FILE Datapath/SignExtend.vhd
+set_global_assignment -name VHDL_FILE Datapath/regW.vhd
+set_global_assignment -name VHDL_FILE Datapath/regPC.vhd
+set_global_assignment -name VHDL_FILE Datapath/regE.vhd
+set_global_assignment -name VHDL_FILE Datapath/regD.vhd
+set_global_assignment -name VHDL_FILE Datapath/Mux2x1_32bits.vhd
+set_global_assignment -name VHDL_FILE Datapath/Mux2x1_5bits.vhd
+set_global_assignment -name VHDL_FILE Datapath/divisor_sinal.vhd
 set_global_assignment -name VHDL_FILE Hazard/Hazard.vhd
 set_global_assignment -name VHDL_FILE Datapath/Datapath.vhd
 set_global_assignment -name VHDL_FILE Controladora/Control.vhd
 set_global_assignment -name VHDL_FILE Pipeline.vhd
+set_global_assignment -name VHDL_FILE tb_Pipeline.vhd
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH tb_Pipeline -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_Pipeline -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_Pipeline
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "100 ns" -section_id tb_Pipeline
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_Pipeline -section_id tb_Pipeline
+set_global_assignment -name EDA_TEST_BENCH_FILE tb_Pipeline.vhd -section_id tb_Pipeline
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

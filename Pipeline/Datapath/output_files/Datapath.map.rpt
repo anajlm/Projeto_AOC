@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Datapath
-Mon Dec 02 10:01:11 2019
+Tue Dec 03 10:55:17 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -13,14 +13,19 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Port Connectivity Checks: "regW:Registrador_W"
- 11. Port Connectivity Checks: "regE:Registrador_E"
- 12. Port Connectivity Checks: "divisor_sinal:Divisor"
- 13. Port Connectivity Checks: "somador:PC_incremento"
- 14. Elapsed Time Per Partition
- 15. Analysis & Synthesis Messages
+  8. Analysis & Synthesis RAM Summary
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Registers Packed Into Inferred Megafunctions
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Source assignments for register_file:RF|altsyncram:registers_rtl_0|altsyncram_dfh1:auto_generated
+ 14. Source assignments for register_file:RF|altsyncram:registers_rtl_1|altsyncram_dfh1:auto_generated
+ 15. Parameter Settings for Inferred Entity Instance: register_file:RF|altsyncram:registers_rtl_0
+ 16. Parameter Settings for Inferred Entity Instance: register_file:RF|altsyncram:registers_rtl_1
+ 17. altsyncram Parameter Settings by Entity Instance
+ 18. Port Connectivity Checks: "somador:PC_incremento"
+ 19. Elapsed Time Per Partition
+ 20. Analysis & Synthesis Messages
 
 
 
@@ -46,18 +51,18 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Dec 02 10:01:11 2019           ;
+; Analysis & Synthesis Status        ; Successful - Tue Dec 03 10:55:17 2019           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Datapath                                        ;
 ; Top-level Entity Name              ; datapath                                        ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 0                                               ;
-;     Total combinational functions  ; 0                                               ;
-;     Dedicated logic registers      ; 0                                               ;
-; Total registers                    ; 0                                               ;
-; Total pins                         ; 20                                              ;
+; Total logic elements               ; 293                                             ;
+;     Total combinational functions  ; 229                                             ;
+;     Dedicated logic registers      ; 101                                             ;
+; Total registers                    ; 101                                             ;
+; Total pins                         ; 100                                             ;
 ; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 0                                               ;
+; Total memory bits                  ; 2,048                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
 ; Total PLLs                         ; 0                                               ;
 +------------------------------------+-------------------------------------------------+
@@ -159,23 +164,35 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                       ;
-+----------------------------------+-----------------+-----------------------+-----------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                          ; Library ;
-+----------------------------------+-----------------+-----------------------+-----------------------------------------------------------------------+---------+
-; somador.vhd                      ; yes             ; User VHDL File        ; C:/Users/ALUNOS/Desktop/Projeto_AOC-master/Datapath/somador.vhd       ;         ;
-; SignExtend.vhd                   ; yes             ; User VHDL File        ; C:/Users/ALUNOS/Desktop/Projeto_AOC-master/Datapath/SignExtend.vhd    ;         ;
-; regW.vhd                         ; yes             ; User VHDL File        ; C:/Users/ALUNOS/Desktop/Projeto_AOC-master/Datapath/regW.vhd          ;         ;
-; regPC.vhd                        ; yes             ; User VHDL File        ; C:/Users/ALUNOS/Desktop/Projeto_AOC-master/Datapath/regPC.vhd         ;         ;
-; regE.vhd                         ; yes             ; User VHDL File        ; C:/Users/ALUNOS/Desktop/Projeto_AOC-master/Datapath/regE.vhd          ;         ;
-; regD.vhd                         ; yes             ; User VHDL File        ; C:/Users/ALUNOS/Desktop/Projeto_AOC-master/Datapath/regD.vhd          ;         ;
-; divisor_sinal.vhd                ; yes             ; User VHDL File        ; C:/Users/ALUNOS/Desktop/Projeto_AOC-master/Datapath/divisor_sinal.vhd ;         ;
-; ALU.vhd                          ; yes             ; User VHDL File        ; C:/Users/ALUNOS/Desktop/Projeto_AOC-master/Datapath/ALU.vhd           ;         ;
-; Datapath.vhd                     ; yes             ; User VHDL File        ; C:/Users/ALUNOS/Desktop/Projeto_AOC-master/Datapath/Datapath.vhd      ;         ;
-; Mux2x1_32bits.vhd                ; yes             ; User VHDL File        ; C:/Users/ALUNOS/Desktop/Projeto_AOC-master/Datapath/Mux2x1_32bits.vhd ;         ;
-; mux2x1_5bits.vhd                 ; yes             ; Auto-Found VHDL File  ; C:/Users/ALUNOS/Desktop/Projeto_AOC-master/Datapath/mux2x1_5bits.vhd  ;         ;
-+----------------------------------+-----------------+-----------------------+-----------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                        ;
++-------------------------------------------------+-----------------+-------------------------------------------------------+-----------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                            ; Library ;
++-------------------------------------------------+-----------------+-------------------------------------------------------+-----------------------------------------------------------------------------------------+---------+
+; register_file.vhd                               ; yes             ; User VHDL File                                        ; E:/Projeto_AOC-master/Pipeline/Datapath/register_file.vhd                               ;         ;
+; somador.vhd                                     ; yes             ; User VHDL File                                        ; E:/Projeto_AOC-master/Pipeline/Datapath/somador.vhd                                     ;         ;
+; SignExtend.vhd                                  ; yes             ; User VHDL File                                        ; E:/Projeto_AOC-master/Pipeline/Datapath/SignExtend.vhd                                  ;         ;
+; regW.vhd                                        ; yes             ; User VHDL File                                        ; E:/Projeto_AOC-master/Pipeline/Datapath/regW.vhd                                        ;         ;
+; regPC.vhd                                       ; yes             ; User VHDL File                                        ; E:/Projeto_AOC-master/Pipeline/Datapath/regPC.vhd                                       ;         ;
+; regE.vhd                                        ; yes             ; User VHDL File                                        ; E:/Projeto_AOC-master/Pipeline/Datapath/regE.vhd                                        ;         ;
+; regD.vhd                                        ; yes             ; User VHDL File                                        ; E:/Projeto_AOC-master/Pipeline/Datapath/regD.vhd                                        ;         ;
+; divisor_sinal.vhd                               ; yes             ; User VHDL File                                        ; E:/Projeto_AOC-master/Pipeline/Datapath/divisor_sinal.vhd                               ;         ;
+; ALU.vhd                                         ; yes             ; User VHDL File                                        ; E:/Projeto_AOC-master/Pipeline/Datapath/ALU.vhd                                         ;         ;
+; Datapath.vhd                                    ; yes             ; User VHDL File                                        ; E:/Projeto_AOC-master/Pipeline/Datapath/Datapath.vhd                                    ;         ;
+; Mux2x1_32bits.vhd                               ; yes             ; User VHDL File                                        ; E:/Projeto_AOC-master/Pipeline/Datapath/Mux2x1_32bits.vhd                               ;         ;
+; mux2x1_5bits.vhd                                ; yes             ; Auto-Found VHDL File                                  ; E:/Projeto_AOC-master/Pipeline/Datapath/mux2x1_5bits.vhd                                ;         ;
+; altsyncram.tdf                                  ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf                        ;         ;
+; stratix_ram_block.inc                           ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_ram_block.inc                 ;         ;
+; lpm_mux.inc                                     ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc                           ;         ;
+; lpm_decode.inc                                  ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc                        ;         ;
+; aglobal130.inc                                  ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc                        ;         ;
+; a_rdenreg.inc                                   ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/a_rdenreg.inc                         ;         ;
+; altrom.inc                                      ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altrom.inc                            ;         ;
+; altram.inc                                      ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc                            ;         ;
+; altdpram.inc                                    ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc                          ;         ;
+; db/altsyncram_dfh1.tdf                          ; yes             ; Auto-Generated Megafunction                           ; E:/Projeto_AOC-master/Pipeline/Datapath/db/altsyncram_dfh1.tdf                          ;         ;
+; db/Datapath.ram0_register_file_87c776fc.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; E:/Projeto_AOC-master/Pipeline/Datapath/db/Datapath.ram0_register_file_87c776fc.hdl.mif ;         ;
++-------------------------------------------------+-----------------+-------------------------------------------------------+-----------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -183,44 +200,77 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
+; Estimated Total logic elements              ; 293   ;
 ;                                             ;       ;
-; Total combinational functions               ; 0     ;
+; Total combinational functions               ; 229   ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 0     ;
-;     -- 3 input functions                    ; 0     ;
-;     -- <=2 input functions                  ; 0     ;
+;     -- 4 input functions                    ; 96    ;
+;     -- 3 input functions                    ; 131   ;
+;     -- <=2 input functions                  ; 2     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 0     ;
-;     -- arithmetic mode                      ; 0     ;
+;     -- normal mode                          ; 167   ;
+;     -- arithmetic mode                      ; 62    ;
 ;                                             ;       ;
-; Total registers                             ; 0     ;
-;     -- Dedicated logic registers            ; 0     ;
+; Total registers                             ; 101   ;
+;     -- Dedicated logic registers            ; 101   ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 20    ;
+; I/O pins                                    ; 100   ;
+; Total memory bits                           ; 2048  ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
+; Maximum fan-out node                        ; clk   ;
+; Maximum fan-out                             ; 165   ;
+; Total fan-out                               ; 1875  ;
+; Average fan-out                             ; 3.80  ;
 +---------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |datapath                  ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 20   ; 0            ; |datapath           ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                         ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                  ; Library Name ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------+--------------+
+; |datapath                                 ; 229 (0)           ; 101 (0)      ; 2048        ; 0            ; 0       ; 0         ; 100  ; 0            ; |datapath                                                                            ; work         ;
+;    |ALU:ALU_1|                            ; 128 (128)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|ALU:ALU_1                                                                  ; work         ;
+;    |Mux2x1_32bits:Mux2|                   ; 32 (32)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|Mux2x1_32bits:Mux2                                                         ; work         ;
+;    |Mux2x1_32bits:Mux4|                   ; 64 (64)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|Mux2x1_32bits:Mux4                                                         ; work         ;
+;    |Mux2x1_5bits:Mux1|                    ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|Mux2x1_5bits:Mux1                                                          ; work         ;
+;    |regD:Registrador_D|                   ; 0 (0)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|regD:Registrador_D                                                         ; work         ;
+;    |regE:Registrador_E|                   ; 0 (0)             ; 31 (31)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|regE:Registrador_E                                                         ; work         ;
+;    |regW:Registrador_W|                   ; 0 (0)             ; 38 (38)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|regW:Registrador_W                                                         ; work         ;
+;    |register_file:RF|                     ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|register_file:RF                                                           ; work         ;
+;       |altsyncram:registers_rtl_0|        ; 0 (0)             ; 0 (0)        ; 1024        ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|register_file:RF|altsyncram:registers_rtl_0                                ; work         ;
+;          |altsyncram_dfh1:auto_generated| ; 0 (0)             ; 0 (0)        ; 1024        ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|register_file:RF|altsyncram:registers_rtl_0|altsyncram_dfh1:auto_generated ; work         ;
+;       |altsyncram:registers_rtl_1|        ; 0 (0)             ; 0 (0)        ; 1024        ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|register_file:RF|altsyncram:registers_rtl_1                                ; work         ;
+;          |altsyncram_dfh1:auto_generated| ; 0 (0)             ; 0 (0)        ; 1024        ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|register_file:RF|altsyncram:registers_rtl_1|altsyncram_dfh1:auto_generated ; work         ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+---------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                              ;
-+----------------------------------------+----------------------------------------+
-; Register name                          ; Reason for Removal                     ;
-+----------------------------------------+----------------------------------------+
-; regD:Registrador_D|InstrD[0..5,26..31] ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 12 ;                                        ;
-+----------------------------------------+----------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                                     ;
++---------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+-------------------------------------------------+
+; Name                                                                                  ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF                                             ;
++---------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+-------------------------------------------------+
+; register_file:RF|altsyncram:registers_rtl_0|altsyncram_dfh1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 32           ; 32           ; 32           ; 32           ; 1024 ; db/Datapath.ram0_register_file_87c776fc.hdl.mif ;
+; register_file:RF|altsyncram:registers_rtl_1|altsyncram_dfh1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 32           ; 32           ; 32           ; 32           ; 1024 ; db/Datapath.ram0_register_file_87c776fc.hdl.mif ;
++---------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+-------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                   ;
++----------------------------------------+---------------------------------------------+
+; Register name                          ; Reason for Removal                          ;
++----------------------------------------+---------------------------------------------+
+; regE:Registrador_E|RdE[0]              ; Merged with regE:Registrador_E|SignImmE[11] ;
+; regE:Registrador_E|RdE[1]              ; Merged with regE:Registrador_E|SignImmE[12] ;
+; regE:Registrador_E|RdE[2]              ; Merged with regE:Registrador_E|SignImmE[13] ;
+; regE:Registrador_E|RdE[3]              ; Merged with regE:Registrador_E|SignImmE[14] ;
+; regE:Registrador_E|SignImmE[16..31]    ; Merged with regE:Registrador_E|SignImmE[15] ;
+; regE:Registrador_E|RdE[4]              ; Merged with regE:Registrador_E|SignImmE[15] ;
+; Total Number of Removed Registers = 21 ;                                             ;
++----------------------------------------+---------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -228,7 +278,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 101   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -238,33 +288,195 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+---------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "regW:Registrador_W"                                                                      ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port      ; Type   ; Severity ; Details                                                                             ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; writeregw ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; regwritew ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+; Registers Packed Into Inferred Megafunctions                             ;
++--------------------------------+----------------------------------+------+
+; Register Name                  ; Megafunction                     ; Type ;
++--------------------------------+----------------------------------+------+
+; regE:Registrador_E|RD1s[0..31] ; register_file:RF|registers_rtl_0 ; RAM  ;
+; regE:Registrador_E|RD2s[0..31] ; register_file:RF|registers_rtl_1 ; RAM  ;
++--------------------------------+----------------------------------+------+
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "regE:Registrador_E"                                                                 ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; rse  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |datapath|regW:Registrador_W|ALUOutW[0] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |datapath|Mux2x1_32bits:Mux4|outMux[1]  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "divisor_sinal:Divisor"                                                              ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; rsa1 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; rta2 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------+
+; Source assignments for register_file:RF|altsyncram:registers_rtl_0|altsyncram_dfh1:auto_generated ;
++---------------------------------+--------------------+------+-------------------------------------+
+; Assignment                      ; Value              ; From ; To                                  ;
++---------------------------------+--------------------+------+-------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                   ;
++---------------------------------+--------------------+------+-------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Source assignments for register_file:RF|altsyncram:registers_rtl_1|altsyncram_dfh1:auto_generated ;
++---------------------------------+--------------------+------+-------------------------------------+
+; Assignment                      ; Value              ; From ; To                                  ;
++---------------------------------+--------------------+------+-------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                   ;
++---------------------------------+--------------------+------+-------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: register_file:RF|altsyncram:registers_rtl_0          ;
++------------------------------------+-------------------------------------------------+----------------+
+; Parameter Name                     ; Value                                           ; Type           ;
++------------------------------------+-------------------------------------------------+----------------+
+; BYTE_SIZE_BLOCK                    ; 8                                               ; Untyped        ;
+; AUTO_CARRY_CHAINS                  ; ON                                              ; AUTO_CARRY     ;
+; IGNORE_CARRY_BUFFERS               ; OFF                                             ; IGNORE_CARRY   ;
+; AUTO_CASCADE_CHAINS                ; ON                                              ; AUTO_CASCADE   ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                                             ; IGNORE_CASCADE ;
+; WIDTH_BYTEENA                      ; 1                                               ; Untyped        ;
+; OPERATION_MODE                     ; DUAL_PORT                                       ; Untyped        ;
+; WIDTH_A                            ; 32                                              ; Untyped        ;
+; WIDTHAD_A                          ; 5                                               ; Untyped        ;
+; NUMWORDS_A                         ; 32                                              ; Untyped        ;
+; OUTDATA_REG_A                      ; UNREGISTERED                                    ; Untyped        ;
+; ADDRESS_ACLR_A                     ; NONE                                            ; Untyped        ;
+; OUTDATA_ACLR_A                     ; NONE                                            ; Untyped        ;
+; WRCONTROL_ACLR_A                   ; NONE                                            ; Untyped        ;
+; INDATA_ACLR_A                      ; NONE                                            ; Untyped        ;
+; BYTEENA_ACLR_A                     ; NONE                                            ; Untyped        ;
+; WIDTH_B                            ; 32                                              ; Untyped        ;
+; WIDTHAD_B                          ; 5                                               ; Untyped        ;
+; NUMWORDS_B                         ; 32                                              ; Untyped        ;
+; INDATA_REG_B                       ; CLOCK1                                          ; Untyped        ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                          ; Untyped        ;
+; RDCONTROL_REG_B                    ; CLOCK1                                          ; Untyped        ;
+; ADDRESS_REG_B                      ; CLOCK1                                          ; Untyped        ;
+; OUTDATA_REG_B                      ; CLOCK1                                          ; Untyped        ;
+; BYTEENA_REG_B                      ; CLOCK1                                          ; Untyped        ;
+; INDATA_ACLR_B                      ; NONE                                            ; Untyped        ;
+; WRCONTROL_ACLR_B                   ; NONE                                            ; Untyped        ;
+; ADDRESS_ACLR_B                     ; NONE                                            ; Untyped        ;
+; OUTDATA_ACLR_B                     ; NONE                                            ; Untyped        ;
+; RDCONTROL_ACLR_B                   ; NONE                                            ; Untyped        ;
+; BYTEENA_ACLR_B                     ; NONE                                            ; Untyped        ;
+; WIDTH_BYTEENA_A                    ; 1                                               ; Untyped        ;
+; WIDTH_BYTEENA_B                    ; 1                                               ; Untyped        ;
+; RAM_BLOCK_TYPE                     ; AUTO                                            ; Untyped        ;
+; BYTE_SIZE                          ; 8                                               ; Untyped        ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                       ; Untyped        ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                            ; Untyped        ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                            ; Untyped        ;
+; INIT_FILE                          ; db/Datapath.ram0_register_file_87c776fc.hdl.mif ; Untyped        ;
+; INIT_FILE_LAYOUT                   ; PORT_A                                          ; Untyped        ;
+; MAXIMUM_DEPTH                      ; 0                                               ; Untyped        ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL                                          ; Untyped        ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL                                          ; Untyped        ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL                                          ; Untyped        ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                                          ; Untyped        ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                                 ; Untyped        ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                                 ; Untyped        ;
+; ENABLE_ECC                         ; FALSE                                           ; Untyped        ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                           ; Untyped        ;
+; WIDTH_ECCSTATUS                    ; 3                                               ; Untyped        ;
+; DEVICE_FAMILY                      ; Cyclone II                                      ; Untyped        ;
+; CBXI_PARAMETER                     ; altsyncram_dfh1                                 ; Untyped        ;
++------------------------------------+-------------------------------------------------+----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: register_file:RF|altsyncram:registers_rtl_1          ;
++------------------------------------+-------------------------------------------------+----------------+
+; Parameter Name                     ; Value                                           ; Type           ;
++------------------------------------+-------------------------------------------------+----------------+
+; BYTE_SIZE_BLOCK                    ; 8                                               ; Untyped        ;
+; AUTO_CARRY_CHAINS                  ; ON                                              ; AUTO_CARRY     ;
+; IGNORE_CARRY_BUFFERS               ; OFF                                             ; IGNORE_CARRY   ;
+; AUTO_CASCADE_CHAINS                ; ON                                              ; AUTO_CASCADE   ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                                             ; IGNORE_CASCADE ;
+; WIDTH_BYTEENA                      ; 1                                               ; Untyped        ;
+; OPERATION_MODE                     ; DUAL_PORT                                       ; Untyped        ;
+; WIDTH_A                            ; 32                                              ; Untyped        ;
+; WIDTHAD_A                          ; 5                                               ; Untyped        ;
+; NUMWORDS_A                         ; 32                                              ; Untyped        ;
+; OUTDATA_REG_A                      ; UNREGISTERED                                    ; Untyped        ;
+; ADDRESS_ACLR_A                     ; NONE                                            ; Untyped        ;
+; OUTDATA_ACLR_A                     ; NONE                                            ; Untyped        ;
+; WRCONTROL_ACLR_A                   ; NONE                                            ; Untyped        ;
+; INDATA_ACLR_A                      ; NONE                                            ; Untyped        ;
+; BYTEENA_ACLR_A                     ; NONE                                            ; Untyped        ;
+; WIDTH_B                            ; 32                                              ; Untyped        ;
+; WIDTHAD_B                          ; 5                                               ; Untyped        ;
+; NUMWORDS_B                         ; 32                                              ; Untyped        ;
+; INDATA_REG_B                       ; CLOCK1                                          ; Untyped        ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                          ; Untyped        ;
+; RDCONTROL_REG_B                    ; CLOCK1                                          ; Untyped        ;
+; ADDRESS_REG_B                      ; CLOCK1                                          ; Untyped        ;
+; OUTDATA_REG_B                      ; CLOCK1                                          ; Untyped        ;
+; BYTEENA_REG_B                      ; CLOCK1                                          ; Untyped        ;
+; INDATA_ACLR_B                      ; NONE                                            ; Untyped        ;
+; WRCONTROL_ACLR_B                   ; NONE                                            ; Untyped        ;
+; ADDRESS_ACLR_B                     ; NONE                                            ; Untyped        ;
+; OUTDATA_ACLR_B                     ; NONE                                            ; Untyped        ;
+; RDCONTROL_ACLR_B                   ; NONE                                            ; Untyped        ;
+; BYTEENA_ACLR_B                     ; NONE                                            ; Untyped        ;
+; WIDTH_BYTEENA_A                    ; 1                                               ; Untyped        ;
+; WIDTH_BYTEENA_B                    ; 1                                               ; Untyped        ;
+; RAM_BLOCK_TYPE                     ; AUTO                                            ; Untyped        ;
+; BYTE_SIZE                          ; 8                                               ; Untyped        ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                       ; Untyped        ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                            ; Untyped        ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                            ; Untyped        ;
+; INIT_FILE                          ; db/Datapath.ram0_register_file_87c776fc.hdl.mif ; Untyped        ;
+; INIT_FILE_LAYOUT                   ; PORT_A                                          ; Untyped        ;
+; MAXIMUM_DEPTH                      ; 0                                               ; Untyped        ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL                                          ; Untyped        ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL                                          ; Untyped        ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL                                          ; Untyped        ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                                          ; Untyped        ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                                 ; Untyped        ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                                 ; Untyped        ;
+; ENABLE_ECC                         ; FALSE                                           ; Untyped        ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                           ; Untyped        ;
+; WIDTH_ECCSTATUS                    ; 3                                               ; Untyped        ;
+; DEVICE_FAMILY                      ; Cyclone II                                      ; Untyped        ;
+; CBXI_PARAMETER                     ; altsyncram_dfh1                                 ; Untyped        ;
++------------------------------------+-------------------------------------------------+----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                        ;
++-------------------------------------------+---------------------------------------------+
+; Name                                      ; Value                                       ;
++-------------------------------------------+---------------------------------------------+
+; Number of entity instances                ; 2                                           ;
+; Entity Instance                           ; register_file:RF|altsyncram:registers_rtl_0 ;
+;     -- OPERATION_MODE                     ; DUAL_PORT                                   ;
+;     -- WIDTH_A                            ; 32                                          ;
+;     -- NUMWORDS_A                         ; 32                                          ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                ;
+;     -- WIDTH_B                            ; 32                                          ;
+;     -- NUMWORDS_B                         ; 32                                          ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                      ;
+;     -- OUTDATA_REG_B                      ; CLOCK1                                      ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                        ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                   ;
+; Entity Instance                           ; register_file:RF|altsyncram:registers_rtl_1 ;
+;     -- OPERATION_MODE                     ; DUAL_PORT                                   ;
+;     -- WIDTH_A                            ; 32                                          ;
+;     -- NUMWORDS_A                         ; 32                                          ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                ;
+;     -- WIDTH_B                            ; 32                                          ;
+;     -- NUMWORDS_B                         ; 32                                          ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                      ;
+;     -- OUTDATA_REG_B                      ; CLOCK1                                      ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                        ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                   ;
++-------------------------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------+
@@ -283,7 +495,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -293,9 +505,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Dec 02 10:01:06 2019
+    Info: Processing started: Tue Dec 03 10:55:04 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Datapath -c Datapath
 Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file register_file.vhd
+    Info (12022): Found design unit 1: register_file-behavioral
+    Info (12023): Found entity 1: register_file
 Info (12021): Found 2 design units, including 1 entities, in source file somador.vhd
     Info (12022): Found design unit 1: somador-comportamento
     Info (12023): Found entity 1: somador
@@ -328,20 +543,14 @@ Info (12021): Found 2 design units, including 1 entities, in source file mux2x1_
     Info (12022): Found design unit 1: Mux2x1_32bits-Logic
     Info (12023): Found entity 1: Mux2x1_32bits
 Info (12127): Elaborating entity "Datapath" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at Datapath.vhd(144): used implicit default value for signal "RD" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at Datapath.vhd(145): used implicit default value for signal "RD1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at Datapath.vhd(145): used implicit default value for signal "RD2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10036): Verilog HDL or VHDL warning at Datapath.vhd(148): object "RsA1" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at Datapath.vhd(148): object "RtA2" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at Datapath.vhd(151): object "RsE" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at Datapath.vhd(152): object "RegWriteW" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at Datapath.vhd(155): object "WriteRegW" assigned a value but never read
 Info (12128): Elaborating entity "regPC" for hierarchy "regPC:Registrador_PC"
 Info (12128): Elaborating entity "somador" for hierarchy "somador:PC_incremento"
 Info (12128): Elaborating entity "regD" for hierarchy "regD:Registrador_D"
 Info (12128): Elaborating entity "divisor_sinal" for hierarchy "divisor_sinal:Divisor"
 Info (12128): Elaborating entity "SignExtend" for hierarchy "SignExtend:Extensao_de_sinal"
 Info (12128): Elaborating entity "regE" for hierarchy "regE:Registrador_E"
+Info (12128): Elaborating entity "register_file" for hierarchy "register_file:RF"
+Warning (10492): VHDL Process Statement warning at register_file.vhd(25): signal "WE3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (12125): Using design file mux2x1_5bits.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: Mux2x1_5bits-Logic
     Info (12023): Found entity 1: Mux2x1_5bits
@@ -349,37 +558,71 @@ Info (12128): Elaborating entity "Mux2x1_5bits" for hierarchy "Mux2x1_5bits:Mux1
 Info (12128): Elaborating entity "Mux2x1_32bits" for hierarchy "Mux2x1_32bits:Mux2"
 Info (12128): Elaborating entity "ALU" for hierarchy "ALU:ALU_1"
 Info (12128): Elaborating entity "regW" for hierarchy "regW:Registrador_W"
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "Op[0]" is stuck at GND
-    Warning (13410): Pin "Op[1]" is stuck at GND
-    Warning (13410): Pin "Op[2]" is stuck at GND
-    Warning (13410): Pin "Op[3]" is stuck at GND
-    Warning (13410): Pin "Op[4]" is stuck at GND
-    Warning (13410): Pin "Op[5]" is stuck at GND
-    Warning (13410): Pin "Funct[0]" is stuck at GND
-    Warning (13410): Pin "Funct[1]" is stuck at GND
-    Warning (13410): Pin "Funct[2]" is stuck at GND
-    Warning (13410): Pin "Funct[3]" is stuck at GND
-    Warning (13410): Pin "Funct[4]" is stuck at GND
-    Warning (13410): Pin "Funct[5]" is stuck at GND
+Warning (276027): Inferred dual-clock RAM node "register_file:RF|registers_rtl_0" from synchronous design logic.  The read-during-write behavior of a dual-clock RAM is undefined and may not match the behavior of the original design.
+Warning (276027): Inferred dual-clock RAM node "register_file:RF|registers_rtl_1" from synchronous design logic.  The read-during-write behavior of a dual-clock RAM is undefined and may not match the behavior of the original design.
+Info (19000): Inferred 2 megafunctions from design logic
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "register_file:RF|registers_rtl_0" 
+        Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
+        Info (286033): Parameter WIDTH_A set to 32
+        Info (286033): Parameter WIDTHAD_A set to 5
+        Info (286033): Parameter NUMWORDS_A set to 32
+        Info (286033): Parameter WIDTH_B set to 32
+        Info (286033): Parameter WIDTHAD_B set to 5
+        Info (286033): Parameter NUMWORDS_B set to 32
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_REG_B set to CLOCK1
+        Info (286033): Parameter ADDRESS_ACLR_B set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_B set to NONE
+        Info (286033): Parameter ADDRESS_REG_B set to CLOCK1
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+        Info (286033): Parameter INIT_FILE set to db/Datapath.ram0_register_file_87c776fc.hdl.mif
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "register_file:RF|registers_rtl_1" 
+        Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
+        Info (286033): Parameter WIDTH_A set to 32
+        Info (286033): Parameter WIDTHAD_A set to 5
+        Info (286033): Parameter NUMWORDS_A set to 32
+        Info (286033): Parameter WIDTH_B set to 32
+        Info (286033): Parameter WIDTHAD_B set to 5
+        Info (286033): Parameter NUMWORDS_B set to 32
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_REG_B set to CLOCK1
+        Info (286033): Parameter ADDRESS_ACLR_B set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_B set to NONE
+        Info (286033): Parameter ADDRESS_REG_B set to CLOCK1
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+        Info (286033): Parameter INIT_FILE set to db/Datapath.ram0_register_file_87c776fc.hdl.mif
+Info (12130): Elaborated megafunction instantiation "register_file:RF|altsyncram:registers_rtl_0"
+Info (12133): Instantiated megafunction "register_file:RF|altsyncram:registers_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "DUAL_PORT"
+    Info (12134): Parameter "WIDTH_A" = "32"
+    Info (12134): Parameter "WIDTHAD_A" = "5"
+    Info (12134): Parameter "NUMWORDS_A" = "32"
+    Info (12134): Parameter "WIDTH_B" = "32"
+    Info (12134): Parameter "WIDTHAD_B" = "5"
+    Info (12134): Parameter "NUMWORDS_B" = "32"
+    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info (12134): Parameter "OUTDATA_REG_B" = "CLOCK1"
+    Info (12134): Parameter "ADDRESS_ACLR_B" = "NONE"
+    Info (12134): Parameter "OUTDATA_ACLR_B" = "NONE"
+    Info (12134): Parameter "ADDRESS_REG_B" = "CLOCK1"
+    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
+    Info (12134): Parameter "INIT_FILE" = "db/Datapath.ram0_register_file_87c776fc.hdl.mif"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_dfh1.tdf
+    Info (12023): Found entity 1: altsyncram_dfh1
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 8 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "clk"
-    Warning (15610): No output dependent on input pin "RegDst"
-    Warning (15610): No output dependent on input pin "ALUSrc"
-    Warning (15610): No output dependent on input pin "RegWrite"
-    Warning (15610): No output dependent on input pin "AlUControl[0]"
-    Warning (15610): No output dependent on input pin "AlUControl[1]"
-    Warning (15610): No output dependent on input pin "FowardAE"
-    Warning (15610): No output dependent on input pin "FowardBE"
-Info (21057): Implemented 20 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 8 input pins
-    Info (21059): Implemented 12 output pins
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 33 warnings
-    Info: Peak virtual memory: 492 megabytes
-    Info: Processing ended: Mon Dec 02 10:01:12 2019
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:05
+Info (21057): Implemented 457 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 40 input pins
+    Info (21059): Implemented 60 output pins
+    Info (21061): Implemented 293 logic cells
+    Info (21064): Implemented 64 RAM segments
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 501 megabytes
+    Info: Processing ended: Tue Dec 03 10:55:19 2019
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:09
 
 

@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for Hazard
-Mon Dec 02 11:42:55 2019
+Tue Dec 03 08:35:13 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -126,28 +126,28 @@ No paths to report.
 +--------------+-------------+--------+--------+--------+--------+
 ; Input Port   ; Output Port ; RR     ; RF     ; FR     ; FF     ;
 +--------------+-------------+--------+--------+--------+--------+
-; RegWriteW    ; FowardAE    ; 7.123  ;        ;        ; 7.123  ;
-; RegWriteW    ; FowardBE    ; 6.162  ;        ;        ; 6.162  ;
-; RsE[0]       ; FowardAE    ; 11.481 ; 11.481 ; 11.481 ; 11.481 ;
-; RsE[1]       ; FowardAE    ; 11.918 ; 11.918 ; 11.918 ; 11.918 ;
-; RsE[2]       ; FowardAE    ; 11.538 ; 11.538 ; 11.538 ; 11.538 ;
-; RsE[3]       ; FowardAE    ; 11.210 ; 11.210 ; 11.210 ; 11.210 ;
-; RsE[4]       ; FowardAE    ; 10.295 ; 9.634  ; 9.634  ; 10.295 ;
-; RtE[0]       ; FowardBE    ; 10.051 ; 10.044 ; 10.044 ; 10.051 ;
-; RtE[1]       ; FowardBE    ; 11.791 ; 11.791 ; 11.791 ; 11.791 ;
-; RtE[2]       ; FowardBE    ; 9.900  ; 9.756  ; 9.756  ; 9.900  ;
-; RtE[3]       ; FowardBE    ; 10.596 ; 10.596 ; 10.596 ; 10.596 ;
-; RtE[4]       ; FowardBE    ; 9.609  ; 8.908  ; 8.908  ; 9.609  ;
-; WriteRegW[0] ; FowardAE    ; 10.711 ; 10.711 ; 10.711 ; 10.711 ;
-; WriteRegW[0] ; FowardBE    ; 9.955  ; 9.955  ; 9.955  ; 9.955  ;
-; WriteRegW[1] ; FowardAE    ; 11.137 ; 11.137 ; 11.137 ; 11.137 ;
-; WriteRegW[1] ; FowardBE    ; 10.523 ; 10.523 ; 10.523 ; 10.523 ;
-; WriteRegW[2] ; FowardAE    ; 11.484 ; 11.484 ; 11.484 ; 11.484 ;
-; WriteRegW[2] ; FowardBE    ; 10.354 ; 10.354 ; 10.354 ; 10.354 ;
-; WriteRegW[3] ; FowardAE    ; 11.546 ; 11.546 ; 11.546 ; 11.546 ;
-; WriteRegW[3] ; FowardBE    ; 10.444 ; 10.444 ; 10.444 ; 10.444 ;
-; WriteRegW[4] ; FowardAE    ; 9.416  ; 9.416  ; 9.416  ; 9.416  ;
-; WriteRegW[4] ; FowardBE    ; 8.745  ; 8.745  ; 8.745  ; 8.745  ;
+; RegWriteW    ; FowardAE    ; 6.620  ;        ;        ; 6.620  ;
+; RegWriteW    ; FowardBE    ; 6.822  ;        ;        ; 6.822  ;
+; RsE[0]       ; FowardAE    ; 7.789  ; 7.762  ; 7.762  ; 7.789  ;
+; RsE[1]       ; FowardAE    ; 11.123 ; 11.114 ; 11.114 ; 11.123 ;
+; RsE[2]       ; FowardAE    ; 10.709 ; 10.709 ; 10.709 ; 10.709 ;
+; RsE[3]       ; FowardAE    ; 10.747 ; 10.747 ; 10.747 ; 10.747 ;
+; RsE[4]       ; FowardAE    ; 9.872  ; 9.170  ; 9.170  ; 9.872  ;
+; RtE[0]       ; FowardBE    ; 10.947 ; 10.947 ; 10.947 ; 10.947 ;
+; RtE[1]       ; FowardBE    ; 10.779 ; 10.779 ; 10.779 ; 10.779 ;
+; RtE[2]       ; FowardBE    ; 10.788 ; 10.788 ; 10.788 ; 10.788 ;
+; RtE[3]       ; FowardBE    ; 10.825 ; 10.825 ; 10.825 ; 10.825 ;
+; RtE[4]       ; FowardBE    ; 10.224 ; 9.712  ; 9.712  ; 10.224 ;
+; WriteRegW[0] ; FowardAE    ; 10.597 ; 10.597 ; 10.597 ; 10.597 ;
+; WriteRegW[0] ; FowardBE    ; 11.280 ; 11.280 ; 11.280 ; 11.280 ;
+; WriteRegW[1] ; FowardAE    ; 10.564 ; 10.564 ; 10.564 ; 10.564 ;
+; WriteRegW[1] ; FowardBE    ; 11.057 ; 11.057 ; 11.057 ; 11.057 ;
+; WriteRegW[2] ; FowardAE    ; 10.525 ; 10.525 ; 10.525 ; 10.525 ;
+; WriteRegW[2] ; FowardBE    ; 10.845 ; 10.845 ; 10.845 ; 10.845 ;
+; WriteRegW[3] ; FowardAE    ; 10.795 ; 10.795 ; 10.795 ; 10.795 ;
+; WriteRegW[3] ; FowardBE    ; 11.002 ; 11.002 ; 11.002 ; 11.002 ;
+; WriteRegW[4] ; FowardAE    ; 9.108  ; 9.108  ; 9.108  ; 9.108  ;
+; WriteRegW[4] ; FowardBE    ; 9.446  ; 9.446  ; 9.446  ; 9.446  ;
 +--------------+-------------+--------+--------+--------+--------+
 
 
@@ -156,28 +156,28 @@ No paths to report.
 +--------------+-------------+--------+--------+--------+--------+
 ; Input Port   ; Output Port ; RR     ; RF     ; FR     ; FF     ;
 +--------------+-------------+--------+--------+--------+--------+
-; RegWriteW    ; FowardAE    ; 7.123  ;        ;        ; 7.123  ;
-; RegWriteW    ; FowardBE    ; 6.162  ;        ;        ; 6.162  ;
-; RsE[0]       ; FowardAE    ; 11.315 ; 11.481 ; 11.481 ; 11.315 ;
-; RsE[1]       ; FowardAE    ; 11.599 ; 11.918 ; 11.918 ; 11.599 ;
-; RsE[2]       ; FowardAE    ; 11.142 ; 11.538 ; 11.538 ; 11.142 ;
-; RsE[3]       ; FowardAE    ; 10.861 ; 11.210 ; 11.210 ; 10.861 ;
-; RsE[4]       ; FowardAE    ; 9.634  ; 9.634  ; 9.634  ; 9.634  ;
-; RtE[0]       ; FowardBE    ; 10.044 ; 10.044 ; 10.044 ; 10.044 ;
-; RtE[1]       ; FowardBE    ; 11.763 ; 11.791 ; 11.791 ; 11.763 ;
-; RtE[2]       ; FowardBE    ; 9.756  ; 9.756  ; 9.756  ; 9.756  ;
-; RtE[3]       ; FowardBE    ; 10.501 ; 10.596 ; 10.596 ; 10.501 ;
-; RtE[4]       ; FowardBE    ; 8.908  ; 8.908  ; 8.908  ; 8.908  ;
-; WriteRegW[0] ; FowardAE    ; 10.711 ; 10.711 ; 10.711 ; 10.711 ;
-; WriteRegW[0] ; FowardBE    ; 9.955  ; 9.955  ; 9.955  ; 9.955  ;
-; WriteRegW[1] ; FowardAE    ; 11.137 ; 11.137 ; 11.137 ; 11.137 ;
-; WriteRegW[1] ; FowardBE    ; 10.523 ; 10.523 ; 10.523 ; 10.523 ;
-; WriteRegW[2] ; FowardAE    ; 11.484 ; 11.484 ; 11.484 ; 11.484 ;
-; WriteRegW[2] ; FowardBE    ; 10.354 ; 10.354 ; 10.354 ; 10.354 ;
-; WriteRegW[3] ; FowardAE    ; 11.546 ; 11.546 ; 11.546 ; 11.546 ;
-; WriteRegW[3] ; FowardBE    ; 10.444 ; 10.444 ; 10.444 ; 10.444 ;
-; WriteRegW[4] ; FowardAE    ; 9.416  ; 9.416  ; 9.416  ; 9.416  ;
-; WriteRegW[4] ; FowardBE    ; 8.745  ; 8.745  ; 8.745  ; 8.745  ;
+; RegWriteW    ; FowardAE    ; 6.620  ;        ;        ; 6.620  ;
+; RegWriteW    ; FowardBE    ; 6.822  ;        ;        ; 6.822  ;
+; RsE[0]       ; FowardAE    ; 7.762  ; 7.762  ; 7.762  ; 7.762  ;
+; RsE[1]       ; FowardAE    ; 11.114 ; 11.114 ; 11.114 ; 11.114 ;
+; RsE[2]       ; FowardAE    ; 10.670 ; 10.709 ; 10.709 ; 10.670 ;
+; RsE[3]       ; FowardAE    ; 10.705 ; 10.747 ; 10.747 ; 10.705 ;
+; RsE[4]       ; FowardAE    ; 9.170  ; 9.170  ; 9.170  ; 9.170  ;
+; RtE[0]       ; FowardBE    ; 10.676 ; 10.947 ; 10.947 ; 10.676 ;
+; RtE[1]       ; FowardBE    ; 10.727 ; 10.779 ; 10.779 ; 10.727 ;
+; RtE[2]       ; FowardBE    ; 10.201 ; 10.788 ; 10.788 ; 10.201 ;
+; RtE[3]       ; FowardBE    ; 10.785 ; 10.825 ; 10.825 ; 10.785 ;
+; RtE[4]       ; FowardBE    ; 9.712  ; 9.712  ; 9.712  ; 9.712  ;
+; WriteRegW[0] ; FowardAE    ; 10.597 ; 10.597 ; 10.597 ; 10.597 ;
+; WriteRegW[0] ; FowardBE    ; 11.280 ; 11.280 ; 11.280 ; 11.280 ;
+; WriteRegW[1] ; FowardAE    ; 10.564 ; 10.564 ; 10.564 ; 10.564 ;
+; WriteRegW[1] ; FowardBE    ; 11.057 ; 11.057 ; 11.057 ; 11.057 ;
+; WriteRegW[2] ; FowardAE    ; 10.525 ; 10.525 ; 10.525 ; 10.525 ;
+; WriteRegW[2] ; FowardBE    ; 10.845 ; 10.845 ; 10.845 ; 10.845 ;
+; WriteRegW[3] ; FowardAE    ; 10.795 ; 10.795 ; 10.795 ; 10.795 ;
+; WriteRegW[3] ; FowardBE    ; 11.002 ; 11.002 ; 11.002 ; 11.002 ;
+; WriteRegW[4] ; FowardAE    ; 9.108  ; 9.108  ; 9.108  ; 9.108  ;
+; WriteRegW[4] ; FowardBE    ; 9.446  ; 9.446  ; 9.446  ; 9.446  ;
 +--------------+-------------+--------+--------+--------+--------+
 
 
@@ -216,28 +216,28 @@ No paths to report.
 +--------------+-------------+-------+-------+-------+-------+
 ; Input Port   ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +--------------+-------------+-------+-------+-------+-------+
-; RegWriteW    ; FowardAE    ; 3.674 ;       ;       ; 3.674 ;
-; RegWriteW    ; FowardBE    ; 3.191 ;       ;       ; 3.191 ;
-; RsE[0]       ; FowardAE    ; 6.210 ; 6.210 ; 6.210 ; 6.210 ;
-; RsE[1]       ; FowardAE    ; 6.434 ; 6.434 ; 6.434 ; 6.434 ;
-; RsE[2]       ; FowardAE    ; 6.244 ; 6.244 ; 6.244 ; 6.244 ;
-; RsE[3]       ; FowardAE    ; 6.091 ; 6.091 ; 6.091 ; 6.091 ;
-; RsE[4]       ; FowardAE    ; 5.681 ; 5.399 ; 5.399 ; 5.681 ;
-; RtE[0]       ; FowardBE    ; 5.485 ; 5.480 ; 5.480 ; 5.485 ;
-; RtE[1]       ; FowardBE    ; 6.347 ; 6.334 ; 6.334 ; 6.347 ;
-; RtE[2]       ; FowardBE    ; 5.449 ; 5.397 ; 5.397 ; 5.449 ;
-; RtE[3]       ; FowardBE    ; 5.740 ; 5.740 ; 5.740 ; 5.740 ;
-; RtE[4]       ; FowardBE    ; 5.334 ; 5.035 ; 5.035 ; 5.334 ;
-; WriteRegW[0] ; FowardAE    ; 5.873 ; 5.873 ; 5.873 ; 5.873 ;
-; WriteRegW[0] ; FowardBE    ; 5.466 ; 5.466 ; 5.466 ; 5.466 ;
-; WriteRegW[1] ; FowardAE    ; 6.062 ; 6.062 ; 6.062 ; 6.062 ;
-; WriteRegW[1] ; FowardBE    ; 5.725 ; 5.725 ; 5.725 ; 5.725 ;
-; WriteRegW[2] ; FowardAE    ; 6.217 ; 6.217 ; 6.217 ; 6.217 ;
-; WriteRegW[2] ; FowardBE    ; 5.676 ; 5.676 ; 5.676 ; 5.676 ;
-; WriteRegW[3] ; FowardAE    ; 6.245 ; 6.245 ; 6.245 ; 6.245 ;
-; WriteRegW[3] ; FowardBE    ; 5.697 ; 5.697 ; 5.697 ; 5.697 ;
-; WriteRegW[4] ; FowardAE    ; 5.302 ; 5.302 ; 5.302 ; 5.302 ;
-; WriteRegW[4] ; FowardBE    ; 4.953 ; 4.953 ; 4.953 ; 4.953 ;
+; RegWriteW    ; FowardAE    ; 3.405 ;       ;       ; 3.405 ;
+; RegWriteW    ; FowardBE    ; 3.513 ;       ;       ; 3.513 ;
+; RsE[0]       ; FowardAE    ; 3.939 ; 3.907 ; 3.907 ; 3.939 ;
+; RsE[1]       ; FowardAE    ; 6.037 ; 5.997 ; 5.997 ; 6.037 ;
+; RsE[2]       ; FowardAE    ; 5.841 ; 5.841 ; 5.841 ; 5.841 ;
+; RsE[3]       ; FowardAE    ; 5.840 ; 5.840 ; 5.840 ; 5.840 ;
+; RsE[4]       ; FowardAE    ; 5.427 ; 5.130 ; 5.130 ; 5.427 ;
+; RtE[0]       ; FowardBE    ; 5.913 ; 5.913 ; 5.913 ; 5.913 ;
+; RtE[1]       ; FowardBE    ; 5.837 ; 5.837 ; 5.837 ; 5.837 ;
+; RtE[2]       ; FowardBE    ; 5.822 ; 5.822 ; 5.822 ; 5.822 ;
+; RtE[3]       ; FowardBE    ; 5.859 ; 5.856 ; 5.856 ; 5.859 ;
+; RtE[4]       ; FowardBE    ; 5.590 ; 5.389 ; 5.389 ; 5.590 ;
+; WriteRegW[0] ; FowardAE    ; 5.763 ; 5.763 ; 5.763 ; 5.763 ;
+; WriteRegW[0] ; FowardBE    ; 6.060 ; 6.060 ; 6.060 ; 6.060 ;
+; WriteRegW[1] ; FowardAE    ; 5.745 ; 5.745 ; 5.745 ; 5.745 ;
+; WriteRegW[1] ; FowardBE    ; 5.987 ; 5.987 ; 5.987 ; 5.987 ;
+; WriteRegW[2] ; FowardAE    ; 5.720 ; 5.720 ; 5.720 ; 5.720 ;
+; WriteRegW[2] ; FowardBE    ; 5.854 ; 5.854 ; 5.854 ; 5.854 ;
+; WriteRegW[3] ; FowardAE    ; 5.888 ; 5.888 ; 5.888 ; 5.888 ;
+; WriteRegW[3] ; FowardBE    ; 5.951 ; 5.951 ; 5.951 ; 5.951 ;
+; WriteRegW[4] ; FowardAE    ; 5.113 ; 5.113 ; 5.113 ; 5.113 ;
+; WriteRegW[4] ; FowardBE    ; 5.261 ; 5.261 ; 5.261 ; 5.261 ;
 +--------------+-------------+-------+-------+-------+-------+
 
 
@@ -246,28 +246,28 @@ No paths to report.
 +--------------+-------------+-------+-------+-------+-------+
 ; Input Port   ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +--------------+-------------+-------+-------+-------+-------+
-; RegWriteW    ; FowardAE    ; 3.674 ;       ;       ; 3.674 ;
-; RegWriteW    ; FowardBE    ; 3.191 ;       ;       ; 3.191 ;
-; RsE[0]       ; FowardAE    ; 6.135 ; 6.210 ; 6.210 ; 6.135 ;
-; RsE[1]       ; FowardAE    ; 6.283 ; 6.434 ; 6.434 ; 6.283 ;
-; RsE[2]       ; FowardAE    ; 6.079 ; 6.244 ; 6.244 ; 6.079 ;
-; RsE[3]       ; FowardAE    ; 5.928 ; 6.091 ; 6.091 ; 5.928 ;
-; RsE[4]       ; FowardAE    ; 5.399 ; 5.399 ; 5.399 ; 5.399 ;
-; RtE[0]       ; FowardBE    ; 5.480 ; 5.480 ; 5.480 ; 5.480 ;
-; RtE[1]       ; FowardBE    ; 6.334 ; 6.334 ; 6.334 ; 6.334 ;
-; RtE[2]       ; FowardBE    ; 5.397 ; 5.397 ; 5.397 ; 5.397 ;
-; RtE[3]       ; FowardBE    ; 5.712 ; 5.740 ; 5.740 ; 5.712 ;
-; RtE[4]       ; FowardBE    ; 5.035 ; 5.035 ; 5.035 ; 5.035 ;
-; WriteRegW[0] ; FowardAE    ; 5.873 ; 5.873 ; 5.873 ; 5.873 ;
-; WriteRegW[0] ; FowardBE    ; 5.466 ; 5.466 ; 5.466 ; 5.466 ;
-; WriteRegW[1] ; FowardAE    ; 6.062 ; 6.062 ; 6.062 ; 6.062 ;
-; WriteRegW[1] ; FowardBE    ; 5.725 ; 5.725 ; 5.725 ; 5.725 ;
-; WriteRegW[2] ; FowardAE    ; 6.217 ; 6.217 ; 6.217 ; 6.217 ;
-; WriteRegW[2] ; FowardBE    ; 5.676 ; 5.676 ; 5.676 ; 5.676 ;
-; WriteRegW[3] ; FowardAE    ; 6.245 ; 6.245 ; 6.245 ; 6.245 ;
-; WriteRegW[3] ; FowardBE    ; 5.697 ; 5.697 ; 5.697 ; 5.697 ;
-; WriteRegW[4] ; FowardAE    ; 5.302 ; 5.302 ; 5.302 ; 5.302 ;
-; WriteRegW[4] ; FowardBE    ; 4.953 ; 4.953 ; 4.953 ; 4.953 ;
+; RegWriteW    ; FowardAE    ; 3.405 ;       ;       ; 3.405 ;
+; RegWriteW    ; FowardBE    ; 3.513 ;       ;       ; 3.513 ;
+; RsE[0]       ; FowardAE    ; 3.907 ; 3.907 ; 3.907 ; 3.907 ;
+; RsE[1]       ; FowardAE    ; 5.997 ; 5.997 ; 5.997 ; 5.997 ;
+; RsE[2]       ; FowardAE    ; 5.829 ; 5.841 ; 5.841 ; 5.829 ;
+; RsE[3]       ; FowardAE    ; 5.823 ; 5.840 ; 5.840 ; 5.823 ;
+; RsE[4]       ; FowardAE    ; 5.130 ; 5.130 ; 5.130 ; 5.130 ;
+; RtE[0]       ; FowardBE    ; 5.797 ; 5.913 ; 5.913 ; 5.797 ;
+; RtE[1]       ; FowardBE    ; 5.837 ; 5.837 ; 5.837 ; 5.837 ;
+; RtE[2]       ; FowardBE    ; 5.566 ; 5.822 ; 5.822 ; 5.566 ;
+; RtE[3]       ; FowardBE    ; 5.856 ; 5.856 ; 5.856 ; 5.856 ;
+; RtE[4]       ; FowardBE    ; 5.389 ; 5.389 ; 5.389 ; 5.389 ;
+; WriteRegW[0] ; FowardAE    ; 5.763 ; 5.763 ; 5.763 ; 5.763 ;
+; WriteRegW[0] ; FowardBE    ; 6.060 ; 6.060 ; 6.060 ; 6.060 ;
+; WriteRegW[1] ; FowardAE    ; 5.745 ; 5.745 ; 5.745 ; 5.745 ;
+; WriteRegW[1] ; FowardBE    ; 5.987 ; 5.987 ; 5.987 ; 5.987 ;
+; WriteRegW[2] ; FowardAE    ; 5.720 ; 5.720 ; 5.720 ; 5.720 ;
+; WriteRegW[2] ; FowardBE    ; 5.854 ; 5.854 ; 5.854 ; 5.854 ;
+; WriteRegW[3] ; FowardAE    ; 5.888 ; 5.888 ; 5.888 ; 5.888 ;
+; WriteRegW[3] ; FowardBE    ; 5.951 ; 5.951 ; 5.951 ; 5.951 ;
+; WriteRegW[4] ; FowardAE    ; 5.113 ; 5.113 ; 5.113 ; 5.113 ;
+; WriteRegW[4] ; FowardBE    ; 5.261 ; 5.261 ; 5.261 ; 5.261 ;
 +--------------+-------------+-------+-------+-------+-------+
 
 
@@ -286,28 +286,28 @@ No paths to report.
 +--------------+-------------+--------+--------+--------+--------+
 ; Input Port   ; Output Port ; RR     ; RF     ; FR     ; FF     ;
 +--------------+-------------+--------+--------+--------+--------+
-; RegWriteW    ; FowardAE    ; 7.123  ;        ;        ; 7.123  ;
-; RegWriteW    ; FowardBE    ; 6.162  ;        ;        ; 6.162  ;
-; RsE[0]       ; FowardAE    ; 11.481 ; 11.481 ; 11.481 ; 11.481 ;
-; RsE[1]       ; FowardAE    ; 11.918 ; 11.918 ; 11.918 ; 11.918 ;
-; RsE[2]       ; FowardAE    ; 11.538 ; 11.538 ; 11.538 ; 11.538 ;
-; RsE[3]       ; FowardAE    ; 11.210 ; 11.210 ; 11.210 ; 11.210 ;
-; RsE[4]       ; FowardAE    ; 10.295 ; 9.634  ; 9.634  ; 10.295 ;
-; RtE[0]       ; FowardBE    ; 10.051 ; 10.044 ; 10.044 ; 10.051 ;
-; RtE[1]       ; FowardBE    ; 11.791 ; 11.791 ; 11.791 ; 11.791 ;
-; RtE[2]       ; FowardBE    ; 9.900  ; 9.756  ; 9.756  ; 9.900  ;
-; RtE[3]       ; FowardBE    ; 10.596 ; 10.596 ; 10.596 ; 10.596 ;
-; RtE[4]       ; FowardBE    ; 9.609  ; 8.908  ; 8.908  ; 9.609  ;
-; WriteRegW[0] ; FowardAE    ; 10.711 ; 10.711 ; 10.711 ; 10.711 ;
-; WriteRegW[0] ; FowardBE    ; 9.955  ; 9.955  ; 9.955  ; 9.955  ;
-; WriteRegW[1] ; FowardAE    ; 11.137 ; 11.137 ; 11.137 ; 11.137 ;
-; WriteRegW[1] ; FowardBE    ; 10.523 ; 10.523 ; 10.523 ; 10.523 ;
-; WriteRegW[2] ; FowardAE    ; 11.484 ; 11.484 ; 11.484 ; 11.484 ;
-; WriteRegW[2] ; FowardBE    ; 10.354 ; 10.354 ; 10.354 ; 10.354 ;
-; WriteRegW[3] ; FowardAE    ; 11.546 ; 11.546 ; 11.546 ; 11.546 ;
-; WriteRegW[3] ; FowardBE    ; 10.444 ; 10.444 ; 10.444 ; 10.444 ;
-; WriteRegW[4] ; FowardAE    ; 9.416  ; 9.416  ; 9.416  ; 9.416  ;
-; WriteRegW[4] ; FowardBE    ; 8.745  ; 8.745  ; 8.745  ; 8.745  ;
+; RegWriteW    ; FowardAE    ; 6.620  ;        ;        ; 6.620  ;
+; RegWriteW    ; FowardBE    ; 6.822  ;        ;        ; 6.822  ;
+; RsE[0]       ; FowardAE    ; 7.789  ; 7.762  ; 7.762  ; 7.789  ;
+; RsE[1]       ; FowardAE    ; 11.123 ; 11.114 ; 11.114 ; 11.123 ;
+; RsE[2]       ; FowardAE    ; 10.709 ; 10.709 ; 10.709 ; 10.709 ;
+; RsE[3]       ; FowardAE    ; 10.747 ; 10.747 ; 10.747 ; 10.747 ;
+; RsE[4]       ; FowardAE    ; 9.872  ; 9.170  ; 9.170  ; 9.872  ;
+; RtE[0]       ; FowardBE    ; 10.947 ; 10.947 ; 10.947 ; 10.947 ;
+; RtE[1]       ; FowardBE    ; 10.779 ; 10.779 ; 10.779 ; 10.779 ;
+; RtE[2]       ; FowardBE    ; 10.788 ; 10.788 ; 10.788 ; 10.788 ;
+; RtE[3]       ; FowardBE    ; 10.825 ; 10.825 ; 10.825 ; 10.825 ;
+; RtE[4]       ; FowardBE    ; 10.224 ; 9.712  ; 9.712  ; 10.224 ;
+; WriteRegW[0] ; FowardAE    ; 10.597 ; 10.597 ; 10.597 ; 10.597 ;
+; WriteRegW[0] ; FowardBE    ; 11.280 ; 11.280 ; 11.280 ; 11.280 ;
+; WriteRegW[1] ; FowardAE    ; 10.564 ; 10.564 ; 10.564 ; 10.564 ;
+; WriteRegW[1] ; FowardBE    ; 11.057 ; 11.057 ; 11.057 ; 11.057 ;
+; WriteRegW[2] ; FowardAE    ; 10.525 ; 10.525 ; 10.525 ; 10.525 ;
+; WriteRegW[2] ; FowardBE    ; 10.845 ; 10.845 ; 10.845 ; 10.845 ;
+; WriteRegW[3] ; FowardAE    ; 10.795 ; 10.795 ; 10.795 ; 10.795 ;
+; WriteRegW[3] ; FowardBE    ; 11.002 ; 11.002 ; 11.002 ; 11.002 ;
+; WriteRegW[4] ; FowardAE    ; 9.108  ; 9.108  ; 9.108  ; 9.108  ;
+; WriteRegW[4] ; FowardBE    ; 9.446  ; 9.446  ; 9.446  ; 9.446  ;
 +--------------+-------------+--------+--------+--------+--------+
 
 
@@ -316,28 +316,28 @@ No paths to report.
 +--------------+-------------+-------+-------+-------+-------+
 ; Input Port   ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +--------------+-------------+-------+-------+-------+-------+
-; RegWriteW    ; FowardAE    ; 3.674 ;       ;       ; 3.674 ;
-; RegWriteW    ; FowardBE    ; 3.191 ;       ;       ; 3.191 ;
-; RsE[0]       ; FowardAE    ; 6.135 ; 6.210 ; 6.210 ; 6.135 ;
-; RsE[1]       ; FowardAE    ; 6.283 ; 6.434 ; 6.434 ; 6.283 ;
-; RsE[2]       ; FowardAE    ; 6.079 ; 6.244 ; 6.244 ; 6.079 ;
-; RsE[3]       ; FowardAE    ; 5.928 ; 6.091 ; 6.091 ; 5.928 ;
-; RsE[4]       ; FowardAE    ; 5.399 ; 5.399 ; 5.399 ; 5.399 ;
-; RtE[0]       ; FowardBE    ; 5.480 ; 5.480 ; 5.480 ; 5.480 ;
-; RtE[1]       ; FowardBE    ; 6.334 ; 6.334 ; 6.334 ; 6.334 ;
-; RtE[2]       ; FowardBE    ; 5.397 ; 5.397 ; 5.397 ; 5.397 ;
-; RtE[3]       ; FowardBE    ; 5.712 ; 5.740 ; 5.740 ; 5.712 ;
-; RtE[4]       ; FowardBE    ; 5.035 ; 5.035 ; 5.035 ; 5.035 ;
-; WriteRegW[0] ; FowardAE    ; 5.873 ; 5.873 ; 5.873 ; 5.873 ;
-; WriteRegW[0] ; FowardBE    ; 5.466 ; 5.466 ; 5.466 ; 5.466 ;
-; WriteRegW[1] ; FowardAE    ; 6.062 ; 6.062 ; 6.062 ; 6.062 ;
-; WriteRegW[1] ; FowardBE    ; 5.725 ; 5.725 ; 5.725 ; 5.725 ;
-; WriteRegW[2] ; FowardAE    ; 6.217 ; 6.217 ; 6.217 ; 6.217 ;
-; WriteRegW[2] ; FowardBE    ; 5.676 ; 5.676 ; 5.676 ; 5.676 ;
-; WriteRegW[3] ; FowardAE    ; 6.245 ; 6.245 ; 6.245 ; 6.245 ;
-; WriteRegW[3] ; FowardBE    ; 5.697 ; 5.697 ; 5.697 ; 5.697 ;
-; WriteRegW[4] ; FowardAE    ; 5.302 ; 5.302 ; 5.302 ; 5.302 ;
-; WriteRegW[4] ; FowardBE    ; 4.953 ; 4.953 ; 4.953 ; 4.953 ;
+; RegWriteW    ; FowardAE    ; 3.405 ;       ;       ; 3.405 ;
+; RegWriteW    ; FowardBE    ; 3.513 ;       ;       ; 3.513 ;
+; RsE[0]       ; FowardAE    ; 3.907 ; 3.907 ; 3.907 ; 3.907 ;
+; RsE[1]       ; FowardAE    ; 5.997 ; 5.997 ; 5.997 ; 5.997 ;
+; RsE[2]       ; FowardAE    ; 5.829 ; 5.841 ; 5.841 ; 5.829 ;
+; RsE[3]       ; FowardAE    ; 5.823 ; 5.840 ; 5.840 ; 5.823 ;
+; RsE[4]       ; FowardAE    ; 5.130 ; 5.130 ; 5.130 ; 5.130 ;
+; RtE[0]       ; FowardBE    ; 5.797 ; 5.913 ; 5.913 ; 5.797 ;
+; RtE[1]       ; FowardBE    ; 5.837 ; 5.837 ; 5.837 ; 5.837 ;
+; RtE[2]       ; FowardBE    ; 5.566 ; 5.822 ; 5.822 ; 5.566 ;
+; RtE[3]       ; FowardBE    ; 5.856 ; 5.856 ; 5.856 ; 5.856 ;
+; RtE[4]       ; FowardBE    ; 5.389 ; 5.389 ; 5.389 ; 5.389 ;
+; WriteRegW[0] ; FowardAE    ; 5.763 ; 5.763 ; 5.763 ; 5.763 ;
+; WriteRegW[0] ; FowardBE    ; 6.060 ; 6.060 ; 6.060 ; 6.060 ;
+; WriteRegW[1] ; FowardAE    ; 5.745 ; 5.745 ; 5.745 ; 5.745 ;
+; WriteRegW[1] ; FowardBE    ; 5.987 ; 5.987 ; 5.987 ; 5.987 ;
+; WriteRegW[2] ; FowardAE    ; 5.720 ; 5.720 ; 5.720 ; 5.720 ;
+; WriteRegW[2] ; FowardBE    ; 5.854 ; 5.854 ; 5.854 ; 5.854 ;
+; WriteRegW[3] ; FowardAE    ; 5.888 ; 5.888 ; 5.888 ; 5.888 ;
+; WriteRegW[3] ; FowardBE    ; 5.951 ; 5.951 ; 5.951 ; 5.951 ;
+; WriteRegW[4] ; FowardAE    ; 5.113 ; 5.113 ; 5.113 ; 5.113 ;
+; WriteRegW[4] ; FowardBE    ; 5.261 ; 5.261 ; 5.261 ; 5.261 ;
 +--------------+-------------+-------+-------+-------+-------+
 
 
@@ -379,7 +379,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Dec 02 11:42:53 2019
+    Info: Processing started: Tue Dec 03 08:35:09 2019
 Info: Command: quartus_sta Hazard -c Hazard
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -413,8 +413,8 @@ Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 388 megabytes
-    Info: Processing ended: Mon Dec 02 11:42:55 2019
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Processing ended: Tue Dec 03 08:35:13 2019
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:03
 
 

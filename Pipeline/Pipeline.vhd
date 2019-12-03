@@ -4,21 +4,28 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
  entity Pipeline is
- 
+	port(clk: in std_logic;
+		  Instr: in std_logic_vector(31 downto 0);
+		  RegWriteW: out std_logic;
+		  WriteRegW: out std_logic_vector(4 downto 0);
+		  AluOutW: out std_logic_vector(31 downto 0)
+	);
  end Pipeline;
  
  
  architecture struct of Pipeline is
  
  component datapath is
-		port ( clk: in std_logic;
+		port (clk: in std_logic;
+				Instr: in std_logic_vector(31 downto 0);
 				RegDst, ALUSrc: in std_logic;
 				RegWrite: in std_logic;
 				Op, Funct: out std_logic_vector(5 downto 0);
-				AlUControl: in std_logic_vector(1 downto 0);
+				ALUControl: in std_logic_vector(1 downto 0);
 				FowardAE, FowardBE: in std_logic;
 				RegWriteW: out std_logic;
-				WriteRegW, RsE, RtE: in std_logic_vector(4 downto 0)
+				WriteRegW, RsE, RtE: out std_logic_vector(4 downto 0);
+				AluOutW: out std_logic_vector(31 downto 0)
 				--StallF, StallD, FlushE: in std_logic;
 				--Zero: out std_logic;
 				--MemWriteD: in std_logic;
@@ -36,24 +43,29 @@ use ieee.numeric_std.all;
  end component;
  
  component Hazard is
-	port (clk: in std_logic;
+	port (--clk: in std_logic;
 		   FowardAE, FowardBE: out std_logic;
 		   RegWriteW: in std_logic;
 		   WriteRegW, RsE, RtE: in std_logic_vector(4 downto 0)
 		  );
  end component;
 
-signal clk: std_logic;
-signal RegDst, ALUSrc, RegWrite, RegWriteW: std_logic;
+signal RegDst, ALUSrc, RegWrite_wire, RegWriteW_wire: std_logic;
 signal ALUControl: std_logic_vector(1 downto 0);
 signal op, funct: std_logic_vector(5 downto 0);
 signal FowardAE, FowardBE: std_logic;
-signal WriteRegW, RsE, RtE: std_logic_vector(4 downto 0);
+signal WriteRegW_wire, RsE_wire, RtE_wire: std_logic_vector(4 downto 0);
+signal AluOutW_wire: std_logic_vector(31 downto 0);
 
 begin
-Caminho_de_dados: datapath port map(clk=>clk, Op=>op, Funct=>funct, RegDst=>RegDst, ALUSrc=>ALUSrc, RegWrite=>RegWrite, ALUControl=>ALUControl, FowardAE=>FowardAE, FowardBE=>FowardBE, RegWriteW=>RegWriteW, WriteRegW=>WriteRegW, RsE=>RsE, RtE=>RtE);
-Controladora: Control port map(op=>op, funct=>funct, ALUControlID=>ALUControl, RegDst=>RegDst, RegWrite=>RegWrite, ALUSrc=>ALUSrc);
-Unidade_de_Hazard: Hazard port map(clk=>clk, FowardAE=>FowardAE, FowardBE=>FowardBE, RegWriteW=>RegWriteW, WriteRegW=>WriteRegW, RsE=>RsE, RtE=>RtE);
+Caminho_de_dados: datapath port map(clk=>clk, Instr=>Instr, Op=>op, Funct=>funct, RegDst=>RegDst, ALUSrc=>ALUSrc, RegWrite=>RegWrite_wire, ALUControl=>ALUControl, FowardAE=>FowardAE, FowardBE=>FowardBE, RegWriteW=>RegWriteW_wire, WriteRegW=>WriteRegW_wire, RsE=>RsE_wire, RtE=>RtE_wire, AluOutW=>AluOutW_wire);
+Controladora: Control port map(op=>op, funct=>funct, ALUControlID=>ALUControl, RegDst=>RegDst, RegWrite=>RegWrite_wire, ALUSrc=>ALUSrc);
+Unidade_de_Hazard: Hazard port map(FowardAE=>FowardAE, FowardBE=>FowardBE, RegWriteW=>RegWriteW_wire, WriteRegW=>WriteRegW_wire, RsE=>RsE_wire, RtE=>RtE_wire);
+
+
+RegWriteW <= RegWriteW_wire;
+WriteRegW <= WriteRegW_wire;
+AluOutW <= AluOutW_wire;
 
 
 end struct;
