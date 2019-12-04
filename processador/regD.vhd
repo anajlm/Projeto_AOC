@@ -7,7 +7,7 @@ entity regD is
 	port (
 		clock : in std_logic;
 		RD : in std_logic_vector (31 downto 0);
-		InstrD : out std_logic_vector (31 downto 0):=x"00000000"
+		InstrD : out std_logic_vector (31 downto 0):=x"f0000000"
 		--stallD: in std_logic;
 	);
 end regD;
