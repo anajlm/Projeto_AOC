@@ -1,0 +1,79 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\ALUNOS\Desktop\Projeto_AOC-master\Pipeline\Hazard\simulation\modelsim
+Ehazard
+Z1 w1575297737
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\ALUNOS\Desktop\Projeto_AOC-master\Pipeline\Hazard\simulation\modelsim
+Z6 8C:/Users/ALUNOS/Desktop/Projeto_AOC-master/Pipeline/Hazard/Hazard.vhd
+Z7 FC:/Users/ALUNOS/Desktop/Projeto_AOC-master/Pipeline/Hazard/Hazard.vhd
+l0
+L7
+Vo=eDX1^5K@k9RPSi^knjM3
+Z8 OV;C;10.1d;51
+31
+Z9 !s108 1575297811.013000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/ALUNOS/Desktop/Projeto_AOC-master/Pipeline/Hazard/Hazard.vhd|
+Z11 !s107 C:/Users/ALUNOS/Desktop/Projeto_AOC-master/Pipeline/Hazard/Hazard.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+!s100 2YSRVkIHE@__=gT08g7zl2
+!i10b 1
+Astruct
+R2
+R3
+R4
+DEx4 work 6 hazard 0 22 o=eDX1^5K@k9RPSi^knjM3
+l18
+L16
+V[FYdHkM@HN83IgfXJ5e:m0
+R8
+31
+R9
+R10
+R11
+R12
+R13
+!s100 aaDGzY8]2GAzA@:5l34Pl0
+!i10b 1
+Etb_hazard
+Z14 w1575296853
+R2
+R3
+R4
+R5
+Z15 8C:/Users/ALUNOS/Desktop/Projeto_AOC-master/Pipeline/Hazard/tb_Hazard.vhd
+Z16 FC:/Users/ALUNOS/Desktop/Projeto_AOC-master/Pipeline/Hazard/tb_Hazard.vhd
+l0
+L5
+VnB=AdoSX6Y9EOaEC32AVF0
+!s100 ?mDj>C0>5:LP>^6^zE;ZE0
+R8
+31
+!i10b 1
+Z17 !s108 1575297811.422000
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/ALUNOS/Desktop/Projeto_AOC-master/Pipeline/Hazard/tb_Hazard.vhd|
+Z19 !s107 C:/Users/ALUNOS/Desktop/Projeto_AOC-master/Pipeline/Hazard/tb_Hazard.vhd|
+R12
+R13
+Acomportamento
+R2
+R3
+R4
+DEx4 work 9 tb_hazard 0 22 nB=AdoSX6Y9EOaEC32AVF0
+l20
+L8
+V?h`i=2oUKMJ]^N4gOD;501
+!s100 emg46BzonEi?`cJ8=J=A^3
+R8
+31
+!i10b 1
+R17
+R18
+R19
+R12
+R13

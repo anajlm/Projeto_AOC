@@ -1,0 +1,135 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+
+entity processador is 
+	port(
+		PC_atual_out 	: out std_logic_vector(31 downto 0);
+		RD 				: in std_logic_vector(31 downto 0);
+		RsA1, RtA2		: out std_logic_vector(4 downto 0);
+		RD1, RD2			: in std_logic_vector(31 downto 0);
+		ALUOutW			: out std_logic_vector(31 downto 0);
+		WriteRegW_out	: out std_logic_vector(31 downto 0)
+	);
+end processador;
+
+architecture comportamento of processador is
+	component regPC is
+	port (
+		clock : in std_logic;
+		entrada : in std_logic_vector (31 downto 0);
+		saida : out std_logic_vector (31 downto 0):=x"00000000"
+	);
+	end component;
+	
+	component somador is --somador do PC
+	port(
+		in1, in2 	: in std_logic_vector(31 downto 0);
+		result		: out std_logic_vector(31 downto 0)
+	);
+	end component;
+	
+	component regD is
+	port (
+		clock : in std_logic;
+		RD : in std_logic_vector (31 downto 0);
+		InstrD : out std_logic_vector (31 downto 0)
+		--stallD: in std_logic;
+	);
+	end component;
+	
+	component divisor_sinal is
+	port(
+		InstrD	: in std_logic_vector(31 downto 0);
+		Op			: out std_logic_vector(5 downto 0);
+		Funct		: out std_logic_vector(5 downto 0);
+		RsA1		: out std_logic_vector(4 downto 0);
+		RtA2		: out std_logic_vector(4 downto 0);
+		RsD		: out std_logic_vector(4 downto 0);
+		RtD		: out std_logic_vector(4 downto 0);
+		RdD		: out std_logic_vector(4 downto 0);
+		Imm		: out std_logic_vector(15 downto 0)
+	);
+	end component;
+	
+	component Control is
+	port(	op, funct : in std_logic_vector(5 downto 0);
+		   RegDst, ALUSrc : out std_logic;
+			ALUControlID     : out std_logic_vector(1 downto 0);
+			RegWrite: out std_logic
+	    );
+	end component;
+	
+	component SignExtend is 
+	port(
+		Imm: in STD_LOGIC_VECTOR(15 downto 0);	
+		SignImmD: out STD_LOGIC_VECTOR(31 downto 0)
+	);
+	end component;
+	
+	component regE is
+	port (
+		clock : in std_logic;
+		RD1, RD2 : in std_logic_vector (31 downto 0);
+		RD1s, RD2s : out std_logic_vector (31 downto 0);
+		RsD, RtD, RdD : in std_logic_vector(4 downto 0);
+		RsE, RtE, RdE : out std_logic_vector(4 downto 0);
+		RegDstD, ALUSrcD, RegWriteD : in std_logic;
+		RegDstE, ALUSrcE, RegWriteE : out std_logic;
+		ALUControlD : in std_logic_vector(1 downto 0);
+		ALUControlE : out std_logic_vector(1 downto 0);
+		SignImmD: in std_logic_vector(31 downto 0); 
+		SignImmE: out std_logic_vector(31 downto 0) 
+		--flushE: in std_logic;
+	);
+	end component;
+	
+	component Mux2x1_5bits is
+	port(	
+		selection : in std_logic;
+		inA, inB : in std_logic_vector (4 downto 0);
+		outMux     : out std_logic_vector (4 downto 0)
+	);
+	end component;
+	
+	component Mux2x1_32bits is
+	port(	
+		selection : in std_logic;
+		inA, inB : in std_logic_vector (31 downto 0);
+		outMux     : out std_logic_vector (31 downto 0)
+	);
+	end component;
+	
+	component ALU is
+	port(
+		SrcA, SrcB 	: in std_logic_vector(31 downto 0);
+		ALUOut		: out std_logic_vector(31 downto 0);
+		ALUControl	: in std_logic_vector(1 downto 0)
+	);
+	end component;
+	
+	component regW is
+	port (
+		clock : in std_logic;
+		ALUOut : in std_logic_vector (31 downto 0);
+		ALUOutW : out std_logic_vector (31 downto 0);
+		WriteRegE : in std_logic_vector(4 downto 0);
+		WriteRegW : out std_logic_vector(4 downto 0);
+		RegWriteE : in std_logic;
+		RegWriteW : out std_logic
+	);
+	end component;
+	
+	component Hazard is
+	port (clk: in std_logic;
+		  FowardAE, FowardBE: out std_logic;
+		  RegWriteW: in std_logic;
+		  WriteRegW, RsE, RtE: in std_logic_vector(4 downto 0)
+		);
+	end component;
+	
+	begin
+	
+	
+	

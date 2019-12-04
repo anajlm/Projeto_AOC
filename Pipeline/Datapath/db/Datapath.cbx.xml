@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="Datapath">
+		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|register_file:RF|altsyncram:registers_rtl_0" CBX_FILE_NAME="altsyncram_dfh1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|register_file:RF|altsyncram:registers_rtl_1" CBX_FILE_NAME="altsyncram_dfh1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

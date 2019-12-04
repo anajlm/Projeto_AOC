@@ -1,0 +1,30 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity tb_processador is
+end tb_processador;
+
+architecture comportamento of tb_processador is
+component processador is 
+	port(
+		clock				: in std_logic;
+		PC_atual_out 	: out std_logic_vector(31 downto 0);
+		RD 				: in std_logic_vector(31 downto 0);
+		RsA1, RtA2		: out std_logic_vector(4 downto 0);
+		RD1, RD2			: in std_logic_vector(31 downto 0);
+		ALUOutW_out		: out std_logic_vector(31 downto 0);
+		WriteRegW_out	: out std_logic_vector(4 downto 0);
+		RegWriteW_out	: out std_logic
+	);
+end component;
+
+signal clock: std_logic;
+
+begin
+	instancia_processador: processador port map(clock);
+
+clock<=not(clock) after 10 ns;
+
+
+end comportamento;

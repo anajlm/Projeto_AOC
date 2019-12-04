@@ -1,0 +1,609 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\Projeto_AOC-master\Pipeline\simulation\modelsim
+Ealu
+Z1 w1575300150
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dE:\Projeto_AOC-master\Pipeline\simulation\modelsim
+Z6 8E:/Projeto_AOC-master/Pipeline/Datapath/ALU.vhd
+Z7 FE:/Projeto_AOC-master/Pipeline/Datapath/ALU.vhd
+l0
+L6
+VOi_<gX=nPTTm4konU^c[61
+Z8 OV;C;10.1d;51
+31
+Z9 !s108 1575383274.812000
+Z10 !s90 -reportprogress|300|-93|-work|work|E:/Projeto_AOC-master/Pipeline/Datapath/ALU.vhd|
+Z11 !s107 E:/Projeto_AOC-master/Pipeline/Datapath/ALU.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+!s100 AUN`@[^2:cBXoA4zb^fGE2
+!i10b 1
+Acomportamento
+R2
+R3
+R4
+DEx4 work 3 alu 0 22 Oi_<gX=nPTTm4konU^c[61
+l16
+L14
+VfF]CK5i5A3ehVfJQmI8cR2
+R8
+31
+R9
+R10
+R11
+R12
+R13
+!s100 6Wdd=7k>b4::PEmfWjjdK1
+!i10b 1
+Econtrol
+R1
+Z14 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z15 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+R2
+R3
+R4
+R5
+Z16 8E:/Projeto_AOC-master/Pipeline/Controladora/Control.vhd
+Z17 FE:/Projeto_AOC-master/Pipeline/Controladora/Control.vhd
+l0
+L6
+V7Lo]@[OKHibEmb>hdV?:D0
+R8
+31
+Z18 !s108 1575383285.354000
+Z19 !s90 -reportprogress|300|-93|-work|work|E:/Projeto_AOC-master/Pipeline/Controladora/Control.vhd|
+Z20 !s107 E:/Projeto_AOC-master/Pipeline/Controladora/Control.vhd|
+R12
+R13
+!s100 1O:n99SjQSiW]GY0@e6_>3
+!i10b 1
+Alogic
+R14
+R15
+R2
+R3
+R4
+DEx4 work 7 control 0 22 7Lo]@[OKHibEmb>hdV?:D0
+l15
+L14
+VSZFRUBX]`[Ig81gk<7@6Q3
+R8
+31
+R18
+R19
+R20
+R12
+R13
+!s100 Zh?:H9Men0`aQldgCH?6]1
+!i10b 1
+Edatapath
+Z21 w1575380972
+R2
+R3
+R4
+R5
+Z22 8E:/Projeto_AOC-master/Pipeline/Datapath/Datapath.vhd
+Z23 FE:/Projeto_AOC-master/Pipeline/Datapath/Datapath.vhd
+l0
+L8
+Vl9a>XQR;4aIV2hEjZERl:3
+R8
+31
+Z24 !s108 1575383284.571000
+Z25 !s90 -reportprogress|300|-93|-work|work|E:/Projeto_AOC-master/Pipeline/Datapath/Datapath.vhd|
+Z26 !s107 E:/Projeto_AOC-master/Pipeline/Datapath/Datapath.vhd|
+R12
+R13
+!s100 U:[nc4:;jG5zQO]5KKeMF3
+!i10b 1
+Astruct
+R2
+R3
+R4
+DEx4 work 8 datapath 0 22 l9a>XQR;4aIV2hEjZERl:3
+l171
+L26
+Vz6zDhgnon;X0J5^fk3]7N2
+R8
+31
+R24
+R25
+R26
+R12
+R13
+!s100 41^e4KN:;V9T9=3BEkNT11
+!i10b 1
+Edivisor_sinal
+R1
+R2
+R3
+R4
+R5
+Z27 8E:/Projeto_AOC-master/Pipeline/Datapath/divisor_sinal.vhd
+Z28 FE:/Projeto_AOC-master/Pipeline/Datapath/divisor_sinal.vhd
+l0
+L5
+VR^DdB0J7nO4k;iMzO235W0
+R8
+31
+Z29 !s108 1575383281.171000
+Z30 !s90 -reportprogress|300|-93|-work|work|E:/Projeto_AOC-master/Pipeline/Datapath/divisor_sinal.vhd|
+Z31 !s107 E:/Projeto_AOC-master/Pipeline/Datapath/divisor_sinal.vhd|
+R12
+R13
+!s100 C_mX2m9?DCCX26^0LU5]H1
+!i10b 1
+Acomportamento
+R2
+R3
+R4
+DEx4 work 13 divisor_sinal 0 22 R^DdB0J7nO4k;iMzO235W0
+l21
+L19
+VGnHdU8FW4<iUZC=?0_?_[2
+R8
+31
+R29
+R30
+R31
+R12
+R13
+!s100 ;f<UnahGh0Ef2mYYOCBg_2
+!i10b 1
+Ehazard
+Z32 w1575372398
+R2
+R3
+R4
+R5
+Z33 8E:/Projeto_AOC-master/Pipeline/Hazard/Hazard.vhd
+Z34 FE:/Projeto_AOC-master/Pipeline/Hazard/Hazard.vhd
+l0
+L7
+Vlo2D1SLVh@T:Rooh0^@>>1
+R8
+31
+Z35 !s108 1575383283.344000
+Z36 !s90 -reportprogress|300|-93|-work|work|E:/Projeto_AOC-master/Pipeline/Hazard/Hazard.vhd|
+Z37 !s107 E:/Projeto_AOC-master/Pipeline/Hazard/Hazard.vhd|
+R12
+R13
+!s100 L_7jD4WbGolRK?MhNjH311
+!i10b 1
+Astruct
+R2
+R3
+R4
+DEx4 work 6 hazard 0 22 lo2D1SLVh@T:Rooh0^@>>1
+l18
+L16
+VA6`07CNW[7iKF6KBDa=^01
+R8
+31
+R35
+R36
+R37
+R12
+R13
+!s100 ?MgF@MeGdR[k13Q9e?JBo1
+!i10b 1
+Emux2x1_32bits
+R1
+R14
+R15
+R2
+R3
+R4
+R5
+Z38 8E:/Projeto_AOC-master/Pipeline/Datapath/Mux2x1_32bits.vhd
+Z39 FE:/Projeto_AOC-master/Pipeline/Datapath/Mux2x1_32bits.vhd
+l0
+L6
+VA1iMBKVB`VF1n`0imac=[1
+R8
+31
+Z40 !s108 1575383279.708000
+Z41 !s90 -reportprogress|300|-93|-work|work|E:/Projeto_AOC-master/Pipeline/Datapath/Mux2x1_32bits.vhd|
+Z42 !s107 E:/Projeto_AOC-master/Pipeline/Datapath/Mux2x1_32bits.vhd|
+R12
+R13
+!s100 oA3RiC_Y3X>LFR]VT0d3F2
+!i10b 1
+Alogic
+R14
+R15
+R2
+R3
+R4
+DEx4 work 13 mux2x1_32bits 0 22 A1iMBKVB`VF1n`0imac=[1
+l15
+L14
+VIR[]:7hzZ8dWW3m:<V[TA0
+R8
+31
+R40
+R41
+R42
+R12
+R13
+!s100 X[VXZlMK?M3jEC^ck9Zf[1
+!i10b 1
+Emux2x1_5bits
+R1
+R14
+R15
+R2
+R3
+R4
+R5
+Z43 8E:/Projeto_AOC-master/Pipeline/Datapath/Mux2x1_5bits.vhd
+Z44 FE:/Projeto_AOC-master/Pipeline/Datapath/Mux2x1_5bits.vhd
+l0
+L6
+VOUB1e^Z^m0F88z[eFoUM<1
+R8
+31
+Z45 !s108 1575383280.449000
+Z46 !s90 -reportprogress|300|-93|-work|work|E:/Projeto_AOC-master/Pipeline/Datapath/Mux2x1_5bits.vhd|
+Z47 !s107 E:/Projeto_AOC-master/Pipeline/Datapath/Mux2x1_5bits.vhd|
+R12
+R13
+!s100 DMSHd1nAClDEjnMb98aR:0
+!i10b 1
+Alogic
+R14
+R15
+R2
+R3
+R4
+DEx4 work 12 mux2x1_5bits 0 22 OUB1e^Z^m0F88z[eFoUM<1
+l15
+L14
+VEbld:7_5:89Qm=QUm1ijW2
+R8
+31
+R45
+R46
+R47
+R12
+R13
+!s100 Ad55n5NlDPQomUfSji2^N1
+!i10b 1
+Epipeline
+Z48 w1575381708
+R2
+R3
+R4
+R5
+Z49 8E:/Projeto_AOC-master/Pipeline/Pipeline.vhd
+Z50 FE:/Projeto_AOC-master/Pipeline/Pipeline.vhd
+l0
+L6
+V`f9X?Mo2RQi[EbD8XozC;2
+R8
+31
+Z51 !s108 1575383286.125000
+Z52 !s90 -reportprogress|300|-93|-work|work|E:/Projeto_AOC-master/Pipeline/Pipeline.vhd|
+Z53 !s107 E:/Projeto_AOC-master/Pipeline/Pipeline.vhd|
+R12
+R13
+!s100 5^>nOb>Z245]KW2mkgLCL0
+!i10b 1
+Astruct
+R2
+R3
+R4
+DEx4 work 8 pipeline 0 22 `f9X?Mo2RQi[EbD8XozC;2
+l60
+L16
+VJHLGFYiEdc4EQNDCHD3[e3
+R8
+31
+R51
+R52
+R53
+R12
+R13
+!s100 I`SHGm@HiP?HAoGTEEnZz3
+!i10b 1
+Eregd
+R1
+R2
+R3
+R4
+R5
+Z54 8E:/Projeto_AOC-master/Pipeline/Datapath/regD.vhd
+Z55 FE:/Projeto_AOC-master/Pipeline/Datapath/regD.vhd
+l0
+L6
+VlBH0ENHi0BD4gN>z6PF4M2
+R8
+31
+Z56 !s108 1575383278.996000
+Z57 !s90 -reportprogress|300|-93|-work|work|E:/Projeto_AOC-master/Pipeline/Datapath/regD.vhd|
+Z58 !s107 E:/Projeto_AOC-master/Pipeline/Datapath/regD.vhd|
+R12
+R13
+!s100 @]a1X:O5d<VGBie03mh7b1
+!i10b 1
+Acomportamento
+R2
+R3
+R4
+DEx4 work 4 regd 0 22 lBH0ENHi0BD4gN>z6PF4M2
+l17
+L15
+V:oofSQ^Ra?jcQTJzmMOg@0
+R8
+31
+R56
+R57
+R58
+R12
+R13
+!s100 aA:3Sm]`TJY>L[49gcNCD2
+!i10b 1
+Erege
+R1
+R2
+R3
+R4
+R5
+Z59 8E:/Projeto_AOC-master/Pipeline/Datapath/regE.vhd
+Z60 FE:/Projeto_AOC-master/Pipeline/Datapath/regE.vhd
+l0
+L6
+VF0[X[?dI_7LAHS6ZJD8:O0
+R8
+31
+Z61 !s108 1575383278.251000
+Z62 !s90 -reportprogress|300|-93|-work|work|E:/Projeto_AOC-master/Pipeline/Datapath/regE.vhd|
+Z63 !s107 E:/Projeto_AOC-master/Pipeline/Datapath/regE.vhd|
+R12
+R13
+!s100 e5WXTRVi8@KhN3o[ZXNaC0
+!i10b 1
+Acomportamento
+R2
+R3
+R4
+DEx4 work 4 rege 0 22 F0[X[?dI_7LAHS6ZJD8:O0
+l25
+L23
+V5iCflo>cF^D]]Sfz4=??k0
+R8
+31
+R61
+R62
+R63
+R12
+R13
+!s100 Ug4fW]_Jj?9m]R4P=3@IY0
+!i10b 1
+Eregister_file
+Z64 w1575377992
+R2
+R3
+R4
+R5
+Z65 8E:/Projeto_AOC-master/Pipeline/Datapath/register_file.vhd
+Z66 FE:/Projeto_AOC-master/Pipeline/Datapath/register_file.vhd
+l0
+L5
+VmeoE6Y_XK02gXWG<eigmY0
+R8
+31
+Z67 !s108 1575383274.095000
+Z68 !s90 -reportprogress|300|-93|-work|work|E:/Projeto_AOC-master/Pipeline/Datapath/register_file.vhd|
+Z69 !s107 E:/Projeto_AOC-master/Pipeline/Datapath/register_file.vhd|
+R12
+R13
+!s100 ]d^4l0jhj?6T]1_;LNkJo0
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+DEx4 work 13 register_file 0 22 meoE6Y_XK02gXWG<eigmY0
+l22
+L19
+V^o;2Ld6NokDH94m0FUA=S3
+R8
+31
+R67
+R68
+R69
+R12
+R13
+!s100 EnONihD4>QQ[WF:Rd?mgo0
+!i10b 1
+Eregpc
+Z70 w1575382794
+R2
+R3
+R4
+R5
+Z71 8E:/Projeto_AOC-master/Pipeline/Datapath/regPC.vhd
+Z72 FE:/Projeto_AOC-master/Pipeline/Datapath/regPC.vhd
+l0
+L6
+V@1Jda@eY]LPbISH<4[7c60
+R8
+31
+Z73 !s108 1575383277.559000
+Z74 !s90 -reportprogress|300|-93|-work|work|E:/Projeto_AOC-master/Pipeline/Datapath/regPC.vhd|
+Z75 !s107 E:/Projeto_AOC-master/Pipeline/Datapath/regPC.vhd|
+R12
+R13
+!s100 IXGa[>T`UlgZA7@:^V5in0
+!i10b 1
+Acomportamento
+R2
+R3
+R4
+DEx4 work 5 regpc 0 22 @1Jda@eY]LPbISH<4[7c60
+l17
+L15
+V[zM]lnBm0Jh0]R=]i=hTH2
+R8
+31
+R73
+R74
+R75
+R12
+R13
+!s100 ImBThfjGC@2i2K]9JU3fC1
+!i10b 1
+Eregw
+R1
+R2
+R3
+R4
+R5
+Z76 8E:/Projeto_AOC-master/Pipeline/Datapath/regW.vhd
+Z77 FE:/Projeto_AOC-master/Pipeline/Datapath/regW.vhd
+l0
+L6
+Vj66AeD??g@LH>DOi4Kefg3
+R8
+31
+Z78 !s108 1575383276.857000
+Z79 !s90 -reportprogress|300|-93|-work|work|E:/Projeto_AOC-master/Pipeline/Datapath/regW.vhd|
+Z80 !s107 E:/Projeto_AOC-master/Pipeline/Datapath/regW.vhd|
+R12
+R13
+!s100 Y<TVAbAAGSA4UNa<I`Zzn0
+!i10b 1
+Acomportamento
+R2
+R3
+R4
+DEx4 work 4 regw 0 22 j66AeD??g@LH>DOi4Kefg3
+l20
+L18
+Va;IzSaUlM_KPGVE;1EPkn1
+R8
+31
+R78
+R79
+R80
+R12
+R13
+!s100 Dk=8mMGQG_Y=;zzg1;`8G3
+!i10b 1
+Esignextend
+R1
+R3
+R4
+R5
+Z81 8E:/Projeto_AOC-master/Pipeline/Datapath/SignExtend.vhd
+Z82 FE:/Projeto_AOC-master/Pipeline/Datapath/SignExtend.vhd
+l0
+L4
+VIR2hzQaRbo;ahmh]e@5a;2
+R8
+31
+Z83 !s108 1575383276.185000
+Z84 !s90 -reportprogress|300|-93|-work|work|E:/Projeto_AOC-master/Pipeline/Datapath/SignExtend.vhd|
+Z85 !s107 E:/Projeto_AOC-master/Pipeline/Datapath/SignExtend.vhd|
+R12
+R13
+!s100 cz3XlgKl9h7o>N:7cJzK:0
+!i10b 1
+Astruct
+R3
+R4
+DEx4 work 10 signextend 0 22 IR2hzQaRbo;ahmh]e@5a;2
+l16
+L12
+V:Kc=LaI6;RfWRNSkM[aQ=1
+R8
+31
+R83
+R84
+R85
+R12
+R13
+!s100 UH?G:R9GLGV4=Mh`dbag91
+!i10b 1
+Esomador
+R1
+R2
+R3
+R4
+R5
+Z86 8E:/Projeto_AOC-master/Pipeline/Datapath/somador.vhd
+Z87 FE:/Projeto_AOC-master/Pipeline/Datapath/somador.vhd
+l0
+L6
+V8C44NK_bWe:SFWjLlTibC1
+R8
+31
+Z88 !s108 1575383275.499000
+Z89 !s90 -reportprogress|300|-93|-work|work|E:/Projeto_AOC-master/Pipeline/Datapath/somador.vhd|
+Z90 !s107 E:/Projeto_AOC-master/Pipeline/Datapath/somador.vhd|
+R12
+R13
+!s100 aS4JAIYX@[2<UEf>f`o?T0
+!i10b 1
+Acomportamento
+R2
+R3
+R4
+DEx4 work 7 somador 0 22 8C44NK_bWe:SFWjLlTibC1
+l15
+L13
+VO`Q4UdPJlo2Le;[OgAS622
+R8
+31
+R88
+R89
+R90
+R12
+R13
+!s100 ;Q07j=i]IYIB?DO]]n4SO0
+!i10b 1
+Etb_pipeline
+Z91 w1575382892
+Z92 DPx4 ieee 16 std_logic_textio 0 22 ?Il0a149GV276[?[UMDWh2
+R2
+R3
+R4
+R5
+Z93 8E:/Projeto_AOC-master/Pipeline/tb_Pipeline.vhd
+Z94 FE:/Projeto_AOC-master/Pipeline/tb_Pipeline.vhd
+l0
+L7
+VbI=zA2ST0`if<1ka=n?711
+!s100 JbmX?`@DfBA_QG1<i?AAa0
+R8
+31
+!i10b 1
+Z95 !s108 1575383286.885000
+Z96 !s90 -reportprogress|300|-93|-work|work|E:/Projeto_AOC-master/Pipeline/tb_Pipeline.vhd|
+Z97 !s107 E:/Projeto_AOC-master/Pipeline/tb_Pipeline.vhd|
+R12
+R13
+Ateste
+R92
+R2
+R3
+R4
+DEx4 work 11 tb_pipeline 0 22 bI=zA2ST0`if<1ka=n?711
+l32
+L12
+VX<YYX7186;XFf>]JXUNPA0
+!s100 0AG_Jfz9[RQPLIQYz9YK>3
+R8
+31
+!i10b 1
+R95
+R96
+R97
+R12
+R13
