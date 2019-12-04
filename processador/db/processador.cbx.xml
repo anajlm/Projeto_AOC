@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="processador">
+		<CBX_INST_ENTRY INSTANCE_NAME="|processador|register_file:instancia_reg_file|altsyncram:registers_rtl_0" CBX_FILE_NAME="altsyncram_bqh1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|processador|register_file:instancia_reg_file|altsyncram:registers_rtl_1" CBX_FILE_NAME="altsyncram_bqh1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

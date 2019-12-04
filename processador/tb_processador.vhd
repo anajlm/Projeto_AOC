@@ -1,0 +1,77 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use ieee.std_logic_textio.all;
+use std.textio.all;
+use ieee.numeric_std.all;
+
+entity tb_processador is
+end tb_processador;
+
+architecture comportamento of tb_processador is
+component processador is 
+	port(
+		clock				: in std_logic;
+		PC_atual_out 	: out std_logic_vector(31 downto 0);
+		RD 				: in std_logic_vector(31 downto 0);
+		--RsA1, RtA2		: out std_logic_vector(4 downto 0);
+		--RD1, RD2			: in std_logic_vector(31 downto 0);
+		ALUOutW_out		: out std_logic_vector(31 downto 0);
+		WriteRegW_out	: out std_logic_vector(4 downto 0);
+		RegWriteW_out	: out std_logic
+	);
+end component;
+
+signal clock : std_logic := '0';
+signal PC_atual_out 	: std_logic_vector(31 downto 0);
+signal RD 				: std_logic_vector(31 downto 0);
+signal ALUOutW_out	: std_logic_vector(31 downto 0);
+signal WriteRegW_out	: std_logic_vector(4 downto 0);
+signal RegWriteW_out	: std_logic;
+
+--file memory : text open read_mode is "instruction_memory.txt"
+--file reg : text open write_mode is "registradores.txt";
+
+--constant TEMPO     : time := 5 ns;
+
+begin
+	instancia_processador: processador port map(clock, PC_atual_out, RD, ALUOutW_out, WriteRegW_out, RegWriteW_out);
+	clock<=not(clock) after 5 ns;
+	
+--	process
+--	file memory : text open read_mode is "instruction_memory.txt";
+--	variable linha : line;
+--	variable input : std_logic_vector(31 downto 0);
+--	variable count : integer;
+--	begin
+--	count:=to_integer(unsigned(PC_atual_out));
+--	count:=count/4;
+--	for i in 0 to count loop
+--		if (not endfile(memory)) then
+--			readline(memory,linha);
+--		else
+--			wait;
+--		end if;
+--	end loop;
+--	read(linha, input);
+--	RD<=input;
+--	end process;
+
+	RD<=x"2011000e", x"02319020" after 14 ns, x"02519825" after 24 ns, x"0233a024" after 34 ns, x"0234a822" after 44 ns, x"0234a822" after 54 ns;  
+	
+--	process
+--	variable linha1 : line;
+--	variable linha2 : line;
+--	variable output1 : std_logic_vector(4 downto 0);
+--	variable output2 : std_logic_vector(31 downto 0);
+--	begin
+--	if(RegWriteW_out='1') then
+--		output1 := WriteRegW_out;
+--		write(linha1, output1);
+--		writeline(reg, linha1);
+--		output2 := ALUOutW_out;
+--		write(linha2, output2);
+--		writeline(reg, linha2);
+--	end if;
+--	end process;
+end comportamento;
