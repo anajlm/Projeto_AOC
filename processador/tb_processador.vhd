@@ -30,13 +30,31 @@ signal WriteRegW_out	: std_logic_vector(4 downto 0);
 signal RegWriteW_out	: std_logic;
 
 --file memory : text open read_mode is "instruction_memory.txt"
---file reg : text open write_mode is "registradores.txt";
+file reg : text open write_mode is "registradores.txt";
 
 --constant TEMPO     : time := 5 ns;
 
 begin
 	instancia_processador: processador port map(clock, PC_atual_out, RD, ALUOutW_out, WriteRegW_out, RegWriteW_out);
 	clock<=not(clock) after 5 ns;
+	
+	process(PC_atual_out)
+	begin
+		if (PC_atual_out=x"00000000") then
+			RD<=x"2011000e";
+		elsif (PC_atual_out=x"00000004") then
+			RD<=x"02319020";
+		elsif (PC_atual_out=x"00000008") then
+			RD<=x"02519825";
+		elsif (PC_atual_out=x"0000000c") then
+			RD<=x"0233a024";
+		elsif (PC_atual_out=x"00000010") then
+			RD<=x"0234a822";
+		else 
+			RD<=x"f0000000";
+		end if;
+	end process;
+		
 	
 --	process
 --	file memory : text open read_mode is "instruction_memory.txt";
@@ -57,21 +75,24 @@ begin
 --	RD<=input;
 --	end process;
 
-	RD<=x"2011000e", x"02319020" after 14 ns, x"02519825" after 24 ns, x"0233a024" after 34 ns, x"0234a822" after 44 ns, x"0234a822" after 54 ns;  
+	--RD<=x"2011000e", x"02319020" after 14 ns, x"02519825" after 24 ns, x"0233a024" after 34 ns, x"0234a822" after 44 ns, x"0234a822" after 54 ns;  
 	
 --	process
 --	variable linha1 : line;
---	variable linha2 : line;
+----	variable linha2 : line;
 --	variable output1 : std_logic_vector(4 downto 0);
---	variable output2 : std_logic_vector(31 downto 0);
+----	variable output2 : std_logic_vector(31 downto 0);
 --	begin
---	if(RegWriteW_out='1') then
---		output1 := WriteRegW_out;
---		write(linha1, output1);
---		writeline(reg, linha1);
---		output2 := ALUOutW_out;
---		write(linha2, output2);
---		writeline(reg, linha2);
---	end if;
+--	while true loop
+--	wait for 3 ns;
+--		if(RegWriteW_out='1') then
+--			output1 := WriteRegW_out;
+--			write(linha1, to_integer(unsigned(output1)));
+--			writeline(reg, linha1);
+--			--output2 := ALUOutW_out;
+--			--write(linha2, output2);
+--			--writeline(reg, linha2);
+--		end if;
+--	end loop;
 --	end process;
 end comportamento;
