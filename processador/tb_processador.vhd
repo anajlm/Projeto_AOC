@@ -29,10 +29,7 @@ signal ALUOutW_out	: std_logic_vector(31 downto 0);
 signal WriteRegW_out	: std_logic_vector(4 downto 0);
 signal RegWriteW_out	: std_logic;
 
---file memory : text open read_mode is "instruction_memory.txt"
-file reg : text open write_mode is "registradores.txt";
-
---constant TEMPO     : time := 5 ns;
+--file   reg  	: text open write_mode is "registradores.txt";
 
 begin
 	instancia_processador: processador port map(clock, PC_atual_out, RD, ALUOutW_out, WriteRegW_out, RegWriteW_out);
@@ -54,30 +51,9 @@ begin
 			RD<=x"f0000000";
 		end if;
 	end process;
-		
 	
---	process
---	file memory : text open read_mode is "instruction_memory.txt";
---	variable linha : line;
---	variable input : std_logic_vector(31 downto 0);
---	variable count : integer;
---	begin
---	count:=to_integer(unsigned(PC_atual_out));
---	count:=count/4;
---	for i in 0 to count loop
---		if (not endfile(memory)) then
---			readline(memory,linha);
---		else
---			wait;
---		end if;
---	end loop;
---	read(linha, input);
---	RD<=input;
---	end process;
 
-	--RD<=x"2011000e", x"02319020" after 14 ns, x"02519825" after 24 ns, x"0233a024" after 34 ns, x"0234a822" after 44 ns, x"0234a822" after 54 ns;  
-	
---	process
+--	write_reg:process
 --	variable linha1 : line;
 ----	variable linha2 : line;
 --	variable output1 : std_logic_vector(4 downto 0);
@@ -93,6 +69,7 @@ begin
 --			--write(linha2, output2);
 --			--writeline(reg, linha2);
 --		end if;
+--		wait for 3 ns;
 --	end loop;
---	end process;
+--	end process write_reg;
 end comportamento;

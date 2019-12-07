@@ -1,5 +1,5 @@
    .data 
-   Lixo1: .asciiz "Execute value: "
+   teste: .asciiz "Execute value: "
 #   #Lixo2: .asciiz "Execute value: "
 #   #Lixo3: .asciiz "Execute value: "
    Executev: .asciiz "Execute value: "

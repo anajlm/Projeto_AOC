@@ -168,7 +168,7 @@
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
-# run -all
+# run 100 ns
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 0 ps  Iteration: 0  Instance: /tb_processador/instancia_processador/instancia_control
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
@@ -191,5 +191,3 @@
 #    Time: 0 ps  Iteration: 0  Instance: /tb_processador/instancia_processador/instancia_reg_file
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /tb_processador/instancia_processador/instancia_reg_file
-# Break key hit 
-# Break in Architecture comportamento at C:/Users/felip/Documents/GitHub/Projeto_AOC/processador/somador.vhd line 16

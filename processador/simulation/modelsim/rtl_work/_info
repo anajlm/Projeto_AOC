@@ -16,7 +16,7 @@ L6
 VOi_<gX=nPTTm4konU^c[61
 Z8 OV;C;10.1d;51
 31
-Z9 !s108 1575482336.866000
+Z9 !s108 1575667002.826000
 Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/felip/Documents/GitHub/Projeto_AOC/processador/ALU.vhd|
 Z11 !s107 C:/Users/felip/Documents/GitHub/Projeto_AOC/processador/ALU.vhd|
 Z12 o-93 -work work -O0
@@ -55,7 +55,7 @@ L6
 V7Lo]@[OKHibEmb>hdV?:D0
 R8
 31
-Z19 !s108 1575482336.624000
+Z19 !s108 1575667002.391000
 Z20 !s90 -reportprogress|300|-93|-work|work|C:/Users/felip/Documents/GitHub/Projeto_AOC/processador/Control.vhd|
 Z21 !s107 C:/Users/felip/Documents/GitHub/Projeto_AOC/processador/Control.vhd|
 R12
@@ -94,7 +94,7 @@ L5
 VR^DdB0J7nO4k;iMzO235W0
 R8
 31
-Z25 !s108 1575482336.052000
+Z25 !s108 1575667001.901000
 Z26 !s90 -reportprogress|300|-93|-work|work|C:/Users/felip/Documents/GitHub/Projeto_AOC/processador/divisor_sinal.vhd|
 Z27 !s107 C:/Users/felip/Documents/GitHub/Projeto_AOC/processador/divisor_sinal.vhd|
 R12
@@ -131,7 +131,7 @@ L7
 Vlo2D1SLVh@T:Rooh0^@>>1
 R8
 31
-Z31 !s108 1575482335.707000
+Z31 !s108 1575667001.570000
 Z32 !s90 -reportprogress|300|-93|-work|work|C:/Users/felip/Documents/GitHub/Projeto_AOC/processador/Hazard.vhd|
 Z33 !s107 C:/Users/felip/Documents/GitHub/Projeto_AOC/processador/Hazard.vhd|
 R12
@@ -170,7 +170,7 @@ L6
 VA1iMBKVB`VF1n`0imac=[1
 R8
 31
-Z36 !s108 1575482334.953000
+Z36 !s108 1575667000.870000
 Z37 !s90 -reportprogress|300|-93|-work|work|C:/Users/felip/Documents/GitHub/Projeto_AOC/processador/Mux2x1_32bits.vhd|
 Z38 !s107 C:/Users/felip/Documents/GitHub/Projeto_AOC/processador/Mux2x1_32bits.vhd|
 R12
@@ -211,7 +211,7 @@ L6
 VOUB1e^Z^m0F88z[eFoUM<1
 R8
 31
-Z41 !s108 1575482335.282000
+Z41 !s108 1575667001.296000
 Z42 !s90 -reportprogress|300|-93|-work|work|C:/Users/felip/Documents/GitHub/Projeto_AOC/processador/Mux2x1_5bits.vhd|
 Z43 !s107 C:/Users/felip/Documents/GitHub/Projeto_AOC/processador/Mux2x1_5bits.vhd|
 R12
@@ -250,7 +250,7 @@ L6
 V5]9hnJ=BioiIFHdGGGbZ?1
 R8
 31
-Z47 !s108 1575482337.168000
+Z47 !s108 1575667003.287000
 Z48 !s90 -reportprogress|300|-93|-work|work|C:/Users/felip/Documents/GitHub/Projeto_AOC/processador/processador.vhd|
 Z49 !s107 C:/Users/felip/Documents/GitHub/Projeto_AOC/processador/processador.vhd|
 R12
@@ -287,7 +287,7 @@ L6
 Va>eoVi9nJNKO73Y_7k?=>0
 R8
 31
-Z53 !s108 1575482334.637000
+Z53 !s108 1575667000.558000
 Z54 !s90 -reportprogress|300|-93|-work|work|C:/Users/felip/Documents/GitHub/Projeto_AOC/processador/regD.vhd|
 Z55 !s107 C:/Users/felip/Documents/GitHub/Projeto_AOC/processador/regD.vhd|
 R12
@@ -324,7 +324,7 @@ L6
 VnZ6A7B1F7TR:k^jPLY3_z2
 R8
 31
-Z59 !s108 1575482334.237000
+Z59 !s108 1575667000.102000
 Z60 !s90 -reportprogress|300|-93|-work|work|C:/Users/felip/Documents/GitHub/Projeto_AOC/processador/regE.vhd|
 Z61 !s107 C:/Users/felip/Documents/GitHub/Projeto_AOC/processador/regE.vhd|
 R12
@@ -361,7 +361,7 @@ L5
 VmeoE6Y_XK02gXWG<eigmY0
 R8
 31
-Z65 !s108 1575482332.615000
+Z65 !s108 1575666998.334000
 Z66 !s90 -reportprogress|300|-93|-work|work|C:/Users/felip/Documents/GitHub/Projeto_AOC/processador/register_file.vhd|
 Z67 !s107 C:/Users/felip/Documents/GitHub/Projeto_AOC/processador/register_file.vhd|
 R12
@@ -398,7 +398,7 @@ L6
 V@1Jda@eY]LPbISH<4[7c60
 R8
 31
-Z71 !s108 1575482333.820000
+Z71 !s108 1575666999.796000
 Z72 !s90 -reportprogress|300|-93|-work|work|C:/Users/felip/Documents/GitHub/Projeto_AOC/processador/regPC.vhd|
 Z73 !s107 C:/Users/felip/Documents/GitHub/Projeto_AOC/processador/regPC.vhd|
 R12
@@ -435,7 +435,7 @@ L6
 V4E4kMz0SfRDzhjjSa=7iI1
 R8
 31
-Z77 !s108 1575482333.495000
+Z77 !s108 1575666999.435000
 Z78 !s90 -reportprogress|300|-93|-work|work|C:/Users/felip/Documents/GitHub/Projeto_AOC/processador/regW.vhd|
 Z79 !s107 C:/Users/felip/Documents/GitHub/Projeto_AOC/processador/regW.vhd|
 R12
@@ -471,7 +471,7 @@ L4
 VIR2hzQaRbo;ahmh]e@5a;2
 R8
 31
-Z82 !s108 1575482333.196000
+Z82 !s108 1575666999.094000
 Z83 !s90 -reportprogress|300|-93|-work|work|C:/Users/felip/Documents/GitHub/Projeto_AOC/processador/SignExtend.vhd|
 Z84 !s107 C:/Users/felip/Documents/GitHub/Projeto_AOC/processador/SignExtend.vhd|
 R12
@@ -507,7 +507,7 @@ L6
 V8C44NK_bWe:SFWjLlTibC1
 R8
 31
-Z87 !s108 1575482332.882000
+Z87 !s108 1575666998.623000
 Z88 !s90 -reportprogress|300|-93|-work|work|C:/Users/felip/Documents/GitHub/Projeto_AOC/processador/somador.vhd|
 Z89 !s107 C:/Users/felip/Documents/GitHub/Projeto_AOC/processador/somador.vhd|
 R12
@@ -532,7 +532,7 @@ R13
 !s100 ;Q07j=i]IYIB?DO]]n4SO0
 !i10b 1
 Etb_processador
-Z90 w1575482313
+Z90 w1575648486
 Z91 DPx4 ieee 16 std_logic_textio 0 22 ?Il0a149GV276[?[UMDWh2
 R2
 R3
@@ -547,7 +547,7 @@ V^5T:[:_[S8^1ATg3:GkY@2
 R8
 31
 !i10b 1
-Z94 !s108 1575482337.646000
+Z94 !s108 1575667003.617000
 Z95 !s90 -reportprogress|300|-93|-work|work|C:/Users/felip/Documents/GitHub/Projeto_AOC/processador/tb_processador.vhd|
 Z96 !s107 C:/Users/felip/Documents/GitHub/Projeto_AOC/processador/tb_processador.vhd|
 R12
@@ -558,10 +558,10 @@ R2
 R3
 R4
 DEx4 work 14 tb_processador 0 22 ^5T:[:_[S8^1ATg3:GkY@2
-l37
+l34
 L11
-Vj<jT>YJJTJXTA5B_6n<0d2
-!s100 `z0`f95VHY>jg32SO9Nh]1
+VHnH87mW6XZLmLSgN_Qf9H2
+!s100 FGEI6Gc8`nM7;`gSS2az=2
 R8
 31
 !i10b 1
